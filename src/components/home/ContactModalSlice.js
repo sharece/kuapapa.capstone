@@ -5,7 +5,7 @@ const initialState = {
 };
 
 export const contactModalSlice = createSlice({
-  name: "modal",
+  name: "contactModal",
   initialState,
   reducers: {
     openContactModal: (state, actions) => {

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:ital@0;1&display=swap");
+@import url("navbar.css");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"); */
+/* @import url("") */
+
+* {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+}
+body {
+  color: white;
+  font-family: "Manropen";
+  background-color: #350443;
+  letter-spacing: 0.2rem;
+}
+.foot-container {
+  margin-top: 250px;
+}
+.nav-container,
+.foot-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 0.5px solid #ffffff33;
+  border-bottom: 0.5px solid #ffffff33;
+}
+.nav-link {
+}
+.nav-link,
+.foot-link {
+  line-height: 2rem;
+  font-size: 14px;
+}
+.nav-link:hover,
+.foot-link:hover {
+  box-shadow: 0 0 60px rgb(3, 107, 3);
+  cursor: pointer;
+  border-radius: 30px;
+}
+.resource {
+  outline: white;
+}
+
+/* map */
+/*  top: 255px;
+  left: 143px; */

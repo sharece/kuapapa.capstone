@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import "./styles/app.css";
 import "./index.css";
 import { Resources } from "./components/home/Resources";
 import { MayorMsg } from "./components/home/MayorMsg";

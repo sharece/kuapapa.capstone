@@ -1,22 +1,24 @@
 import { Navbar } from "./Navbar";
-import { Disclaimer } from "./Disclaimer";
-import { BoundryCert } from "./BoundryCert";
-import { Resources } from "./Resources";
-import { ContactModal } from "./ContactModal";
-import { useSelector } from "react-redux";
+import { Footer } from "./Footer";
+import { Reports } from "./ocean.weather/Reports";
+// import mapoutline from ".../assets/mapoutline.png";
+import { Map } from "./Map";
+// import { useSelector } from "react-redux";
+// import { Outline } from "./Outline";
 export const HomePage = () => {
-  const { contactModalOpen } = useSelector((store) => store.contactModal);
+  // const { contactModalOpen } = useSelector((store) => store.contactModal);
   return (
-    <>
-      {contactModalOpen && <ContactModal />} <Navbar />
-      <ContactModal />
+    // {contactModalOpen && <ContactModal />}
+    <div>
+      <Navbar />
+      {/* <img className="map" src={mapoutline} alt="kauai map"></img> */}
+      <Map />
       {/* //map */}
-      {/* //title banner ? */}
+      {/* //title banner  */}
       {/* //bio */}
       {/* //Kaua'i Ocean Safety + Weather Report //footer = disclaimer - boundry - */}
-      <Disclaimer />
-      <BoundryCert />
-      <Resources />
-    </>
+      <Reports />
+      <Footer />
+    </div>
   );
 };
