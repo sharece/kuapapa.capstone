@@ -1,5 +1,6 @@
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
+import napalizoom from "../../assets/napali-zoom.png";
 
 export const Napali = () => (
   //nav
@@ -12,7 +13,7 @@ export const Napali = () => (
     <div className="moku-container">
       <h1 className="text-4xl">Napali</h1>
       <div className="img-container">
-        {/* <img className="zoom map" src={zoompuna} alt="map" /> */}
+        <img className="zoom map" src={napalizoom} alt="map" />
       </div>
       <p>
         Nāpali’s plant is the olonā, a plant that grows straight whose stems are

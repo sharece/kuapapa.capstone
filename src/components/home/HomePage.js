@@ -11,7 +11,9 @@ import { Koolau } from "../koolau/Koolau";
 import { Napali } from "../napali/Napali";
 import { Niihau } from "../niihau/Niihau";
 import { Link } from "react-router-dom";
-import placeholdermap from "../../assets/roughdraft-map.jpg";
+import { ContactModal } from "./ContactModal";
+import colormap from "../../assets/color-map.png";
+import bannergif from "../../assets/gif.gif";
 // import { useSelector } from "react-redux";
 // import { Outline } from "./Outline";
 export const HomePage = () => {
@@ -19,32 +21,38 @@ export const HomePage = () => {
   return (
     // {contactModalOpen && <ContactModal />}
     <div>
-      <Navbar />
-      {/* <img src={bannergif} alt="banner gif"></img> */}
+      <div className="gif">
+        <img src={bannergif} alt="banner gif"></img>
+      </div>
       <div className="img-container">
-        <img clasName="" src={placeholdermap} alt="map"></img>
+        <img className="" src={colormap} alt="map"></img>
       </div>
       {/* //title banner  */}
       {/* //bio */}
-      <Link to="/puna" element={Puna}>
-        PUNA
-      </Link>
-      <Link to="/kona" element={Kona}>
-        KONA
-      </Link>
-      <Link to="/koolau" element={Koolau}>
-        KO'OLAU
-      </Link>
-      <Link to="/napali" element={Napali}>
-        NAPALI
-      </Link>
-      <Link to="/niihau" element={Niihau}>
-        NIIHAU
-      </Link>
+      <div className="moku-link-container">
+        <Link to="/puna" element={Puna}>
+          PUNA
+        </Link>
+        <Link to="/kona" element={Kona}>
+          KONA
+        </Link>
+        <Link to="/koolau" element={Koolau}>
+          KO'OLAU
+        </Link>
+        <Link to="/napali" element={Napali}>
+          NAPALI
+        </Link>
+        <Link to="/niihau" element={Niihau}>
+          NIIHAU
+        </Link>
+      </div>
       <Bio />
       {/* //Kaua'i Ocean Safety + Weather Report //footer = disclaimer - boundry - */}
       <Reports />
       <Footer />
+      <div className="nav-bar">
+        <Navbar />
+      </div>
     </div>
   );
 };

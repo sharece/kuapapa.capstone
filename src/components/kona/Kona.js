@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
-
+import konazoom from "../../assets/kona-zoom.png";
 export const Kona = () => (
   //nav
   //banner
@@ -13,7 +13,7 @@ export const Kona = () => (
     <div className="moku-container">
       <h1 className="text-4xl">Kona</h1>
       <div className="img-container">
-        {/* <img className="zoom map" src={zoompuna} alt="map" /> */}
+        <img className="zoom map" src={konazoom} alt="map" />
       </div>
       <p>
         From centuries ago, the west end of Kona from the area where Waimea

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "../home/Navbar";
-import zoompuna from "../../assets/zoompuna.jpg";
+import punazoom from "../../assets/puna-zoom.png";
 import { Footer } from "../home/Footer";
 export const Puna = () => (
   <>
@@ -8,7 +8,7 @@ export const Puna = () => (
     <div className="moku-container">
       <h1 className="text-4xl">Puna</h1>
       <div className="img-container">
-        <img className="zoom map" src={zoompuna} alt="map" />
+        <img className="zoom map" src={punazoom} alt="map" />
       </div>
       <div className="">
         <p className="moku-text">

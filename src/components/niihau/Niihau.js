@@ -1,5 +1,6 @@
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
+import niihauzoom from "../../assets/niihau-zoom.png";
 
 export const Niihau = () => (
   //nav
@@ -13,7 +14,7 @@ export const Niihau = () => (
     <div className="moku-container">
       <h1 className="text-4xl">Ni'ihau</h1>
       <div className="img-container">
-        {/* <img className="zoom map" src={zoompuna} alt="map" /> */}
+        <img className="zoom map" src={niihauzoom} alt="map" />
       </div>
       <p>
         Ni‘ihau: The whole island plus Ka‘ula and Lehua ‘Uala (sweet potato) is

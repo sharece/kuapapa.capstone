@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
+import koolauzoom from "../../assets/koolau-zoom.png";
 
 export const Koolau = () => (
   //nav
@@ -13,7 +14,7 @@ export const Koolau = () => (
     <div className="moku-container">
       <h1 className="text-4xl">Ko'olau</h1>
       <div className="img-container">
-        {/* <img className="zoom map" src={zoompuna} alt="map" /> */}
+        <img className="zoom map" src={koolauzoom} alt="map" />
       </div>
       <p>
         Ko‘olau’s plant icon is the flower of the koko‘olau (also known as
