@@ -1,4 +1,4 @@
-export const MayorMsg = () => {
+export const MayorMsg = () => (
   <p>
     July, 2014 Aloha and welcome to Kauaʻi’s newest educational mission: Kauaʻi
     Nui Kuapapa—Talking About Our Island, which is created for our local
@@ -31,5 +31,5 @@ export const MayorMsg = () => {
     development. Mahalo to the Nā Hōkū Welo team from the bottom of my heart for
     all of their hard work, patience and perseverance in helping us get this
     project up and running.
-  </p>;
-};
+  </p>
+);

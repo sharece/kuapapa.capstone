@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"); */
+/* @import url("") */
+
+* {
+  font-family: "Manrope", sans-serif;
+  margin: auto;
+  padding: 2px;
+}
+body {
+  color: rgb(17, 16, 16, 0.9);
+  font-family: "IM Fell Great Primer", sans-serif;
+  background-color: rgba(2, 34, 8, 0.9);
+  /* letter-spacing: 0.1rem; */
+}
+.foot-container {
+  margin-top: 1rem;
+}
+.nav-container,
+.foot-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 0.5px solid #ffffff33;
+  border-bottom: 0.5px solid #ffffff33;
+}
+.nav-link {
+}
+.nav-link,
+.foot-link {
+  line-height: 1.5rem;
+  font-size: 14px;
+}
+.nav-link:hover,
+.foot-link:hover,
+.ahu-link:hover {
+  color: rgb(32, 1, 37);
+  box-shadow: rgb(234, 228, 220);
+  cursor: pointer;
+}
+.ahu-link-container {
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ahu-link {
+  padding-right: 5px;
+  text-transform: uppercase;
+  font-family: "IM Fell Double Pica", "sans-serif";
+}
+h1,
+h2 {
+  display: block;
+  letter-spacing: 0.2rem;
+  font-size: 27px;
+  display: flex;
+  justify-content: center;
+  font-family: "IM Fell Double Pica", "sans-serif";
+}
+h2 {
+  padding: 0.5rem;
+}
+/* placeholdermap {
+  max-width: 3rem;
+} */
+.moku-text {
+  padding: 0.8rem;
+}
+.img {
+  max-width: 100%;
+  max-height: 40%;
+}
+/* map */
+/*  top: 255px;
+  left: 143px; */
+
+/* @media screen and (min-width: 1280px); */

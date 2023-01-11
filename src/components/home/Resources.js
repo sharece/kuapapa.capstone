@@ -1,4 +1,4 @@
-export const Resources = () => {
+export const Resources = () => (
   <div className="">
     <p className="resource">
       BIBLIOGRAPHY Kaua‘i Nui Kuapapa: Talking About Our Island is a project
@@ -73,5 +73,5 @@ export const Resources = () => {
       Inc. Private individuals whose support means a whole lot
     </p>
     ;
-  </div>;
-};
+  </div>
+);

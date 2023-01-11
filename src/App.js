@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import "./styles/app.css";
+import "./app.css";
 import "./index.css";
 import { Resources } from "./components/home/Resources";
 import { MayorMsg } from "./components/home/MayorMsg";
@@ -12,6 +12,7 @@ import { Koolau } from "./components/koolau/Koolau";
 import { Halelea } from "./components/halelea/Halelea";
 import { Napali } from "./components/napali/Napali";
 import { HomePage } from "./components/home/HomePage";
+import { Disclaimer } from "./components/home/Disclaimer";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Route path="/koolau" element={<Koolau />} />
         <Route path="/halelea" element={<Halelea />} />
         <Route path="/napali" element={<Napali />} />
-        {/* <Route path="/" element={< />} /> */}
+        <Route path="/disclaimer" element={<Disclaimer />} />
       </Routes>
     </div>
   );
