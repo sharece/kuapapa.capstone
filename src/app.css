@@ -7,6 +7,7 @@
 * {
   font-family: "Manrope", sans-serif;
   margin: auto;
+  width: auto;
   padding: 2px;
 }
 body {
@@ -49,6 +50,7 @@ body {
 .moku-link-container {
   display: flex;
   justify-content: center;
+  font-weight: 800;
 }
 .ahu-link {
   padding-right: 5px;
@@ -79,6 +81,9 @@ h2 {
 }
 .contact-modal {
   color: red;
+}
+reports {
+  overflow: auto;
 }
 /* map */
 /*  top: 255px;

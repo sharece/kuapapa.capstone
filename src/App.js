@@ -13,6 +13,29 @@ import { Halelea } from "./components/halelea/Halelea";
 import { Napali } from "./components/napali/Napali";
 import { HomePage } from "./components/home/HomePage";
 import { Disclaimer } from "./components/home/Disclaimer";
+import { Kipu } from "./components/puna/Kipu";
+import { Haiku } from "./components/puna/Haiku";
+import { Niumalu } from "./components/puna/Niumalu";
+import { Nawiliwili } from "./components/puna/Nawiliwili";
+import { Kalapaki } from "./components/puna/Kalapaki";
+import { Hanamaulu } from "./components/puna/Hanamaulu";
+import { Wailua } from "./components/puna/Wailua";
+import { Olohena } from "./components/puna/Olohena";
+import { Waipouli } from "./components/puna/Waipouli";
+import { Kapaa } from "./components/puna/Kapaa";
+import { Kealia } from "./components/puna/Kealia";
+import { Kamalomaloo } from "./components/puna/Kamalomaloo";
+import { Mana } from "./components/kona/Mana";
+import { Waimea } from "./components/kona/Waimea";
+import { Makaweli } from "./components/kona/Makaweli";
+import { Hanapepe } from "./components/kona/Hanapepe";
+import { Wahiawa } from "./components/kona/Wahiawa";
+import { Kalaheo } from "./components/kona/Kalaheo";
+import { Lawai } from "./components/kona/Lawai";
+import { Koloa } from "./components/kona/Koloa";
+import { Weliweli } from "./components/kona/WeliWeli";
+import { Paa } from "./components/kona/Paa";
+import { Mahaulepu } from "./components/kona/Mahaulepu";
 
 function App() {
   return (
@@ -26,6 +49,18 @@ function App() {
         <Route path="/niihau" element={<Niihau />} />
         <Route path="/kona" element={<Kona />} />
         <Route path="/puna" element={<Puna />} />
+        <Route path="/kipu" element={<Kipu />} />
+        <Route path="/haiku" element={<Haiku />} />
+        <Route path="/niumalu" element={<Niumalu />} />
+        <Route path="/nawiliwili" element={<Nawiliwili />} />
+        <Route path="/kalapaki" element={<Kalapaki />} />
+        <Route path="/hanamaulu" element={<Hanamaulu />} />
+        <Route path="/wailua" element={<Wailua />} />
+        <Route path="/olohena" element={<Olohena />} />
+        <Route path="/waipouli" element={<Waipouli />} />
+        <Route path="/kapaa" element={<Kapaa />} />
+        <Route path="/kealia" element={<Kealia />} />
+        <Route path="/komalomaloo" element={<Kamalomaloo />} />
         <Route path="/koolau" element={<Koolau />} />
         <Route path="/halelea" element={<Halelea />} />
         <Route path="/napali" element={<Napali />} />
