@@ -11,14 +11,14 @@ export const WeatherReport = ({ embedId }) => (
       sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
       className="w-80rem h-24rem"
     ></iframe>
-    <div>
+    {/* <div>
       <a
         href="https://www.meteoblue.com/en/weather/week/kauai-island_united-states_5848511?utm_source=weather_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget"
         rel="noopener"
       >
         Weather by Meteoblue.com
       </a>
-    </div>
+    </div> */}
   </div>
 );
 WeatherReport.propTypes = {
