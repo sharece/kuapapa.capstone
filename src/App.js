@@ -60,7 +60,7 @@ function App() {
         <Route path="/waipouli" element={<Waipouli />} />
         <Route path="/kapaa" element={<Kapaa />} />
         <Route path="/kealia" element={<Kealia />} />
-        <Route path="/komalomaloo" element={<Kamalomaloo />} />
+        <Route path="/kamalomaloo" element={<Kamalomaloo />} />
         <Route path="/koolau" element={<Koolau />} />
         <Route path="/halelea" element={<Halelea />} />
         <Route path="/napali" element={<Napali />} />

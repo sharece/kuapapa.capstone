@@ -8,9 +8,10 @@ import { Koolau } from "../koolau/Koolau";
 import { Napali } from "../napali/Napali";
 import { Niihau } from "../niihau/Niihau";
 import { Link } from "react-router-dom";
+import { Title } from "./Title";
 // import { ContactModal } from "./ContactModal";
 // import colormap from "../../assets/color-map.png";
-import bannergif from "../../assets/gif.gif";
+// import bannergif from "../../assets/gif.gif";
 import { ClickableMap } from "./ClickableMap";
 // import { useSelector } from "react-redux";
 // import { Outline } from "./Outline";
@@ -19,14 +20,17 @@ export const HomePage = () => {
   return (
     // {contactModalOpen && <ContactModal />}
     <>
-      <div className="gif">
-        <img src={bannergif} alt="banner gif"></img>
+      <div className="nav-bar pb-8">
+        <Navbar />
       </div>
-      <Bio />
-      <div className="img-container">
+      {/* <div className="gif">
+        <img src={bannergif} alt="banner gif"></img>
+      </div> */}
+      <div className="pb-5">
         <ClickableMap />
         {/* <img className="" src={colormap} alt="map"></img> */}
       </div>
+      <Title />
       <div className="moku-link-container">
         <Link to="/puna" element={Puna}>
           PUNA
@@ -44,11 +48,9 @@ export const HomePage = () => {
           NIIHAU
         </Link>
       </div>
+      <Bio />
       <Reports />
       <Footer />
-      <div className="nav-bar">
-        <Navbar />
-      </div>
     </>
   );
 };

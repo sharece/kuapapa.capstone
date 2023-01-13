@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
 import konazoom from "../../assets/kona-zoom.png";
+import konaroadsign from "../../assets/kona-label.jpg";
 export const Kona = () => (
   //nav
   //banner
@@ -12,8 +13,44 @@ export const Kona = () => (
     <Navbar />
     <div className="moku-container">
       <h1 className="text-4xl">Kona</h1>
-      <div className="img-container">
+      <div className="img-container justify-center">
         <img className="zoom map" src={konazoom} alt="map" />
+        <img className="road-sign" src={konaroadsign} alt="kona road sign" />
+      </div>
+      <div className="ahu-link-container">
+        <Link className="ahu-link" to="/mana">
+          Mana
+        </Link>
+        <Link className="ahu-link" to="/waimea">
+          Waimea
+        </Link>
+        <Link className="ahu-link" to="/makaweli">
+          Makaweli
+        </Link>
+        <Link className="ahu-link" to="/hanapepe">
+          Hanapepe
+        </Link>
+        <Link className="ahu-link" to="/wahiawa">
+          Wahiawa
+        </Link>
+        <Link className="ahu-link" to="/kalaheo">
+          Kalaheo
+        </Link>
+        <Link className="ahu-link" to="/lawai">
+          Lawai
+        </Link>
+        <Link className="ahu-link" to="/koloa">
+          Koloa
+        </Link>
+        <Link className="ahu-link" to="/weliweli">
+          Weliweli
+        </Link>
+        <Link className="ahu-link" to="/paa">
+          Paa
+        </Link>
+        <Link className="ahu-link" to="/mahaulepu">
+          Mahaulepu
+        </Link>
       </div>
       <p>
         From centuries ago, the west end of Kona from the area where Waimea
@@ -33,41 +70,7 @@ export const Kona = () => (
         red as the brightest red dirt of Waimea Canyon.
       </p>
     </div>
-    <div className="ahu-link-container">
-      <Link className="ahu-link" to="/mana">
-        Mana
-      </Link>
-      <Link className="ahu-link" to="/waimea">
-        Waimea
-      </Link>
-      <Link className="ahu-link" to="/makaweli">
-        Makaweli
-      </Link>
-      <Link className="ahu-link" to="/hanapepe">
-        Hanapepe
-      </Link>
-      <Link className="ahu-link" to="/wahiawa">
-        Wahiawa
-      </Link>
-      <Link className="ahu-link" to="/kalaheo">
-        Kalaheo
-      </Link>
-      <Link className="ahu-link" to="/lawai">
-        Lawai
-      </Link>
-      <Link className="ahu-link" to="/koloa">
-        Koloa
-      </Link>
-      <Link className="ahu-link" to="/weliweli">
-        Weliweli
-      </Link>
-      <Link className="ahu-link" to="/paa">
-        Paa
-      </Link>
-      <Link className="ahu-link" to="/mahaulepu">
-        Mahaulepu
-      </Link>
-    </div>
+
     <Footer />
   </>
 );

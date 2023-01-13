@@ -10,7 +10,7 @@ export const Navbar = () => {
         <div className="nav-link">
           <Link to="/">KAUA'I NUI KUAPAPA</Link>
         </div>
-        <div className="contact-modal">
+        <div className="nav-link">
           <ContactModal />
         </div>
         <div className="nav-link">

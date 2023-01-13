@@ -5,41 +5,47 @@
 /* @import url("") */
 
 * {
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope", "IM Fell Double Pica" sans-serif;
   margin: auto;
   width: auto;
-  padding: 2px;
+  /* padding: 2px; */
 }
 body {
   color: rgba(16, 17, 16, 0.9);
   font-family: "IM Fell Great Primer", sans-serif;
-  background-color: rgba(248, 255, 247, 0.7);
+  background-color: rgba(220, 167, 23, 0.5);
   /* letter-spacing: 0.1rem; */
 }
 .foot-container {
   margin-top: 1rem;
 }
+.road-sign {
+  width: 50%;
+  height: 50%;
+}
+.koolau-zoom {
+  padding-bottom: 75px;
+}
 .nav-container,
 .foot-container {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
-  border-top: 0.5px solid #ffffff33;
-  border-bottom: 0.5px solid #ffffff33;
 }
-.nav-bar {
-  padding: 5px;
-}
+
 .nav-link,
 .foot-link {
-  line-height: 1.5rem;
-  font-size: 14px;
+  /* font-family: "IM Fell Double Pica", sans-serif; */
+  padding: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: lowercase;
 }
 .nav-link:hover,
 .foot-link:hover,
 .ahu-link:hover {
   color: rgb(32, 1, 37);
-  box-shadow: rgb(234, 228, 220);
+  box-shadow: rgba(2, 90, 32, 0.86);
   cursor: pointer;
 }
 .ahu-link-container {
@@ -51,6 +57,7 @@ body {
   display: flex;
   justify-content: center;
   font-weight: 800;
+  padding-bottom: 2rem;
 }
 .ahu-link {
   padding-right: 5px;
@@ -75,22 +82,32 @@ h2 {
 .moku-text {
   padding: 0.8rem;
 }
-.img {
+/* .img {
   max-width: 100%;
   max-height: 40%;
+} */
+.img-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
 }
-.contact-modal {
-  color: red;
-}
+
 reports {
   overflow: auto;
+}
+p {
+  padding: 1rem;
+}
+.napalizoom {
+  padding-right: 28px;
 }
 /* map */
 /*  top: 255px;
   left: 143px; */
 
 @media screen and (min-width: 1280px) {
-  .gif {
-    display: none;
+  .reports {
+    display: flex;
+    flex-direction: row;
   }
 }

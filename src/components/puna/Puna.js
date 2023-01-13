@@ -2,13 +2,53 @@ import { Link } from "react-router-dom";
 import { Navbar } from "../home/Navbar";
 import punazoom from "../../assets/puna-zoom.png";
 import { Footer } from "../home/Footer";
+import punasign from "../../assets/puna-label.jpg";
 export const Puna = () => (
   <>
     <Navbar />
     <div className="moku-container">
       <h1 className="text-4xl">Puna</h1>
       <div className="img-container">
+        <img className="road-sign" alt="puna road sign" src={punasign} />
         <img className="zoom map" src={punazoom} alt="map" />
+      </div>
+      <div className="ahu-link-container">
+        <Link className="ahu-link" to="/kipu">
+          Kipu
+        </Link>
+        <Link className="ahu-link" to="/haiku">
+          Haiku
+        </Link>
+        <Link className="ahu-link" to="/niumalu">
+          Niumalu
+        </Link>
+        <Link className="ahu-link" to="/nawiliwili">
+          Nawiliwili
+        </Link>
+        <Link className="ahu-link" to="/kalapaki">
+          Kalapaki
+        </Link>
+        <Link className="ahu-link" to="/hanamaulu">
+          Hanamaulu
+        </Link>
+        <Link className="ahu-link" to="/wailua">
+          Wailua
+        </Link>
+        <Link className="ahu-link" to="/olohena">
+          Olohena
+        </Link>
+        <Link className="ahu-link" to="/waipouli">
+          Waipouli
+        </Link>
+        <Link className="ahu-link" to="/kapaa">
+          Kapa'a
+        </Link>
+        <Link className="ahu-link" to="/kealia">
+          Kealia
+        </Link>
+        <Link className="ahu-link" to="/kamalomaloo">
+          Kamalomaloo
+        </Link>
       </div>
       <div className="">
         <p className="moku-text">
@@ -29,44 +69,6 @@ export const Puna = () => (
           color yellow is associated with royalty, as seen in ahu‘ula, the royal
           feather capes of Kaua‘i’s mō‘ī.
         </p>
-      </div>
-      <div className="ahu-link-container">
-        <Link className="ahu-link" to="/kipu">
-          Kipu
-        </Link>
-        <Link className="ahu-link" to="/haiku">
-          Haiku
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Niumalu
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Nawiliwili
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Kalapaki
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Hanamaulu
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Wailua
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Olohena
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Waipouli
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Kapa'a
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Kealia
-        </Link>
-        <Link className="ahu-link" to="/kipu">
-          Kamalomaloo
-        </Link>
       </div>
     </div>
     <Footer />

@@ -3,7 +3,7 @@ export const Footer = () => {
   return (
     <>
       <div className="foot-container">
-        <div className="foot-link pr-5px">
+        <div className="foot-link pr-9">
           <Link to="/disclaimer">DISCLAIMER</Link>
         </div>
         <div className="foot-link">

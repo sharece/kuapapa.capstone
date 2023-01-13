@@ -1,10 +1,7 @@
+import iconmap from "../../assets/icon-map.png";
 export const ClickableMap = () => (
   <>
-    <img
-      alt="clickable map"
-      src="../../assets/color-map.png"
-      useMap="#image_map"
-    />
+    <img className="" alt="clickable map" src={iconmap} useMap="#image_map" />
     <map name="image_map">
       <area
         alt="kona"

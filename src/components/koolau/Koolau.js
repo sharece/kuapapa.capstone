@@ -3,18 +3,21 @@ import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
 import koolauzoom from "../../assets/koolau-zoom.png";
 
+import koolau from "../../assets/koolau-label.jpg";
 export const Koolau = () => (
   //nav
   //banner
   //moku plaque
   //map
   //links to ahupuaas (12)
+
   <>
     <Navbar />
     <div className="moku-container">
       <h1 className="text-4xl">Ko'olau</h1>
       <div className="img-container">
-        <img className="zoom map" src={koolauzoom} alt="map" />
+        <img className="road-sign" src={koolau} alt="kona road sign" />
+        <img className="koolau-zoom" src={koolauzoom} alt="map" />
       </div>
       <p>
         Ko‘olau’s plant icon is the flower of the koko‘olau (also known as
