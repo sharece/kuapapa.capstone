@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <>
-      <div className="foot-container">
-        <div className="foot-link pr-9">
+      <div className="foot-container p-3">
+        <div className="foot-link ">
           <Link to="/disclaimer">DISCLAIMER</Link>
         </div>
-        <div className="foot-link">
+        <div className="foot-link ">
           <Link to="/boundryCert">BOUNDRY CERTIFICATES</Link>
         </div>
         <div className="foot-link">

@@ -1,18 +1,27 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "../home/Navbar";
-import kealia from "../../assets/Puna_kealia.png";
 import kealiabd from "../../assets/ahu-divisions/Kealia.png";
+import kealiasign from "../../assets/ahu-signs/Puna_kealia.png";
+import punasign from "../../assets/punasign.png";
 import { Footer } from "../home/Footer";
 export const Kealia = () => (
   <>
     <Navbar />
-    <div>
-      <img src={kealiabd} alt=" kealia ahupuaa breakdown" />
-      <Link className="back-to-moku" to="/puna">
-        Take me back to Puna
-      </Link>
-      <img src={kealia} alt="kealia road sign" />
-      <p>
+    <div className="ahu-elements">
+      <div className="ahu-sign">
+        <img width="100%" src={kealiasign} alt="kealia road sign" />
+      </div>
+      <div className="ahu-map-and-sign">
+        <div className="kealiabd">
+          <img src={kealiabd} alt="kealia ahupuaa breakdown" />
+        </div>
+        <Link className="back-to-moku" to="/puna">
+          <div className="moku-sign">
+            <img src={punasign} alt="puna sign" />
+          </div>
+        </Link>
+      </div>
+      <div className="ahu-text">
         Keālia: The-salt-encrustation; Lit: Salt-land; Salt-pan Hele ka ho`i a
         hiki i Ke-ālia, ua napo`o ka lā. When one reaches Ke-ālia at last, the
         sun is set. Said of one who procrastinates. A play on alia (to wait).
@@ -23,7 +32,7 @@ export const Kealia = () => (
         saw a very sick woman whom all the kahuna had been unable to help.
         Hi`iaka uttered a prayer and at once health was given back to the woman.
         [Rice]
-      </p>
+      </div>
     </div>
     <Footer />
   </>

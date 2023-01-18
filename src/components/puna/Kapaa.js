@@ -1,18 +1,27 @@
 import { Link } from "react-router-dom";
-import kapaa from "../../assets/Puna_kapaa.png";
 import { Navbar } from "../home/Navbar";
 import kapaabd from "../../assets/ahu-divisions/Kapaa.png";
+import kapaasign from "../../assets/ahu-signs/Puna_kapaa.png";
+import punasign from "../../assets/punasign.png";
 import { Footer } from "../home/Footer";
 export const Kapaa = () => (
   <>
     <Navbar />
-    <div>
-      <img src={kapaabd} alt="kapaa ahupuaa breakdown" />
-      <Link className="back-to-moku" to="/puna">
-        Take me back to Puna
-      </Link>
-      <img src={kapaa} alt="kapaa road sign" />
-      <p>
+    <div className="ahu-elements">
+      <div className="ahu-sign">
+        <img width="100%" src={kapaasign} alt="kapaa road sign" />
+      </div>
+      <div className="ahu-map-and-sign">
+        <div className="kipubd">
+          <img src={kapaabd} alt="kapaa ahupuaa breakdown" />
+        </div>
+        <Link className="back-to-moku" to="/puna">
+          <div className="moku-sign">
+            <img src={punasign} alt="puna sign" />
+          </div>
+        </Link>
+      </div>
+      <div className="ahu-text">
         Kapa`a: The-solid; The-closing; The-enclosure; To hold; firm Ka lulu o
         Moikeha i ka laulā o Kapa`a. The calm of Moikeha in the breadth of
         Kapa`a. The chief Moikeha enjoyed the peace of Kapa`a, the place he
@@ -58,7 +67,7 @@ export const Kapaa = () => (
         Lo’i. [LCA 8837] •Ka’upulehua Lit: ? Kula. [LCA 8837] •Pu’u-’eke’eke
         Lit: Purse or scrotum hill Pali on the south side of Ulu-kiu. [LCA 8837]
         Ulu-kiu-lalo Lit: ? `Ili on the west of Ulu-kiu. [LCA 8837]
-      </p>
+      </div>
     </div>
     <Footer />
   </>

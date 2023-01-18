@@ -36,6 +36,18 @@ import { Koloa } from "./components/kona/Koloa";
 import { Weliweli } from "./components/kona/WeliWeli";
 import { Paa } from "./components/kona/Paa";
 import { Mahaulepu } from "./components/kona/Mahaulepu";
+import { Anahola } from "./components/koolau/Anahola";
+import { Aliomanu } from "./components/koolau/Aliomanu";
+import { Papaa } from "./components/koolau/Papaa";
+import { Moloaa } from "./components/koolau/Moloaa";
+import { Kaakaaniu } from "./components/koolau/Kaakaaniu";
+import { Lepeuli } from "./components/koolau/Lepeuli";
+import { Waipake } from "./components/koolau/Waipake";
+import { Pilaa } from "./components/koolau/Pilaa";
+import { Waiakalua } from "./components/koolau/Waiakalua";
+import { Kahili } from "./components/koolau/Kahili";
+import { Kilauea } from "./components/koolau/Kilauea";
+import { Namahana } from "./components/koolau/Namahana";
 
 function App() {
   return (
@@ -64,6 +76,29 @@ function App() {
         <Route path="/koolau" element={<Koolau />} />
         <Route path="/halelea" element={<Halelea />} />
         <Route path="/napali" element={<Napali />} />
+        <Route path="/mana" element={<Mana />} />
+        <Route path="/waimea" element={<Waimea />} />
+        <Route path="/makaweli" element={<Makaweli />} />
+        <Route path="/hanapepe" element={<Hanapepe />} />
+        <Route path="/wahiawa" element={<Wahiawa />} />
+        <Route path="/kalaheo" element={<Kalaheo />} />
+        <Route path="/lawai" element={<Lawai />} />
+        <Route path="/koloa" element={<Koloa />} />
+        <Route path="/weliweli" element={<Weliweli />} />
+        <Route path="/paa" element={<Paa />} />
+        <Route path="/mahaulepu" element={<Mahaulepu />} />
+        <Route path="/anahola" element={<Anahola />} />
+        <Route path="/aliomanu" element={<Aliomanu />} />
+        <Route path="/papaa" element={<Papaa />} />
+        <Route path="/moloaa" element={<Moloaa />} />
+        <Route path="/kaakaaniu" element={<Kaakaaniu />} />
+        <Route path="/lepeuli" element={<Lepeuli />} />
+        <Route path="/waipake" element={<Waipake />} />
+        <Route path="/pilaa" element={<Pilaa />} />
+        <Route path="/waiakalua" element={<Waiakalua />} />
+        <Route path="/kahili" element={<Kahili />} />
+        <Route path="/kilauea" element={<Kilauea />} />
+        <Route path="/namahana" element={<Namahana />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
       </Routes>
     </div>

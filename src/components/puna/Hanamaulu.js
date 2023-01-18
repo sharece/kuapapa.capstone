@@ -1,18 +1,27 @@
 import { Link } from "react-router-dom";
-import hanamaulu from "../../assets/Puna_hanamaulu.png";
+import hanamaulusign from "../../assets/ahu-signs/Puna_hanamaulu.png";
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
 import hanamaulubd from "../../assets/ahu-divisions/Hanamaulu.png";
+import punasign from "../../assets/punasign.png";
 export const Hanamaulu = () => (
   <>
     <Navbar />
-    <img src={hanamaulubd} alt="hanamaulu ahupuaa breakdown" />
-    <Link className="back-to-moku" to="/puna">
-      Take me back to Puna
-    </Link>
-    <div>
-      <img src={hanamaulu} alt="hanamaulu road sign" />
-      <p>
+    <div className="ahu-elements">
+      <div className="ahu-sign">
+        <img width="100%" src={hanamaulusign} alt="hanamaulu road sign" />
+      </div>
+      <div className="ahu-map-and-sign">
+        <div className="hanamaulubd">
+          <img src={hanamaulubd} alt="hanamaulu ahupuaa breakdown" />
+        </div>
+        <Link className="back-to-moku" to="/puna">
+          <div className="moku-sign">
+            <img src={punasign} alt="puna sign" />
+          </div>
+        </Link>
+      </div>
+      <div className="ahu-text">
         HANAMAULU Hanamā`ulu: Tired-bay (as from walking) Alt: Hana-mā`ula -If
         pronounced Ha-na-ma-oo-la, it means "work at plant culture." If
         pronounced Hana-maula, it means make legs tired." #This ahupua`a was
@@ -60,7 +69,7 @@ export const Hanamaulu = () => (
         they recognized each other immediately from their dreams. They married
         and lived many years at Pali-'o'oma. After their deaths, the cliffs were
         renamed Ke-’alohi-wai in honor of the woman from O’ahu.
-      </p>
+      </div>
     </div>
     <Footer />
   </>

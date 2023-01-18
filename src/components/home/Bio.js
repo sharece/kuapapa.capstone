@@ -1,5 +1,5 @@
 export const Bio = () => (
-  <div>
+  <div className="">
     {/* <h1 className=""> Kaua‘i Nui Kuapapa</h1>
     <h2 className="">"The entirety of Kaua‘i"</h2> */}
     <p>

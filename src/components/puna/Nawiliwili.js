@@ -1,18 +1,27 @@
 import { Link } from "react-router-dom";
-import nawiliwili from "../../assets/Puna_nawiliwili.png";
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
 import nawiliwilibd from "../../assets/ahu-divisions/Nawiliwili.png";
+import punasign from "../../assets/punasign.png";
+import nawiliwilisign from "../../assets/ahu-signs/Puna_nawiliwili.png";
 export const Nawiliwili = () => (
   <>
     <Navbar />
-    <img src={nawiliwilibd} alt="nawiliwili ahupuaa breakdown" />
-    <Link className="back-to-moku" to="/puna">
-      Take me back to Puna
-    </Link>
-    <div>
-      <img src={nawiliwili} alt="nawiliwili road sign" />
-      <p>
+    <div className="ahu-elements">
+      <div className="ahu-sign">
+        <img width="100%" src={nawiliwilisign} alt="nawiliwili road sign" />
+      </div>
+      <div className="ahu-map-and-sign">
+        <div className="kipubd">
+          <img src={nawiliwilibd} alt="nawiliwili ahupuaa breakdown" />
+        </div>
+        <Link className="back-to-moku" to="/puna">
+          <div className="moku-sign">
+            <img src={punasign} alt="puna sign" />
+          </div>
+        </Link>
+      </div>
+      <div className="ahu-text">
         Nāwiliwili: Ainakumuwai: Ahupua`a of Nawiliwili Bay What is special
         about Nawiliwili Bay? What was Nawiliwili Bay like before people
         arrived? How did Hawaiian settlers use their new home? What happened
@@ -20,7 +29,7 @@ export const Nawiliwili = () => (
         polluted bays in the state? What can we do to restore the health of
         Nawiliwili Bay? Explore these questions as we tour the ahupua'a of
         Nawiliwili Bay.
-      </p>
+      </div>
     </div>
     <Footer />
   </>

@@ -1,18 +1,27 @@
 import { Link } from "react-router-dom";
-import niumalu from "../../assets/Puna_niumalu.png";
 import { Navbar } from "../home/Navbar";
 import niumalubd from "../../assets/ahu-divisions/Niumalu.png";
 import { Footer } from "../home/Footer";
+import punasign from "../../assets/punasign.png";
+import niumalusign from "../../assets/ahu-signs/Puna_niumalu.png";
 export const Niumalu = () => (
   <>
     <Navbar />
-    <img src={niumalubd} alt="niumalu ahupuaa breakdown" />
-    <Link className="back-to-moku" to="/puna">
-      Take me back to Puna
-    </Link>
-    <div>
-      <img src={niumalu} alt="niumalu road sign" />
-      <p>
+    <div className="ahu-elements">
+      <div className="ahu-sign">
+        <img width="100%" src={niumalusign} alt="niumalu road sign" />
+      </div>
+      <div className="ahu-map-and-sign">
+        <div className="kipubd">
+          <img src={niumalubd} alt="kipu ahupuaa breakdown" />
+        </div>
+        <Link className="back-to-moku" to="/puna">
+          <div className="moku-sign">
+            <img src={punasign} alt="puna sign" />
+          </div>
+        </Link>
+      </div>
+      <div className="ahu-text">
         Niumalu: Shaded coconut tree The boundary starts at the large fish pond
         of Pepeawa, crosses the range of hills called Hōkū to the sea in the
         northeast corner of the land of Kīpū, containing 1767 acres. *When two
@@ -20,7 +29,7 @@ export const Niumalu = () => (
         creating the hole in the mountain at Anahola. The second threw his spear
         which continued until it cast its shadow on the coconut trees here, thus
         the name Niu-malu. Which two heros were involved depends upon the story.
-      </p>
+      </div>
     </div>
     <Footer />
   </>

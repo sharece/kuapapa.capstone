@@ -1,9 +1,10 @@
 import bernsign from "../../assets/bernard-sig.png";
+import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 export const MayorMsg = () => (
   <>
     <Navbar />
-    <p className="bg-white p-5">
+    <p className="bg-white p-8">
       July, 2014 <br></br>Aloha and welcome to Kauaʻi’s newest educational
       mission: Kauaʻi Nui Kuapapa—Talking About Our Island, which is created for
       our local community and can also be utilized by visitors and by all those
@@ -38,5 +39,6 @@ export const MayorMsg = () => (
       this project up and running.
       <img alt="bernard signature" src={bernsign} />
     </p>
+    <Footer />
   </>
 );

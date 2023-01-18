@@ -9,6 +9,7 @@ import { Napali } from "../napali/Napali";
 import { Niihau } from "../niihau/Niihau";
 import { Link } from "react-router-dom";
 import { Title } from "./Title";
+import kuapapaimg from "../../assets/kuapapaimg.png";
 // import { ContactModal } from "./ContactModal";
 // import colormap from "../../assets/color-map.png";
 // import bannergif from "../../assets/gif.gif";
@@ -23,14 +24,14 @@ export const HomePage = () => {
       <div className="nav-bar pb-8">
         <Navbar />
       </div>
-      {/* <div className="gif">
-        <img src={bannergif} alt="banner gif"></img>
-      </div> */}
-      <div className="pb-5">
-        <ClickableMap />
-        {/* <img className="" src={colormap} alt="map"></img> */}
+      <div className="home-img">
+        <img src={kuapapaimg} alt="kauai img" />
       </div>
       <Title />
+      <div className="p-10">
+        <ClickableMap />
+      </div>
+
       <div className="moku-link-container">
         <Link to="/puna" element={Puna}>
           PUNA

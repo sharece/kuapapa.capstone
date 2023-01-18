@@ -1,19 +1,27 @@
 import { Link } from "react-router-dom";
-import olohena from "../../assets/Puna_olohena.png";
 import { Navbar } from "../home/Navbar";
 import olohenabd from "../../assets/ahu-divisions/Olohena.png";
 import { Footer } from "../home/Footer";
-
+import punasign from "../../assets/punasign.png";
+import olohenasign from "../../assets/ahu-signs/Puna_olohena.png";
 export const Olohena = () => (
   <>
     <Navbar />
-    <Link className="back-to-moku" to="/puna">
-      Take me back to Puna
-    </Link>
-    <div>
-      <img src={olohenabd} alt="olohena ahupuaa breakdown" />
-      <img src={olohena} alt="olohena road sign" />
-      <p>
+    <div className="ahu-elements">
+      <div className="ahu-sign">
+        <img width="100%" src={olohenasign} alt="olohena road sign" />
+      </div>
+      <div className="ahu-map-and-sign">
+        <div className="olohenabd">
+          <img src={olohenabd} alt="olohena ahupuaa breakdown" />
+        </div>
+        <Link className="back-to-moku" to="/puna">
+          <div className="moku-sign">
+            <img src={punasign} alt="puna sign" />
+          </div>
+        </Link>
+      </div>
+      <div className="ahu-text">
         `Olohena: Hill-(shaped)-like-buttocks; Rubbing-the-mon-veneris;
         Back-of-a-fish; Rolling-naked Ka-lama Lit: The-torch Stream rising from
         the watershed of Ka-puka-iki. It flows across the ahupuaâ€™a of Olohena.
@@ -33,7 +41,7 @@ export const Olohena = () => (
         Māhele Names Hō-lau Lit: To give a leaf Kula. [LCA 3831] Kuanea Lit:
         Barren `Ili bordered on the N = kahawai, E = aina "Waipouli", S = kula,
         W = kula of Hō-lau.[LCA 3831]
-      </p>
+      </div>
     </div>
     <Footer />
   </>

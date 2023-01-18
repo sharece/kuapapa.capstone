@@ -1,19 +1,27 @@
 import { Link } from "react-router-dom";
-import waipouli from "../../assets/Puna_waipouli.png";
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
 import waipoulibd from "../../assets/ahu-divisions/Waipouli.png";
+import waipoulisign from "../../assets/ahu-signs/Puna_waipouli.png";
+import punasign from "../../assets/punasign.png";
 export const Waipouli = () => (
   <>
     <Navbar />
-
-    <div>
-      <img src={waipoulibd} alt="waipouli ahupuaa breakdown" />
-      <Link className="back-to-moku" to="/puna">
-        Take me back to Puna
-      </Link>
-      <img src={waipouli} alt="waipouli road sign" />
-      <p>
+    <div className="ahu-elements">
+      <div className="ahu-sign">
+        <img width="100%" src={waipoulisign} alt="waipouli road sign" />
+      </div>
+      <div className="ahu-map-and-sign">
+        <div className="kipubd">
+          <img src={waipoulibd} alt="waipouli ahupuaa breakdown" />
+        </div>
+        <Link className="back-to-moku" to="/puna">
+          <div className="moku-sign">
+            <img src={punasign} alt="puna sign" />
+          </div>
+        </Link>
+      </div>
+      <div className="ahu-text">
         Waipouli: Dark water Lit: Water of darkness; Lit: Water darkened by an
         eclipse Wai-pouli is an ahupua`a of the Puna district, between Kapa`a
         and Olohena. It is possible that an eclipse of the sun was observed here
@@ -30,7 +38,7 @@ export const Waipouli = () => (
         were married and lived the rest of their lives at Hā’ena.[Rice] Nā keiki
         o Waipouli me Honoma`ele. A humorous reference to very dark people. A
         play on pouli (dark) and`ele (black). (Pukui 2237)
-      </p>
+      </div>
     </div>
     <Footer />
   </>

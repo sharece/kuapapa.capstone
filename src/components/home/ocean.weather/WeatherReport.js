@@ -5,7 +5,7 @@ export const WeatherReport = ({ embedId }) => (
   <div className="">
     <iframe
       title="weather"
-      src={`https://www.meteoblue.com/en/weather/widget/daily/{$embedId}`}
+      src={`https://www.meteoblue.com/en/weather/widget/daily/kauai-island_united-states_{$embedId}`}
       frameborder="0"
       allowtransparency="true"
       sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
