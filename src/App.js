@@ -13,6 +13,7 @@ import { Halelea } from "./components/halelea/Halelea";
 import { Napali } from "./components/napali/Napali";
 import { HomePage } from "./components/home/HomePage";
 import { Disclaimer } from "./components/home/Disclaimer";
+import { Contact } from "./components/home/Contact";
 import { Kipu } from "./components/puna/Kipu";
 import { Haiku } from "./components/puna/Haiku";
 import { Niumalu } from "./components/puna/Niumalu";
@@ -100,6 +101,7 @@ function App() {
         <Route path="/kilauea" element={<Kilauea />} />
         <Route path="/namahana" element={<Namahana />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

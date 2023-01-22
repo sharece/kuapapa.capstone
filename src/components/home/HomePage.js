@@ -9,17 +9,18 @@ import { Napali } from "../napali/Napali";
 import { Niihau } from "../niihau/Niihau";
 import { Link } from "react-router-dom";
 import { Title } from "./Title";
+import ReactPlayer from "react-player";
 import kuapapaimg from "../../assets/kuapapaimg.png";
 // import { ContactModal } from "./ContactModal";
 // import colormap from "../../assets/color-map.png";
 // import bannergif from "../../assets/gif.gif";
 import { ClickableMap } from "./ClickableMap";
+import React from "react";
 // import { useSelector } from "react-redux";
 // import { Outline } from "./Outline";
 export const HomePage = () => {
-  // const { contactModalOpen } = useSelector((store) => store.contactModal);
+  const playerRef = React.useRef(null);
   return (
-    // {contactModalOpen && <ContactModal />}
     <>
       <div className="nav-bar pb-8">
         <Navbar />
@@ -49,8 +50,24 @@ export const HomePage = () => {
           NIIHAU
         </Link>
       </div>
-      <Bio />
-      <Reports />
+      <div className="p-3">
+        <Bio />
+      </div>
+      <div className="p-1 ">
+        <h1 className="bg-green-800 text-1xl p-3 font-xtra-bold w-96">
+          Kaua'i Ocean Safety and Weather
+        </h1>
+        <ReactPlayer
+          className="ocean safety video"
+          width="24rem"
+          height="200px"
+          ref={playerRef}
+          url="https://www.youtube.com/embed/eTTdHO0tDB8"
+        />
+        <div className="w-96">
+          <Reports />
+        </div>
+      </div>
       <Footer />
     </>
   );

@@ -1,18 +1,15 @@
+import React from "react";
 import SurfReportEmbed from "./SurfReportEmbed";
 import { WeatherReport } from "./WeatherReport";
-import YoutubeEmbed from "./YoutubeEmbed";
+// import YoutubeEmbed from "./YoutubeEmbed";
 
 export const Reports = () => (
   <>
-    <h1 className="text-2xl p-3 font-bold">Kaua'i Ocean Safety and Weather</h1>
-    <div className="reports">
+    <div className="reports p-3">
       <div className="">
-        <WeatherReport embedId="5848511?geoloc=fixed&days=7&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=light" />
+        <WeatherReport embedId="https://www.meteoblue.com/en/weather/widget/daily/kauai-island_united-states_5848511?geoloc=fixed&days=4&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=light" />
       </div>
       {/* https://www.meteoblue.com/en/weather/week/kauai-island_united-states_5848511 */}
-      <div className="">
-        <YoutubeEmbed embedId="eTTdHO0tDB8" />
-      </div>
       <div className="">
         <SurfReportEmbed embedId="https://www.weather.gov/hfo/SRFobs#Kauai" />
       </div>

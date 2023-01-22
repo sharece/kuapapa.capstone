@@ -4,7 +4,7 @@ import { Navbar } from "./Navbar";
 export const MayorMsg = () => (
   <>
     <Navbar />
-    <p className="bg-white p-8">
+    <p className="bg-white p-16">
       July, 2014 <br></br>Aloha and welcome to Kauaʻi’s newest educational
       mission: Kauaʻi Nui Kuapapa—Talking About Our Island, which is created for
       our local community and can also be utilized by visitors and by all those

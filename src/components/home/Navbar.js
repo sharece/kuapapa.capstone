@@ -1,22 +1,77 @@
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { ContactModal } from "./ContactModal";
+import { NavLink } from "react-router-dom";
+import { Burger } from "../Burger";
+import clsx from "clsx";
+// import homeicon from "../../assets/homeicon.png";
+
 export const Navbar = () => {
-  const { contactModalOpen } = useSelector((store) => store.contactModal);
   return (
-    <>
-      {contactModalOpen && <ContactModal />}
-      <div className="nav-container">
-        <div className="nav-link">
-          <Link to="/">KAUA'I NUI KUAPAPA</Link>
+    <div className="nav-container">
+      <div className="navbar">
+        <div className="title-header">
+          <NavLink className="title" to="/home">
+            Kaua'i Nui Kuapapa
+          </NavLink>
         </div>
-        <div className="nav-link">
-          <ContactModal />
+        <div className="nav-desktop">
+          <div className="dropdown">
+            <NavLink
+              className={({ isActive }) =>
+                clsx("nav-link", { "nav-link-active": isActive })
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                clsx("nav-link", {
+                  "nav-link-active": isActive,
+                })
+              }
+              to="/resources"
+            >
+              Resources
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                clsx("nav-link", {
+                  "nav-link-active": isActive,
+                })
+              }
+              to="/contact"
+            >
+              Contact
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                clsx("nav-link", {
+                  "nav-link-active": isActive,
+                })
+              }
+              to="/disclaimer"
+            >
+              Disclaimer
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                clsx("nav-link", { "nav-link-active": isActive })
+              }
+              to="/boundryCert"
+            >
+              Boundry Certificates
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                clsx("nav-link", { "nav-link-active": isActive })
+              }
+              to="/mayorMsg"
+            >
+              Message From Former Mayor Carvalho
+            </NavLink>
+          </div>
         </div>
-        <div className="nav-link">
-          <Link to="/resources">RESOURCES</Link>
-        </div>
+        <Burger />
       </div>
-    </>
+    </div>
   );
 };
