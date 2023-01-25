@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import manabd from "../../assets/ahu-divisions/Mana.png";
+import ahumap from "../../assets/ahu-divisions/Mana.png";
 import { Navbar } from "../home/Navbar";
 import { Footer } from "../home/Footer";
 import konasign from "../../assets/ahu-signs/konasign.png";
@@ -12,12 +12,12 @@ export const Mana = () => (
         <img width="100%" src={manasign} alt="mana road sign" />
       </div>
       <div className="ahu-map-and-sign">
-        <div className="manabd">
-          <img src={manabd} alt="mana ahupuaa breakdown" />
+        <div className="ahu-map">
+          <img src={ahumap} alt="mana ahupuaa breakdown" />
         </div>
         <Link className="back-to-moku" to="/kona">
           <div className="moku-sign">
-            <img src={konasign} alt="kona sign" />
+            <img className="" src={konasign} alt="kona sign" />
           </div>
         </Link>
       </div>

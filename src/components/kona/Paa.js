@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import paabd from "../../assets/ahu-divisions/Paa.png";
+import ahumap from "../../assets/ahu-divisions/Paa.png";
 import { Navbar } from "../home/Navbar";
 import { Footer } from "../home/Footer";
 import konasign from "../../assets/ahu-signs/konasign.png";
@@ -12,8 +12,8 @@ export const Paa = () => (
         <img width="100%" src={paasign} alt="paa road sign" />
       </div>
       <div className="ahu-map-and-sign">
-        <div className="manabd">
-          <img src={paabd} alt="paa ahupuaa breakdown" />
+        <div className="ahu-map">
+          <img src={ahumap} alt="paa ahupuaa breakdown" />
         </div>
         <Link className="back-to-moku" to="/kona">
           <div className="moku-sign">

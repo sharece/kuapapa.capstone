@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import waimeabd from "../../assets/ahu-divisions/Waimea.png";
+import ahumap from "../../assets/ahu-divisions/Waimea.png";
 import { Navbar } from "../home/Navbar";
 import { Footer } from "../home/Footer";
 import konasign from "../../assets/ahu-signs/konasign.png";
@@ -12,8 +12,8 @@ export const Waimea = () => (
         <img width="100%" src={waimeasign} alt="waimea road sign" />
       </div>
       <div className="ahu-map-and-sign">
-        <div className="waimeabd">
-          <img src={waimeabd} alt="waimea ahupuaa breakdown" />
+        <div className="ahu-map">
+          <img src={ahumap} alt="waimea ahupuaa breakdown" />
         </div>
         <Link className="back-to-moku" to="/kona">
           <div className="moku-sign">

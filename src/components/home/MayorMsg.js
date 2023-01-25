@@ -37,7 +37,7 @@ export const MayorMsg = () => (
       development. Mahalo to the Nā Hōkū Welo team from the bottom of my heart
       for all of their hard work, patience and perseverance in helping us get
       this project up and running.
-      <img alt="bernard signature" src={bernsign} />
+      <img alt="bernard signature" className="signature" src={bernsign} />
     </p>
     <Footer />
   </>

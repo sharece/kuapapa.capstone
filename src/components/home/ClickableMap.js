@@ -1,7 +1,12 @@
 import greenmap from "../../assets/green-kauai.png";
 export const ClickableMap = () => (
   <>
-    <img className="" alt="clickable map" src={greenmap} useMap="#image_map" />
+    <img
+      className="home-map"
+      alt="clickable map"
+      src={greenmap}
+      useMap="#image_map"
+    />
     <map name="image_map">
       <area
         alt="kona"

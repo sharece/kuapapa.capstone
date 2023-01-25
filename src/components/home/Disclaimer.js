@@ -5,7 +5,7 @@ import { Navbar } from "./Navbar";
 export const Disclaimer = () => (
   <>
     <Navbar />
-    <div className="p-5">
+    <div className="p-12">
       <h1 className="text-3xl p-3">Disclaimer about Kauaʻi Nui Kuapapa:</h1>{" "}
       <p>
         This project is not survey grade and is not checked for legal validity

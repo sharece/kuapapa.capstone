@@ -1,22 +1,16 @@
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
-import niihauzoom from "../../assets/niihau-zoom.png";
+import niihau from "../../assets/niihau.png";
 
 export const Niihau = () => (
-  //nav
-  //banner
-  //moku plaque
-  //map
-  //title
-  //text content
   <>
     <Navbar />
     <div className="moku-container">
-      <h1 className="text-4xl">Ni'ihau</h1>
+      <h1 className="text-7xl p-8 flex justify-center">Ni'ihau</h1>
       <div className="img-container">
-        <img className="zoom map" src={niihauzoom} alt="map" />
+        <img className="niihau" src={niihau} alt="niihau" />
       </div>
-      <p>
+      <p className="text-xl p-5">
         Ni‘ihau: The whole island plus Ka‘ula and Lehua ‘Uala (sweet potato) is
         a staple in the native diet. This plant embodies the deeply rooted
         nature of the people of Ni‘ihau as people of the earth. Still a

@@ -1,1 +1,1 @@
-export const BoundryCert = () => {};
+export const BoundryCert = () => <div>boundry</div>;
