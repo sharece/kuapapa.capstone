@@ -9,6 +9,7 @@ export const ClickableMap = () => (
     />
     <map name="image_map">
       <area
+        target="_self"
         alt="kona"
         title="kona"
         href="http://localhost:3000/kona"
@@ -16,6 +17,7 @@ export const ClickableMap = () => (
         shape="circle"
       />
       <area
+        target="_self"
         alt="halelea"
         title="halelea"
         href="http://localhost:3000/halelea"
@@ -23,6 +25,7 @@ export const ClickableMap = () => (
         shape="circle"
       />
       <area
+        target="_self"
         alt="napali"
         title="napali"
         href="http://localhost:3000/napali"
@@ -30,6 +33,7 @@ export const ClickableMap = () => (
         shape="circle"
       />
       <area
+        target="_self"
         alt="koolau"
         title="koolau"
         href="http://localhost:3000/koolau"
@@ -37,6 +41,7 @@ export const ClickableMap = () => (
         shape="circle"
       />
       <area
+        target="_self"
         alt="puna"
         title="puna"
         href="http://localhost:3000/puna"
@@ -44,6 +49,7 @@ export const ClickableMap = () => (
         shape="circle"
       />
       <area
+        target="_self"
         alt="kona2"
         title="kona2"
         href="http://localhost:3000/kona"
@@ -51,6 +57,7 @@ export const ClickableMap = () => (
         shape="circle"
       />
       <area
+        target="_self"
         alt="kona3"
         title="kona3"
         href="http://localhost:3000/kona"
@@ -58,6 +65,7 @@ export const ClickableMap = () => (
         shape="circle"
       />
       <area
+        target="_self"
         alt="niihau"
         title="niihau"
         href="http://localhost:3000/niihau"
