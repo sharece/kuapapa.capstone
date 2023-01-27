@@ -8,18 +8,16 @@ export const Mana = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
+      <Link className="back-to-moku" to="/kona">
+        <div className="moku-sign">
+          <img className="" src={konasign} alt="kona sign" />
+        </div>
+      </Link>
       <div className="ahu-sign">
         <img width="100%" src={manasign} alt="mana road sign" />
       </div>
-      <div className="ahu-map-and-sign">
-        <div className="ahu-map">
-          <img src={ahumap} alt="mana ahupuaa breakdown" />
-        </div>
-        <Link className="back-to-moku" to="/kona">
-          <div className="moku-sign">
-            <img className="" src={konasign} alt="kona sign" />
-          </div>
-        </Link>
+      <div className="ahu-map">
+        <img src={ahumap} alt="mana ahupuaa breakdown" />
       </div>
     </div>
     <div className="ahu-text">

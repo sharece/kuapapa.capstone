@@ -1,16 +1,10 @@
-import { Link } from "react-router-dom";
+import { Website } from "../../assets/icons/Website";
 export const Footer = () => (
   <>
-    <div className="foot-container">
-      <div className="foot-link ">
-        <Link to="/disclaimer">DISCLAIMER</Link>
-      </div>
-      <div className="foot-link ">
-        <Link to="/boundryCert">BOUNDRY CERTIFICATES</Link>
-      </div>
-      <div className="foot-link">
-        <Link to="/mayorMsg">MESSAGE FROM THE MAYOR</Link>
-      </div>
+    <div className="foot-container text-xs flex justify-center p-8">
+      <a alt="devisland link" href="www.dev-island.org">
+        <Website /> Made by Dev Island
+      </a>
     </div>
   </>
 );

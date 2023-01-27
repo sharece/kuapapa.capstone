@@ -7,18 +7,21 @@ import { Kona } from "../kona/Kona";
 import { Koolau } from "../koolau/Koolau";
 import { Napali } from "../napali/Napali";
 import { Niihau } from "../niihau/Niihau";
+import { Halelea } from "../halelea/Halelea";
+import puna from "../../assets/ahu-signs/puna-label.jpg";
+import kona from "../../assets/ahu-signs/kona-label.jpg";
+import koolau from "../../assets/ahu-signs/koolau-label.jpg";
+import napali from "../../assets/ahu-signs/napali-label.jpg";
+import niihau from "../../assets/ahu-signs/niihau-label.jpg";
+import halelea from "../../assets/ahu-signs/halelea-label.jpg";
 import { Link } from "react-router-dom";
 import { Title } from "./Title";
 import ReactPlayer from "react-player";
-import kuapapaimg from "../../assets/kuapapaimg.jpg";
-// import { ContactModal } from "./ContactModal";
-// import colormap from "../../assets/color-map.png";
-// import bannergif from "../../assets/gif.gif";
-// import { ClickableMap } from "./ClickableMap";
+import kuapapaimg from "../../assets/homeimg.png";
+import { ClickableMap } from "./ClickableMap";
 import { ClickableMap2 } from "./ClickableMap2";
 import React from "react";
-// import { useSelector } from "react-redux";
-// import { Outline } from "./Outline";
+
 export const HomePage = () => {
   const playerRef = React.useRef(null);
   return (
@@ -26,55 +29,75 @@ export const HomePage = () => {
       <div className="">
         <Navbar />
       </div>
-      <div className="home-img pt-8">
+      <div className="home-img pt-8 border-b-2 border-slate-200">
         <img src={kuapapaimg} alt="kauai img" />
+      </div>
+      <div className="flex justify-center text-7xl">
+        <Title />
       </div>
       <div className="flex flex-col justify-center">
         <div className="flex justify-center text-2xl">
           "The entirety of Kaua‘i"
         </div>
-        <div className="flex justify-center">
-          <Title />
+        <div className="map-2">
+          <ClickableMap2 />
+        </div>
+
+        <div className="moku-link-container p-10">
+          <Link to="/niihau" element={Niihau}>
+            <div className="moku-sign">
+              <img src={niihau} alt="niihau sign" />
+            </div>
+          </Link>
+          <Link to="/kona" element={Kona}>
+            <div className="moku-sign">
+              <img src={kona} alt="kona sign" />
+            </div>
+          </Link>
+          <Link to="/napali" element={Napali}>
+            <div className="moku-sign">
+              <img src={napali} alt="napali sign" />
+            </div>
+          </Link>
+          <Link to="/halelea" element={Halelea}>
+            <div className="moku-sign">
+              <img src={halelea} alt="niihau sign" />
+            </div>
+          </Link>
+          <Link to="/koolau" element={Koolau}>
+            <div className="moku-sign">
+              <img src={koolau} alt="koolau sign" />
+            </div>
+          </Link>
+          <Link to="/puna" element={Puna}>
+            <div className="moku-sign">
+              <img src={puna} alt="puna sign" />
+            </div>
+          </Link>
         </div>
       </div>
-      <div className="w-96">
-        <ClickableMap2 />
+
+      <div className="map-1">
+        <ClickableMap />
       </div>
 
-      <div className="moku-link-container">
-        <Link to="/puna" element={Puna}>
-          PUNA
-        </Link>
-        <Link to="/kona" element={Kona}>
-          KONA
-        </Link>
-        <Link to="/koolau" element={Koolau}>
-          KO'OLAU
-        </Link>
-        <Link to="/napali" element={Napali}>
-          NAPALI
-        </Link>
-        <Link to="/niihau" element={Niihau}>
-          NIIHAU
-        </Link>
-      </div>
       <div className="p-3">
         <Bio />
       </div>
       <div className="report-title">
-        <h1 className="bg-green-800 text-1xl p-3 font-xtra-bold w-full">
+        <h1 className="bg-slate-200 flex justify-center text-xl p-3 font-xtra-bold w-full">
           Kaua'i Ocean Safety and Weather
         </h1>
-        <div className="video-and-reports">
-          <ReactPlayer
-            className="ocean-video"
-            width="24rem"
-            height="200px"
-            ref={playerRef}
-            url="https://www.youtube.com/embed/eTTdHO0tDB8"
-          />
-          <div className="w-96">
-            <Reports />
+        <div className="weather-section">
+          <Reports />
+          <div className="video">
+            <ReactPlayer
+              className="ocean-video"
+              width="24rem"
+              height="200px"
+              ref={playerRef}
+              url="https://www.youtube.com/embed/eTTdHO0tDB8"
+            />
           </div>
         </div>
       </div>

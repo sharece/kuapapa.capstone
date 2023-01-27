@@ -13,7 +13,7 @@ export const Burger = () => {
       <div className={clsx(`mobile-menu ${isOpen ? "page-burger-open" : ""}`)}>
         <NavLink
           className={({ isActive }) =>
-            clsx("nav-link", { "nav-link-active": isActive })
+            clsx("ham-link", { "ham-link-active": isActive })
           }
           to="/"
         >
@@ -21,7 +21,7 @@ export const Burger = () => {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            clsx("nav-link", { "nav-link-active": isActive })
+            clsx("ham-link", { "ham-link-active": isActive })
           }
           to="/resources"
         >
@@ -29,7 +29,7 @@ export const Burger = () => {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            clsx("nav-link", { "nav-link-active": isActive })
+            clsx("ham-link", { "ham-link-active": isActive })
           }
           to="/disclaimer"
         >
@@ -38,7 +38,7 @@ export const Burger = () => {
 
         <NavLink
           className={({ isActive }) =>
-            clsx("nav-link", { "nav-link-active": isActive })
+            clsx("ham-link", { "ham-link-active": isActive })
           }
           to="/contact"
         >
@@ -46,7 +46,7 @@ export const Burger = () => {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            clsx("nav-link", { "nav-link-active": isActive })
+            clsx("ham-link", { "ham-link-active": isActive })
           }
           to="/boundrycerts"
         >
@@ -54,7 +54,7 @@ export const Burger = () => {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            clsx("nav-link", { "nav-link-active": isActive })
+            clsx("ham-link", { "ham-link-active": isActive })
           }
           to="/mayormsg"
         >

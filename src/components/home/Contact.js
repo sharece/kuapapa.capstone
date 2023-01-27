@@ -10,26 +10,26 @@ import { Navbar } from "./Navbar";
 export const Contact = () => (
   <>
     <Navbar />
-    <div className="pt-12">
-      <div className="flex flex-col  flex-wrap">
+    <div className="pt-10">
+      <div className="contact-container flex flex-col  flex-wrap">
         <div className="text-3xl leading-relaxed">Share your mana'o</div>
         <ChatBubble />
 
         <div className="p-5">
           <div className="leading-relaxed p-3 text-2xl bg-slate-200 rounded-xl flex flex-wrap">
-            <h1 className="text-3xl p-3"> Nā Hōkū Welo LLC</h1>
+            <div className="text-3xl p-3">Nā Hōkū Welo LLC</div>
             <div className="contact-text">
               <div className="contact-line flex p-1">
-                <Mail />
-                P.O. Box 1805 Līhu‘e, HI 96766 admin@nahokuwelo.com
+                <Phone />
+                (808) 241-4952 || Fax (808) 241-6399
               </div>
               <div className="contact-line flex p-1">
                 <Person />
                 Nalani K. Brun Economic Development Specialist IV-Tourism
               </div>
               <div className="contact-line flex p-1">
-                <Phone />
-                (808) 241-4952 || Fax (808) 241-6399
+                <Mail />
+                P.O. Box 1805 Līhu‘e, HI 96766 admin@nahokuwelo.com
               </div>
               <div className="contact-line flex p-1">
                 <Office />
