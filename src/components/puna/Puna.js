@@ -28,7 +28,7 @@ export const Puna = () => (
           <div className="moku-sign p-1">
             <img className="w-10" src={punasign} alt="puna road sign" />
           </div>
-          <h1 className="text-7xl ">Puna</h1>
+          <h1 className="text-7xl tracking-widest">Puna</h1>
         </div>
         <div className="moku-map">
           <img width="100%" src={punamap} alt="puna map" />

@@ -27,7 +27,7 @@ export const Kona = () => (
           <div className="moku-sign p-1">
             <img className="w-10" src={konasign} alt="kona road sign" />
           </div>
-          <div className="text-7xl ">Kona</div>
+          <div className="text-7xl tracking-widest">Kona</div>
         </div>
         <div className="moku-map">
           <img width="100%" src={konamap} alt="kona map" />

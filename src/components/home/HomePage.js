@@ -36,14 +36,14 @@ export const HomePage = () => {
         <Title />
       </div>
       <div className="flex flex-col justify-center">
-        <div className="flex justify-center text-2xl">
+        <div className="flex justify-center text-2xl tracking-wide">
           "The entirety of Kaua‘i"
         </div>
         <div className="map-2">
           <ClickableMap2 />
         </div>
 
-        <div className="moku-link-container p-10">
+        <div className="moku-link-container p-5">
           <Link to="/niihau" element={Niihau}>
             <div className="moku-sign">
               <img src={niihau} alt="niihau sign" />

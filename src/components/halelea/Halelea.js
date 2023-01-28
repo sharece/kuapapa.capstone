@@ -26,7 +26,7 @@ export const Halelea = () => (
           <div className="moku-sign p-1">
             <img className="w-10" src={haleleasign} alt="halelea road sign" />
           </div>
-          <h1 className="text-7xl p-8">Halele‘a</h1>
+          <h1 className="text-7xl p-8 tracking-widest">Halele‘a</h1>
         </div>
         <div className="moku-map">
           <img width="100%" src={haleleamap} alt="halelea map" />

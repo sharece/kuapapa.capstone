@@ -31,7 +31,6 @@ body {
   margin-left: 10px;
   width: 100%; */
 }
-
 .mobile-menu {
   /* display: flex;
   flex-direction: column; */
@@ -64,11 +63,14 @@ body {
 .nav-link-active {
   display: none;
 }
+.ham-link {
+  display: none;
+}
 .ham-link-active {
   color: #8f76c2;
   font-weight: 500;
 }
-.ham-link,
+.ham-link-active,
 .foot-link {
   padding: 2px;
   margin-bottom: 10px;
@@ -78,13 +80,13 @@ body {
   transition: 300ms;
   cursor: pointer;
 }
-.ham-link:hover,
+.ham-link-active:hover,
 .foot-link:hover {
   font-size: 1rem;
   text-shadow: rgba(2, 90, 32, 0.86);
   color: rgb(1, 40, 8);
 }
-.ham-link:after {
+.ham-link-active:after {
   transform: scaleY(1);
   opacity: 1;
 }
@@ -113,7 +115,7 @@ body {
   padding: 0.8rem;
 }
 .learn-more {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .moku-text {
   padding: 2rem;
@@ -154,7 +156,8 @@ h2 {
   padding: 1rem;
 }
 .moku-sign {
-  width: 80%;
+  width: 90%;
+  z-index: 3;
 }
 .moku-link-container {
   display: flex;
@@ -240,6 +243,9 @@ h2 {
     width: 50%;
     padding: 3px;
   }
+  .reports {
+    display: flex;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .nav-desktop {
@@ -303,6 +309,9 @@ h2 {
   .ham-link:after {
     transform: scaleY(1);
     opacity: 1;
+  }
+  .reports {
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -374,7 +383,8 @@ h2 {
   }
   .ahu-text,
   .moku-text {
-    font-size: xx-large;
+    font-size: x-large;
+    padding: 2rem;
   }
   .ahu-elements {
     padding: 2.5rem;
@@ -394,6 +404,11 @@ h2 {
     justify-content: space-around;
   }
   .surf-report {
+  }
+  .all-contact {
+    /* padding: 2rem; */
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   /* For pdf */

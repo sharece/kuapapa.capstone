@@ -1,6 +1,6 @@
 export const Phone = () => (
   <svg
-    className="display-block w-24 p-1"
+    className="display-block w-20 p-1"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
