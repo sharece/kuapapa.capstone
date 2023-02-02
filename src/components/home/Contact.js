@@ -20,19 +20,27 @@ export const Contact = () => (
             <div className="  p-3 text-3xl">Nā Hōkū Welo LLC</div>
             <div className="contact-text">
               <div className="contact-line flex p-1">
-                <Phone />
+                <div className="contact-icon">
+                  <Phone />
+                </div>
                 (808) 241-4952 || Fax (808) 241-6399
               </div>
               <div className="contact-line flex p-1">
-                <Person />
+                <div className="contact-icon">
+                  <Person />
+                </div>
                 Nalani K. Brun Economic Development Specialist IV-Tourism
               </div>
               <div className="contact-line flex p-1">
-                <Mail />
+                <div className="contact-icon">
+                  <Mail />
+                </div>
                 P.O. Box 1805 Līhu‘e, HI 96766 admin@nahokuwelo.com
               </div>
               <div className="contact-line flex p-1">
-                <Office />
+                <div className="contact-icon">
+                  <Office />
+                </div>
                 Office of Economic Development County of Kaua‘i 4444 Rice St.
                 Suite 200 Līhu‘e, HI 96766
               </div>

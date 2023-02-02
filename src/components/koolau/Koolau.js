@@ -20,74 +20,85 @@ export const Koolau = () => (
   <>
     <Navbar />
     <div className="moku-container">
+      <div className="pb-4 text-7xl tracking-widest flex justify-center">
+        Ko'olau
+      </div>
       <div className="moku-pic">
         <img src={mokupic} alt="koolau moku pic" />
       </div>
       <div className="flex justify-center flex-col p-2">
-        <div className="flex">
-          <div className="moku-sign p-1">
-            <img className="w-10" src={koolausign} alt="koolau road sign" />
-          </div>
-          <div className="text-7xl">Ko'olau</div>
-        </div>
+        <div className="flex"></div>
         <div className="moku-map">
           <img width="100%" src={koolaubd} alt="koolau map" />
         </div>
       </div>
       <div className="moku-text">
-        Ko‘olau’s plant icon is the flower of the koko‘olau (also known as
-        ko‘oko‘olau). It is easy to see why this plant would be chosen for this
-        moku by simply noticing it’s name, but koko‘olau is a widely used
-        medicinal plant. It is made into tea and has medicinal properties and is
-        used in a variety of ways for healing. This is a very useful plant that
-        through ingenuity hundreds of years ago became highly valued. Referred
-        to as an i‘a (fish) in Hawaiian, the ula, or spiny lobster, is highly
-        prized as food. It’s delicate life and spawning cycle should remind us
-        about the need for self control and proper management of natural
-        resources around the island through lāhui, or temporary restriction
-        periods. The color is a cross between red (‘ula‘ula, like the name of
-        this fish) and purple, Kaua‘i’s designated color since the late 1940s.
+        <p className="p-2">
+          Ko‘olau’s plant icon is the flower of the koko‘olau (also known as
+          ko‘oko‘olau). It is easy to see why this plant would be chosen for
+          this moku by simply noticing it’s name, but koko‘olau is a widely used
+          medicinal plant. It is made into tea and has medicinal properties and
+          is used in a variety of ways for healing. This is a very useful plant
+          that through ingenuity hundreds of years ago became highly valued.
+          Referred to as an i‘a (fish) in Hawaiian, the ula, or spiny lobster,
+          is highly prized as food. It’s delicate life and spawning cycle should
+          remind us about the need for self control and proper management of
+          natural resources around the island through lāhui, or temporary
+          restriction periods.
+        </p>
+        <p className="p-2">
+          {" "}
+          The color is a cross between red (‘ula‘ula, like the name of this
+          fish) and purple, Kaua‘i’s designated color since the late 1940s.
+        </p>
       </div>
       <div className="learn-more text-2xl">
         Learn more about Ahupua'a's in the Moku of Ko'olau :
       </div>
+      <div className="moku-sign p-1">
+        <img className="w-20" src={koolausign} alt="koolau road sign" />
+      </div>
       <div className="ahu-link-container">
-        <Link className="ahu-link" to="/anahola">
-          <img src={anahola} alt="anahola road sign" />
-        </Link>
-        <Link className="ahu-link" to="/aliomanu">
-          <img src={aliomanu} alt="alimanu road sign" />
-        </Link>
-        <Link className="ahu-link" to="/papaa">
-          <img src={papaa} alt="papaa road sign" />
-        </Link>
-        <Link className="ahu-link" to="/moloaa">
-          <img src={moloaa} alt="moloaa road sign" />
-        </Link>
-        <Link className="ahu-link" to="/kaakaaniu">
-          <img src={kaakaaniu} alt="kaakaaniu road sign" />
-        </Link>
-        <Link className="ahu-link" to="/lepeuli">
-          <img src={lepeuli} alt="lepeuli road sign" />
-        </Link>
-        <Link className="ahu-link" to="/waipake">
-          <img src={waipake} alt="waipake road sign" />
-        </Link>
-        <Link className="ahu-link" to="/pilaa">
-          <img src={pilaa} alt="pilaa road sign" />
-        </Link>
-        <Link className="ahu-link" to="/waiakalua">
-          <img src={waiakalua} alt="waiakalua road sign" />
-        </Link>
-        <Link className="ahu-link" to="/kahili road sign">
-          <img src={kahili} alt="kahili road sign" />
-        </Link>
-        <Link className="ahu-link" to="/kilauea">
-          <img src={kilauea} alt="kilauea road sign" />
-        </Link>
-        <Link className="ahu-link" to="/namahana">
-          <img src={namahana} alt="namahana road sign" />
-        </Link>
+        <div className="ahu-link-col-1">
+          <Link className="ahu-link" to="/anahola">
+            <img src={anahola} alt="anahola road sign" />
+          </Link>
+          <Link className="ahu-link" to="/aliomanu">
+            <img src={aliomanu} alt="alimanu road sign" />
+          </Link>
+          <Link className="ahu-link" to="/papaa">
+            <img src={papaa} alt="papaa road sign" />
+          </Link>
+          <Link className="ahu-link" to="/moloaa">
+            <img src={moloaa} alt="moloaa road sign" />
+          </Link>
+          <Link className="ahu-link" to="/kaakaaniu">
+            <img src={kaakaaniu} alt="kaakaaniu road sign" />
+          </Link>
+          <Link className="ahu-link" to="/lepeuli">
+            <img src={lepeuli} alt="lepeuli road sign" />
+          </Link>
+        </div>
+        <div className="ahu-link-col-2">
+          <Link className="ahu-link" to="/waipake">
+            <img src={waipake} alt="waipake road sign" />
+          </Link>
+          <Link className="ahu-link" to="/pilaa">
+            <img src={pilaa} alt="pilaa road sign" />
+          </Link>
+          <Link className="ahu-link" to="/waiakalua">
+            <img src={waiakalua} alt="waiakalua road sign" />
+          </Link>
+          <Link className="ahu-link" to="/kahili road sign">
+            <img src={kahili} alt="kahili road sign" />
+          </Link>
+          <Link className="ahu-link" to="/kilauea">
+            <img src={kilauea} alt="kilauea road sign" />
+          </Link>
+          <Link className="ahu-link" to="/namahana">
+            <img src={namahana} alt="namahana road sign" />
+          </Link>
+        </div>
       </div>
     </div>
     <Footer />

@@ -14,33 +14,19 @@ body {
 .nav-desktop {
   display: none;
 }
-.map-1 {
+.tablet-map {
   display: none;
 }
-.map-2 {
-  display: flex;
-  /* justify-content: center; */
-}
-.hamburger {
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 20px;
-  text-align: center;
-  margin-left: 10px;
-  width: 100%; */
-}
 .mobile-menu {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   position: absolute;
   padding: 0.5rem;
   right: 0;
   top: 2.5rem;
   width: 50%;
-  background-color: #03561ee6;
-  /* z-index: 0; */
+  background-color: #00084ceb;
+  z-index: 0;
   opacity: 0;
 }
 .page-burger-open {
@@ -49,10 +35,10 @@ body {
   z-index: 1;
 }
 .navbar {
-  /* display: flex; */
+  display: flex;
   color: #adadc2;
   top: 0;
-  /* z-index: 0; */
+  z-index: 0;
   justify-content: flex-start;
   background-color: #00084ceb;
   height: 3rem;
@@ -64,7 +50,9 @@ body {
   display: none;
 }
 .ham-link {
-  display: none;
+  /* display: none; */
+  text-transform: lowercase;
+  z-index: 0;
 }
 .ham-link-active {
   color: #8f76c2;
@@ -73,10 +61,10 @@ body {
 .ham-link-active,
 .foot-link {
   padding: 2px;
+  text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 600;
-  text-transform: lowercase;
   transition: 300ms;
   cursor: pointer;
 }
@@ -92,6 +80,7 @@ body {
 }
 .title-header {
   width: 500px;
+  padding: 8px;
   margin-left: 12px;
 }
 .title {
@@ -107,18 +96,20 @@ body {
 }
 .ahu-link-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 50%;
+  /* flex-wrap: wrap; */
+  width: 80%;
   padding: 3px;
 }
 .bio {
-  padding: 0.8rem;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
 }
 .learn-more {
   padding: 1rem;
 }
 .moku-text {
-  padding: 2rem;
+  padding: 1.9rem;
+  letter-spacing: 0.5px;
   width: 100%;
 }
 .moku-pic {
@@ -129,7 +120,7 @@ body {
 }
 .moku-container,
 .ahu-elements {
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 h1,
 h2 {
@@ -155,21 +146,38 @@ h2 {
 .ahu-sign {
   padding: 1rem;
 }
+.ahu-map {
+  padding: 0.2rem;
+}
+
 .moku-sign {
   width: 90%;
-  z-index: 3;
+  /* z-index: 3; */
+}
+.back-to-moku-sign {
+  width: 20%;
+  position: absolute;
+  bottom: 40rem;
+  /* need to fix for bigger scrn */
 }
 .moku-link-container {
   display: flex;
 }
+.desktop-map {
+  display: none;
+}
 
 /* 1 tablet */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 640px) {
+  .desktop-map {
+    display: none;
+  }
   .nav-desktop {
     display: none;
   }
-  .map-2 {
-    display: none;
+  .tablet-map {
+    display: flex;
+    cursor: pointer;
   }
   .mobile-menu {
     display: flex;
@@ -247,13 +255,18 @@ h2 {
     display: flex;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1199px) {
+@media screen and (min-width: 1024px) {
   .nav-desktop {
     display: none;
   }
-  .map-2 {
+  .tablet-map {
     display: none;
   }
+  .desktop-map {
+    display: flex;
+    cursor: pointer;
+  }
+
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -313,19 +326,16 @@ h2 {
   .reports {
     display: flex;
   }
-}
-@media screen and (min-width: 1200px) {
-  /* img {
-    width: 100%;
-  } */
-  /* .nav-container {
+  .video,
+  .reports {
     display: flex;
-    top: 0;
-    color: #060607;
-    background-color: #03561ee6;
-    height: 3rem;
-    width: 100%;
-  } */
+    flex-direction: row;
+  }
+  .contact-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
   .title-header,
   .title {
     display: none;
@@ -337,7 +347,10 @@ h2 {
     position: fixed;
     width: 100%;
     padding: 1rem;
+    color: white;
+    background-color: #00084ceb;
   }
+
   .nav-link {
     display: flex;
   }
@@ -349,7 +362,7 @@ h2 {
     /* z-index: 1; */
     font-size: 20px;
     font-weight: 400;
-    padding: 0.2rem;
+    padding: 0.1rem;
     /* text-transform: lowercase; */
     cursor: pointer;
   }
@@ -375,11 +388,10 @@ h2 {
   .signature {
     width: 50%;
   }
-  .ahu-map-and-sign {
-    display: flex;
-  }
   .ahu-sign {
     max-width: 30%;
+    display: inline-block;
+    padding: 1rem;
   }
   .ahu-text,
   .moku-text {
@@ -403,14 +415,19 @@ h2 {
     display: flex;
     justify-content: space-around;
   }
-  .surf-report {
-  }
   .all-contact {
     /* padding: 2rem; */
     display: flex;
     flex-wrap: nowrap;
   }
+  .moku-sign {
+    display: inline-block;
+    padding: 1rem;
+  }
 
+  .contact-icon {
+    display: none;
+  }
   /* For pdf */
   .react-pdf__Page {
     margin-top: 10px;

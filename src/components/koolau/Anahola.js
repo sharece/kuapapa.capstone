@@ -11,16 +11,17 @@ export const Anahola = () => (
       <div className="ahu-sign">
         <img width="100%" src={anaholasign} alt="anahola road sign" />
       </div>
-      <div className="ahu-map-and-sign">
-        <div className="anaholabd">
-          <img src={anaholabd} alt="anahola ahupuaa breakdown" />
+      <Link className="back-to-moku" to="/koolau">
+        <div className="moku-sign">
+          <img src={koolausign} alt="koolau sign" />
         </div>
-        <Link className="back-to-moku" to="/koolau">
-          <div className="moku-sign">
-            <img src={koolausign} alt="koolau sign" />
-          </div>
-        </Link>
+      </Link>
+      {/* <div className="ahu-map-and-sign"> */}
+      <div className="anaholabd">
+        <img src={anaholabd} alt="anahola ahupuaa breakdown" />
       </div>
+
+      {/* </div> */}
     </div>
     <div className="ahu-text">
       Anahola: The name of a mo`o Anahola was a mo`o, a lizard kupua or

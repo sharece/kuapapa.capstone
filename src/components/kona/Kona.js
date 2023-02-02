@@ -19,74 +19,97 @@ export const Kona = () => (
   <>
     <Navbar />
     <div className="moku-container">
+      <div className="pb-4 text-7xl tracking-widest flex justify-center">
+        Kona
+      </div>
       <div className="moku-pic">
         <img src={mokupic} alt="kokee red dirt stream" />
       </div>
       <div className="flex justify-center flex-col p-2">
-        <div className="flex">
-          <div className="moku-sign p-1">
-            <img className="w-10" src={konasign} alt="kona road sign" />
-          </div>
-          <div className="text-7xl tracking-widest">Kona</div>
-        </div>
         <div className="moku-map">
-          <img width="100%" src={konamap} alt="kona map" />
+          <img width="80%" src={konamap} alt="kona map" />
         </div>
       </div>
       <div className="moku-text">
-        From centuries ago, the west end of <h1>Kona</h1> from the area where
-        Waimea Canyon School is located today to Polihale was the site of a
-        coconut grove with waterways meandering between the trees. This is the
-        Kona logo's plant icon. The grove in the area of Kekaha was known as
-        Kaunalewa and numerous old mele (chants, songs) boasted about the beauty
-        of this place. People across the islands knew of this grove through
-        these mele, even those who had never visited the area. The sugar
-        industry removed the grove to plant sugar, and so the coconut tree in
-        this logo is a homage to Kaunalewa. The fish is pāpio, a common and
-        well-loved fish among Kaua‘i fishermen and locals in general. The area
-        between Polihale Beach Park and Nōhili Point is known as Pāpiohuli. This
-        is the spot on the island that enjoys the last rays of sunlight at the
-        end of each day, and so this fish was chosen to highlight Kona's
-        position on the west end of Kaua‘i. The color association for Kona is
-        red as the brightest red dirt of Waimea Canyon.
+        <p className="p-2">
+          From centuries ago, the west end of Kona from the area where Waimea
+          Canyon School is located today to Polihale was the site of a coconut
+          grove with waterways meandering between the trees. This is the Kona
+          logo's plant icon.
+        </p>
+        <p className="p-2">
+          The grove in the area of Kekaha was known as Kaunalewa and numerous
+          old mele (chants, songs) boasted about the beauty of this place.
+          People across the islands knew of this grove through these mele, even
+          those who had never visited the area.
+        </p>
+        <p className="p-2">
+          The sugar industry removed the grove to plant sugar, and so the
+          coconut tree in this logo is a homage to Kaunalewa.{" "}
+        </p>
+        <p className="p-2">
+          {" "}
+          The fish is pāpio, a common and well-loved fish among Kaua‘i fishermen
+          and locals in general.
+        </p>
+        <p className="p-2">
+          The area between Polihale Beach Park and Nōhili Point is known as
+          Pāpiohuli. This is the spot on the island that enjoys the last rays of
+          sunlight at the end of each day, and so this fish was chosen to
+          highlight Kona's position on the west end of Kaua‘i.
+        </p>
+        <p className="p-2">
+          {" "}
+          The color association for Kona is red as the brightest red dirt of
+          Waimea Canyon.
+        </p>
       </div>
       <div className="learn-more text-2xl">
-        Learn more about Ahupua'a's in the Moku of Kona
+        Learn more about Ahupua'a's in the Moku of Kona :
+      </div>
+      <div className="moku-sign p-1">
+        <img className="w-20" src={konasign} alt="kona road sign" />
       </div>
       <div className="ahu-link-container">
-        <Link className="ahu-link" to="/mana">
-          <img src={mana} alt="mana ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/waimea">
-          <img src={waimea} alt="waimea ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/makaweli">
-          <img src={makaweli} alt="makaweli ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/hanapepe">
-          <img src={hanapepe} alt="hanapepe ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/wahiawa">
-          <img src={wahiawa} alt="wahiawa ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/kalaheo">
-          <img src={kalaheo} alt="kalaheo ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/lawai">
-          <img src={lawai} alt="lawai ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/koloa">
-          <img src={koloa} alt="koloa ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/weliweli">
-          <img src={weliweli} alt="weliweli ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/paa">
-          <img src={paa} alt="paa ahupuaa link" />
-        </Link>
-        <Link className="ahu-link" to="/mahaulepu">
-          <img src={mahaulepu} alt="mahaulepu ahupuaa link" />
-        </Link>
+        <div className="ahu-link-col-1">
+          <Link className="ahu-link" to="/mana">
+            <img src={mana} alt="mana ahupuaa link" />
+          </Link>
+          <Link className="ahu-link" to="/waimea">
+            <img src={waimea} alt="waimea ahupuaa link" />
+          </Link>
+          <Link className="ahu-link" to="/makaweli">
+            <img src={makaweli} alt="makaweli ahupuaa link" />
+          </Link>
+          <Link className="ahu-link" to="/hanapepe">
+            <img src={hanapepe} alt="hanapepe ahupuaa link" />
+          </Link>
+          <Link className="ahu-link" to="/wahiawa">
+            <img src={wahiawa} alt="wahiawa ahupuaa link" />
+          </Link>
+
+          <Link className="ahu-link" to="/kalaheo">
+            <img src={kalaheo} alt="kalaheo ahupuaa link" />
+          </Link>
+        </div>
+        <div className="ahu-link-col-2">
+          <Link className="ahu-link" to="/lawai">
+            <img src={lawai} alt="lawai ahupuaa link" />
+          </Link>
+          <Link className="ahu-link" to="/koloa">
+            <img src={koloa} alt="koloa ahupuaa link" />
+          </Link>
+
+          <Link className="ahu-link" to="/weliweli">
+            <img src={weliweli} alt="weliweli ahupuaa link" />
+          </Link>
+          <Link className="ahu-link" to="/paa">
+            <img src={paa} alt="paa ahupuaa link" />
+          </Link>
+          <Link className="ahu-link" to="/mahaulepu">
+            <img src={mahaulepu} alt="mahaulepu ahupuaa link" />
+          </Link>
+        </div>
       </div>
       <Footer />
     </div>

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import colormap from "../../assets/color-mapfi.png";
-export const ClickableMap2 = () => {
+export const DesktopMap = () => {
   const navigate = useNavigate();
   const handleClick = (evt) => {
     /*
@@ -14,7 +14,7 @@ export const ClickableMap2 = () => {
     <>
       <div className="flex justify-center p-10 z-3">
         <img
-          sizes="(min-width: 1200px),(min-width: 1400px),(max-width: 768px),(max-width:400px)"
+          sizes="(min-width: 1280px)"
           alt="clickable map"
           src={colormap}
           useMap="#image_map"

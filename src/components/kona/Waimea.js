@@ -8,18 +8,17 @@ export const Waimea = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
+      <Link className="back-to-moku" to="/kona">
+        <div className="back-to-moku-sign">
+          <img src={konasign} alt="kona sign" />
+        </div>
+      </Link>
+      <div className="ahu-map">
+        <img src={ahumap} alt="waimea ahupuaa breakdown" />
+      </div>
+
       <div className="ahu-sign">
         <img width="100%" src={waimeasign} alt="waimea road sign" />
-      </div>
-      <div className="ahu-map-and-sign">
-        <div className="ahu-map">
-          <img src={ahumap} alt="waimea ahupuaa breakdown" />
-        </div>
-        <Link className="back-to-moku" to="/kona">
-          <div className="moku-sign">
-            <img src={konasign} alt="kona sign" />
-          </div>
-        </Link>
       </div>
     </div>
     <div className="ahu-text">

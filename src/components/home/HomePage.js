@@ -16,10 +16,11 @@ import niihau from "../../assets/ahu-signs/niihau-label.jpg";
 import halelea from "../../assets/ahu-signs/halelea-label.jpg";
 import { Link } from "react-router-dom";
 import { Title } from "./Title";
+import { DesktopMap } from "./DesktopMap";
 import ReactPlayer from "react-player";
 import kuapapaimg from "../../assets/homeimg.png";
-import { ClickableMap } from "./ClickableMap";
-import { ClickableMap2 } from "./ClickableMap2";
+// import { ClickableMap } from "./ClickableMap";
+import { TabletMap } from "./TabletMap";
 import React from "react";
 
 export const HomePage = () => {
@@ -36,14 +37,17 @@ export const HomePage = () => {
         <Title />
       </div>
       <div className="flex flex-col justify-center">
-        <div className="flex justify-center text-2xl tracking-wide">
+        <div className="flex justify-center pb-2 text-xl tracking-widest">
           "The entirety of Kaua‘i"
         </div>
-        <div className="map-2">
-          <ClickableMap2 />
+        <div className="tablet-map">
+          <TabletMap />
+        </div>
+        <div className="desktop-map">
+          <DesktopMap />
         </div>
 
-        <div className="moku-link-container p-5">
+        <div className="moku-link-container p-3">
           <Link to="/niihau" element={Niihau}>
             <div className="moku-sign">
               <img src={niihau} alt="niihau sign" />
@@ -76,16 +80,16 @@ export const HomePage = () => {
           </Link>
         </div>
       </div>
-
+      {/* 
       <div className="map-1">
         <ClickableMap />
-      </div>
+      </div> */}
 
       <div className="p-3">
         <Bio />
       </div>
       <div className="report-title">
-        <h1 className="bg-slate-200 flex justify-center text-xl p-3 font-xtra-bold w-full">
+        <h1 className="bg-slate-400 flex justify-center text-xl p-3 font-xtra-bold w-full">
           Kaua'i Ocean Safety and Weather
         </h1>
         <div className="weather-section">
