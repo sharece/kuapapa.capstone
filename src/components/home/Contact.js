@@ -15,8 +15,8 @@ export const Contact = () => (
         <div className="text-3xl leading-relaxed">Share your mana'o</div>
         <ChatBubble />
 
-        <div className=" p-5">
-          <div className="all-contact leading-relaxed p-3 text-2xl bg-slate-200 rounded-xl flex flex-wrap">
+        <div className="p-5">
+          <div className="all-contact w-96 leading-relaxed p-3 text-2xl bg-slate-200 rounded-xl flex flex-wrap">
             <div className="  p-3 text-3xl">Nā Hōkū Welo LLC</div>
             <div className="contact-text">
               <div className="contact-line flex p-1">

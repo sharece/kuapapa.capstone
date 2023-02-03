@@ -11,10 +11,16 @@ body {
   color: rgba(2, 2, 2, 0.9);
   font-family: "Unbounded", sans-serif;
 }
+.click-text {
+  display: none;
+}
 .nav-desktop {
   display: none;
 }
 .tablet-map {
+  display: none;
+}
+.desktop-bio {
   display: none;
 }
 .mobile-menu {
@@ -96,7 +102,7 @@ body {
 }
 .ahu-link-container {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   width: 80%;
   padding: 3px;
 }
@@ -106,6 +112,7 @@ body {
 }
 .learn-more {
   padding: 1rem;
+  font-size: 0.9rem;
 }
 .moku-text {
   padding: 1.9rem;
@@ -113,14 +120,16 @@ body {
   width: 100%;
 }
 .moku-pic {
-  max-width: 70%;
+  max-width: 85%;
 }
 .moku-map {
   padding-left: 4rem;
 }
-.moku-container,
+.moku-container {
+  padding-top: 3.5rem;
+}
 .ahu-elements {
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 h1,
 h2 {
@@ -156,8 +165,8 @@ h2 {
 }
 .back-to-moku-sign {
   width: 20%;
-  position: absolute;
-  bottom: 40rem;
+  /* position: flex; */
+  /* bottom: 20rem; */
   /* need to fix for bigger scrn */
 }
 .moku-link-container {
@@ -238,21 +247,21 @@ h2 {
   .reports {
     display: flex;
   }
-  .ahu-map-and-sign {
-    display: flex;
-  }
   .ahu-sign {
     max-width: 30%;
   }
-
   .ahu-link-container {
     display: flex;
+    flex-direction: column;
     /* flex-wrap: wrap; */
-    width: 50%;
+    /* width: 50%; */
     padding: 3px;
   }
   .reports {
     display: flex;
+  }
+  .ahu-text {
+    padding: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -266,7 +275,6 @@ h2 {
     display: flex;
     cursor: pointer;
   }
-
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -331,16 +339,38 @@ h2 {
     display: flex;
     flex-direction: row;
   }
+
   .contact-icon {
     display: none;
   }
+  .bio {
+    width: 80%;
+  }
+  .ahu-link-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .ahu-link:hover {
+    font-size: 20px;
+    color: #8f76c2;
+  }
+  .moku-link-container {
+    width: 80%;
+  }
+  .ahu-text,
+  .moku-text {
+    padding: 3rem;
+    font-size: medium;
+  }
+  .moku-pic {
+    width: 75%;
+  }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1380px) {
   .title-header,
   .title {
     display: none;
   }
-
   .nav-desktop {
     display: flex;
     align-items: flex-end;
@@ -350,17 +380,29 @@ h2 {
     color: white;
     background-color: #00084ceb;
   }
+  .click-text {
+    display: flex;
+    font-size: larger;
+    padding: 1rem;
+  }
+  .bio {
+    width: 80%;
+  }
+  .mobile-bio {
+    display: none;
+  }
 
   .nav-link {
     display: flex;
   }
   .nav-link-active {
     color: #8f76c2;
+    font-size: 20px;
   }
   .nav-link,
   .foot-link {
     /* z-index: 1; */
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
     padding: 0.1rem;
     /* text-transform: lowercase; */
@@ -368,7 +410,7 @@ h2 {
   }
   .nav-link:hover,
   .foot-link:hover {
-    font-size: 1rem;
+    font-size: 20px;
     color: #8f76c2;
     text-shadow: #f7fbf8;
   }
@@ -383,7 +425,6 @@ h2 {
   .reports {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
   }
   .signature {
     width: 50%;
@@ -393,10 +434,16 @@ h2 {
     display: inline-block;
     padding: 1rem;
   }
+  .moku-link-container {
+    width: 80%;
+  }
   .ahu-text,
   .moku-text {
-    font-size: x-large;
-    padding: 2rem;
+    padding: 3rem;
+    font-size: medium;
+  }
+  .moku-pic {
+    width: 75%;
   }
   .ahu-elements {
     padding: 2.5rem;
@@ -406,8 +453,12 @@ h2 {
   } */
   .ahu-link-container {
     display: flex;
+    flex-direction: row;
   }
-
+  .ahu-link:hover {
+    font-size: 20px;
+    color: #8f76c2;
+  }
   .contact-container {
     padding: 5rem;
   }
@@ -424,7 +475,15 @@ h2 {
     display: inline-block;
     padding: 1rem;
   }
-
+  .ahu-text {
+    padding: 2rem;
+    font-size: small;
+  }
+  .learn-more {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+  }
   .contact-icon {
     display: none;
   }

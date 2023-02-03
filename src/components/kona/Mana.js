@@ -4,15 +4,20 @@ import { Navbar } from "../home/Navbar";
 import { Footer } from "../home/Footer";
 import konasign from "../../assets/ahu-signs/konasign.png";
 import manasign from "../../assets/ahu-signs/Kona_mana.png";
+import { SubNav } from "../home/SubNav";
 export const Mana = () => (
   <>
     <Navbar />
+    <div className="pt-14">
+      <SubNav />
+    </div>
+
     <div className="ahu-elements">
-      <Link className="back-to-moku" to="/kona">
+      {/* <Link className="back-to-moku" to="/kona">
         <div className="back-to-moku-sign">
           <img className="" src={konasign} alt="kona sign" />
         </div>
-      </Link>
+      </Link> */}
       <div className="ahu-map">
         <img src={ahumap} alt="mana ahupuaa breakdown" />
       </div>

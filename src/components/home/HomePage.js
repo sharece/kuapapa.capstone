@@ -37,16 +37,27 @@ export const HomePage = () => {
         <Title />
       </div>
       <div className="flex flex-col justify-center">
-        <div className="flex justify-center pb-2 text-xl tracking-widest">
+        <div className="flex justify-center pb-4 text-xl tracking-widest">
           "The entirety of Kaua‘i"
         </div>
+
         <div className="tablet-map">
           <TabletMap />
         </div>
-        <div className="desktop-map">
-          <DesktopMap />
+        <div className="desktop-bio-n-map">
+          <div className="desktop-bio">
+            <Bio />
+          </div>
+          <div className="click-text">
+            <div className="flex justify-center pb-2 text-xlrg ">
+              Click the map to select a moku!
+            </div>
+          </div>
+          <div className="desktop-map">
+            <DesktopMap />
+          </div>
         </div>
-
+        <div className=" pb-2 ">Click on a Moku to learn more!</div>
         <div className="moku-link-container p-3">
           <Link to="/niihau" element={Niihau}>
             <div className="moku-sign">
@@ -85,7 +96,7 @@ export const HomePage = () => {
         <ClickableMap />
       </div> */}
 
-      <div className="p-3">
+      <div className="mobile-bio">
         <Bio />
       </div>
       <div className="report-title">

@@ -1,11 +1,10 @@
 export const Bio = () => (
   <div className="bio">
-    <div className="text-xl p-1 flex justify-center pb-3">
-      Kaua'i Nui Kuapapa
-    </div>
+    <h2>
+      Kaua'i Nui Kuapapa can be interpreted in English as ‘the genealogy of
+      Great Kaua‘i’ or ‘the entirety of Kaua‘i’.
+    </h2>
     <div className="pb-3">
-      can be interpreted in English as ‘the genealogy of Great Kaua‘i’ or ‘the
-      entirety of Kaua‘i’.
       <p className="p-2">
         The phrase is found in certain Hawaiian mele, poems or chants, from
         centuries ago that speak about Kaua‘i’s unique heritage.
