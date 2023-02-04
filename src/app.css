@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;600&display=swap");
 
 * {
   font-family: "Manrope", "IM Fell Double Pica" sans-serif;
@@ -9,9 +10,12 @@
 }
 body {
   color: rgba(2, 2, 2, 0.9);
-  font-family: "Unbounded", sans-serif;
+  font-family: "Manrope", "Big Shoulder Display", sans-serif;
 }
-.click-text {
+.logo {
+  width: 25px;
+}
+.click-map {
   display: none;
 }
 .nav-desktop {
@@ -23,6 +27,10 @@ body {
 .desktop-bio {
   display: none;
 }
+.text-banner {
+  padding-top: 45px;
+  border-bottom: 1rem solid #450068;
+}
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -31,7 +39,7 @@ body {
   right: 0;
   top: 2.5rem;
   width: 50%;
-  background-color: #00084ceb;
+  background-color: #450068;
   z-index: 0;
   opacity: 0;
 }
@@ -46,7 +54,7 @@ body {
   top: 0;
   z-index: 0;
   justify-content: flex-start;
-  background-color: #00084ceb;
+  background-color: #450068;
   height: 3rem;
   width: 100%;
   position: fixed;
@@ -57,7 +65,7 @@ body {
 }
 .ham-link {
   /* display: none; */
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   z-index: 0;
 }
 .ham-link-active {
@@ -85,16 +93,14 @@ body {
   opacity: 1;
 }
 .title-header {
-  width: 500px;
-  padding: 8px;
-  margin-left: 12px;
+  width: 50%;
 }
-.title {
+/* .title {
   text-decoration: none;
   font-size: large;
   font-weight: 700;
   width: 500px;
-}
+} */
 .home-img {
   max-width: 100%;
   margin-top: 1rem;
@@ -114,6 +120,9 @@ body {
   padding: 1rem;
   font-size: 0.9rem;
 }
+.hanalei-bay {
+  border-bottom: 1rem solid #450068;
+}
 .moku-text {
   padding: 1.9rem;
   letter-spacing: 0.5px;
@@ -127,6 +136,11 @@ body {
 }
 .moku-container {
   padding-top: 3.5rem;
+}
+.mobile-bio {
+  background-image: url("../../kuapapa.capstone/src/assets/bg-mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .ahu-elements {
   padding-top: 4rem;
@@ -142,6 +156,12 @@ h2 {
 h2 {
   padding: 0.5rem;
 }
+.report-title {
+  letter-spacing: 0.2 rem;
+  background-color: #450068;
+  color: white;
+}
+
 .video,
 .reports {
   /* padding: 0.5rem; */
@@ -158,9 +178,8 @@ h2 {
 .ahu-map {
   padding: 0.2rem;
 }
-
 .moku-sign {
-  width: 90%;
+  width: 60%;
   /* z-index: 3; */
 }
 .back-to-moku-sign {
@@ -188,15 +207,19 @@ h2 {
     display: flex;
     cursor: pointer;
   }
+  .click-map {
+    display: none;
+  }
   .mobile-menu {
     display: flex;
+    color: white;
     flex-direction: column;
     /* position: absolute; */
     padding: 0.5rem;
     right: 0;
     top: 2.5rem;
     width: 50%;
-    background-color: #03561ee6;
+    background-color: #450068;
     z-index: 0;
     opacity: 0;
   }
@@ -207,11 +230,11 @@ h2 {
   }
   .navbar {
     display: flex;
-    color: #060607;
+    color: white;
     top: 0;
     /* z-index: 0; */
     justify-content: flex-start;
-    background-color: #03561ee6;
+    background-color: #450068;
     height: 3rem;
     width: 100%;
     position: fixed;
@@ -246,6 +269,11 @@ h2 {
   }
   .reports {
     display: flex;
+  }
+  .moku-links-and-map {
+    background-image: url("../../kuapapa.capstone/src/assets/bg-mountain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .ahu-sign {
     max-width: 30%;
@@ -277,13 +305,14 @@ h2 {
   }
   .mobile-menu {
     display: flex;
+    color: white;
     flex-direction: column;
     /* position: absolute; */
     padding: 0.5rem;
     right: 0;
     top: 2.5rem;
     width: 50%;
-    background-color: #03561ee6;
+    background-color: #450068;
     z-index: 0;
     opacity: 0;
   }
@@ -294,11 +323,11 @@ h2 {
   }
   .navbar {
     display: flex;
-    color: #060607;
     top: 0;
+    color: white;
     /* z-index: 0; */
     justify-content: flex-start;
-    background-color: #03561ee6;
+    background-color: #450068;
     height: 3rem;
     width: 100%;
     position: fixed;
@@ -331,6 +360,19 @@ h2 {
     transform: scaleY(1);
     opacity: 1;
   }
+  .moku-sign:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .moku-links-and-map {
+    background-image: url("../../kuapapa.capstone/src/assets/bg-mountain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .reports {
     display: flex;
   }
@@ -339,12 +381,11 @@ h2 {
     display: flex;
     flex-direction: row;
   }
-
   .contact-icon {
     display: none;
   }
   .bio {
-    width: 80%;
+    width: 70%;
   }
   .ahu-link-container {
     display: flex;
@@ -365,11 +406,21 @@ h2 {
   .moku-pic {
     width: 75%;
   }
+
+  .click-text {
+    display: flex;
+    font-size: larger;
+    padding: 1rem;
+  }
 }
 @media screen and (min-width: 1380px) {
   .title-header,
   .title {
     display: none;
+  }
+  .text-banner {
+    padding-top: 45px;
+    border-bottom: 0.5rem solid #450068;
   }
   .nav-desktop {
     display: flex;
@@ -378,8 +429,9 @@ h2 {
     width: 100%;
     padding: 1rem;
     color: white;
-    background-color: #00084ceb;
+    background-color: #450068;
   }
+
   .click-text {
     display: flex;
     font-size: larger;
@@ -391,7 +443,6 @@ h2 {
   .mobile-bio {
     display: none;
   }
-
   .nav-link {
     display: flex;
   }
@@ -437,6 +488,9 @@ h2 {
   .moku-link-container {
     width: 80%;
   }
+  .moku-sign:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
   .ahu-text,
   .moku-text {
     padding: 3rem;
@@ -444,6 +498,15 @@ h2 {
   }
   .moku-pic {
     width: 75%;
+  }
+  .moku-links-and-map {
+    background-image: url("../../kuapapa.capstone/src/assets/bg-mountain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .desktop-bio {
+    display: flex;
+    font-weight: 700;
   }
   .ahu-elements {
     padding: 2.5rem;
@@ -471,6 +534,8 @@ h2 {
     display: flex;
     flex-wrap: nowrap;
   }
+
+  /* this needs to be for the moku page not the home page styles need to rename */
   .moku-sign {
     display: inline-block;
     padding: 1rem;

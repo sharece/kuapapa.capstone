@@ -12,7 +12,7 @@ export const DesktopMap = () => {
   };
   return (
     <>
-      <div className="flex justify-center p-10 z-3">
+      <div className="flex justify-center p-5 z-3">
         <img
           sizes="(min-width: 1280px)"
           alt="clickable map"

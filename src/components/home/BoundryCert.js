@@ -1,9 +1,6 @@
 // import React, { Component } from "react";
-// // import { Navbar } from "./Navbar";
-// pdfsamp from "../pdf/BC_01_10_1_Lawai.pdf";
-// import { Document, Page, pdfsamp } from "react-pdf";
-// pdfsamp.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
+// import { Document, Page } from "react-pdf";
+// // import sample from ".../pdf/BC_01_10_1_Lawai.pdf";
 // class BoundryCert extends Component {
 //   constructor(props) {
 //     super(props);
@@ -24,12 +21,13 @@
 //     return (
 //       <div>
 //         <Document
-//           file="../pdf/BC_01_10_1_Lawai.pdf"
+//           file=".../pdf/BC_01_10_1_Lawai.pdf"
 //           onLoadSuccess={this.onDocumentLoad}
 //         >
 //           <Page pageNumber={pageNumber} />
 //         </Document>
 //         <p>
+//           {" "}
 //           Page {pageNumber} of {numPages}
 //         </p>
 //       </div>

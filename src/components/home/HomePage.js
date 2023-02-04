@@ -19,6 +19,7 @@ import { Title } from "./Title";
 import { DesktopMap } from "./DesktopMap";
 import ReactPlayer from "react-player";
 import kuapapaimg from "../../assets/homeimg.png";
+import textbanner from "../../assets/text-banner.png";
 // import { ClickableMap } from "./ClickableMap";
 import { TabletMap } from "./TabletMap";
 import React from "react";
@@ -30,17 +31,18 @@ export const HomePage = () => {
       <div className="">
         <Navbar />
       </div>
-      <div className="home-img pt-8 border-b-2 border-slate-200">
-        <img src={kuapapaimg} alt="kauai img" />
+      <div className="text-banner">
+        <img src={textbanner} alt="kauai nui kuapapa" />
       </div>
-      <div className="flex justify-center text-7xl">
+      {/* <div className="flex justify-center text-7xl">
         <Title />
-      </div>
-      <div className="flex flex-col justify-center">
-        <div className="flex justify-center pb-4 text-xl tracking-widest">
-          "The entirety of Kaua‘i"
+      </div> */}
+      <div className="click-map">
+        <div className="flex justify-center pb-2 text-xlrg">
+          Click the map to select a moku!
         </div>
-
+      </div>
+      <div className="moku-links-and-map  flex flex-col justify-center">
         <div className="tablet-map">
           <TabletMap />
         </div>
@@ -48,16 +50,13 @@ export const HomePage = () => {
           <div className="desktop-bio">
             <Bio />
           </div>
-          <div className="click-text">
-            <div className="flex justify-center pb-2 text-xlrg ">
-              Click the map to select a moku!
-            </div>
-          </div>
           <div className="desktop-map">
             <DesktopMap />
           </div>
         </div>
-        <div className=" pb-2 ">Click on a Moku to learn more!</div>
+        <div className="click-map">
+          <div className="pb-2 text-3xl">Click on a Moku to learn more!</div>
+        </div>
         <div className="moku-link-container p-3">
           <Link to="/niihau" element={Niihau}>
             <div className="moku-sign">
@@ -91,29 +90,27 @@ export const HomePage = () => {
           </Link>
         </div>
       </div>
-      {/* 
-      <div className="map-1">
-        <ClickableMap />
-      </div> */}
-
       <div className="mobile-bio">
         <Bio />
       </div>
       <div className="report-title">
-        <h1 className="bg-slate-400 flex justify-center text-xl p-3 font-xtra-bold w-full">
+        <div className="flex justify-center text-xl p-3 font-xtra-bold w-full">
           Kaua'i Ocean Safety and Weather
-        </h1>
-        <div className="weather-section">
-          <Reports />
-          <div className="video">
-            <ReactPlayer
-              className="ocean-video"
-              width="24rem"
-              height="200px"
-              ref={playerRef}
-              url="https://www.youtube.com/embed/eTTdHO0tDB8"
-            />
-          </div>
+        </div>
+      </div>
+      <div className="hanalei-bay">
+        <img src={kuapapaimg} alt="kauai img" />
+      </div>
+      <div className="weather-section">
+        <Reports />
+        <div className="video">
+          <ReactPlayer
+            className="ocean-video"
+            width="24rem"
+            height="200px"
+            ref={playerRef}
+            url="https://www.youtube.com/embed/eTTdHO0tDB8"
+          />
         </div>
       </div>
       <Footer />

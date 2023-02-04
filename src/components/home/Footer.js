@@ -1,4 +1,5 @@
 import { Website } from "../../assets/icons/Website";
+
 export const Footer = () => (
   <>
     <div className="foot-container p-8 text-xs flex justify-center">
