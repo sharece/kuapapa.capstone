@@ -97,37 +97,37 @@ import { BCWaioli } from "./components/boundries/BCWaioli";
 import { BCWaipouli } from "./components/boundries/BCWaipouli";
 import { BCLumahai } from "./components/boundries/BCLumahai";
 
-// import { PunaKealia } from "./components/boundries/PunaKealia";
-// import { WaimeaKuiloa } from "./components/boundries/WaimeaKuiloa";
-// import { KoolauPilaa } from "./components/boundries/KoolauPilaa";
-// import { PunaWaipouli } from "./components/boundries/PunaWaipouli";
-// import { PunaKapaa } from "./components/boundries/PunaKapaa";
-// import { PunaOlohena } from "./components/boundries/PunaOlohena";
-// import { PunaWailua } from "./components/boundries/PunaWailua";
-// import { KoloaKalaheo } from "./components/boundries/KoloaKalaheo";
-// import { KoloaWahiawa } from "./components/boundries/KoloaWahiawa";
-// import { KoloaLawai } from "./components/boundries/KoloaLawai";
-// import { HanaleiLumahai } from "./components/boundries/HanaleiLumahai";
-// import { HanaleiWaipaa } from "./components/boundries/HanaleiWaipaa";
-// import { HanaleiWaioli } from "./components/boundries/HanaleiWaioli";
-// import { WaimeaKoula } from "./components/boundries/WaimeaKoula";
-// import { WaimeManuahi } from "./components/boundries/WaimeManuahi";
-// import { WaimeaHanapepe } from "./components/boundries/WaimeaHanapepe";
-// import { WaimeaEleele } from "./components/boundries/WaimeaEleele";
-// import { HanaleiHanalei } from "./components/boundries/HanaleiHanalei";
-// import { KoolauAnahola } from "./components/boundries/KoolauAnahola";
-// import { KoolauKamalomalo } from "./components/boundries/KoolauKamalomalo";
-// import { HanaleiHanakapiai } from "./components/boundries/HanaleiHanakapiai";
-// import { HanaleiHanakoa } from "./components/boundries/HanaleiHanakoa";
-// import { HanaleiPohakuau } from "./components/boundries/HanaleiPohakuau";
-// import { HanaleiKalalau } from "./components/boundries/HanaleiKalalau";
-// import { HanaleiHonopu } from "./components/boundries/HanaleiHonopu";
-// import { HanaleiWawapuhi } from "./components/boundries/HanaleiWawapuhi";
-// import { KoloaKoloa } from "./components/boundries/KoloaKoloa";
-// import { WaimeaWaimea } from "./components/boundries/WaimeaWaimea";
-// import { WaimeaKikiaola } from "./components/boundries/WaimeaKikiaola";
-// import { KoolauKahili } from "./components/boundries/KoolauKahili";
-// import { HaleleaKalihiKaiKalihiWai } from "./components/boundries/HaleleaKalihiKaiKalihiWai";
+import { PunaKealia } from "./components/boundries/PunaKealia";
+import { WaimeaKuiloa } from "./components/boundries/WaimeaKuiloa";
+import { KoolauPilaa } from "./components/boundries/KoolauPilaa";
+import { PunaWaipouli } from "./components/boundries/PunaWaipouli";
+import { PunaKapaa } from "./components/boundries/PunaKapaa";
+import { PunaOlohena } from "./components/boundries/PunaOlohena";
+import { PunaWailua } from "./components/boundries/PunaWailua";
+import { KoloaKalaheo } from "./components/boundries/KoloaKalaheo";
+import { KoloaWahiawa } from "./components/boundries/KoloaWahiawa";
+import { KoloaLawai } from "./components/boundries/KoloaLawai";
+import { HanaleiLumahai } from "./components/boundries/HanaleiLumahai";
+import { HanaleiWaipaa } from "./components/boundries/HanaleiWaipaa";
+import { HanaleiWaioli } from "./components/boundries/HanaleiWaioli";
+import { WaimeaKoula } from "./components/boundries/WaimeaKoula";
+import { WaimeaManuahi } from "./components/boundries/WaimeaManuahi";
+import { WaimeaHanapepe } from "./components/boundries/WaimeaHanapepe";
+import { WaimeaEleele } from "./components/boundries/WaimeaEleele";
+import { HanaleiHanalei } from "./components/boundries/HanaleiHanalei";
+import { KoolauAnahola } from "./components/boundries/KoolauAnahola";
+import { KoolauKamalomalo } from "./components/boundries/KoolauKamalomaloo";
+import { HanaleiHanakapiai } from "./components/boundries/HanaleiHanakapiai";
+import { HanaleiHanakoa } from "./components/boundries/HanaleiHanakoa";
+import { HanaleiPohakuau } from "./components/boundries/HanaleiPohakuau";
+import { HanaleiKalalau } from "./components/boundries/HanaleiKalalau";
+import { HanaleiHonopu } from "./components/boundries/HanaleiHonopu";
+import { HanaleiWawapuhi } from "./components/boundries/HanaleiWawapuhi";
+import { KoloaKoloa } from "./components/boundries/KoloaKoloa";
+import { WaimeaWaimea } from "./components/boundries/WaimeaWaimea";
+import { WaimeaKikiaola } from "./components/boundries/WaimeaKikiaola";
+import { KoolauKahili } from "./components/boundries/KoolauKahili";
+import { HaleleaKalihiKaiKalihiWai } from "./components/boundries/HaleleaKalihiKaiKalihiWai";
 
 function App() {
   return (
@@ -229,7 +229,7 @@ function App() {
         <Route path="/BC_31_01_Kealia" element={<BCKealia2 />} />
         <Route path="/BC_32_31_Kalihi-Kai-Kalihi-Wai" element={<BCKalihi />} />
 
-        {/* <Route path="/COB_01_Puna-Kealia" element={<PunaKealia />} />
+        <Route path="/COB_01_Puna-Kealia" element={<PunaKealia />} />
         <Route path="/COB_02_Waimea-Kuiloa" element={<WaimeaKuiloa />} />
         <Route path="/COB_03_Koolau-Pilaa" element={<KoolauPilaa />} />
         <Route path="/COB_04_Puna-Waipouli" element={<PunaWaipouli />} />
@@ -243,7 +243,7 @@ function App() {
         <Route path="/COB_12_Hanalei-Waipaa" element={<HanaleiWaipaa />} />
         <Route path="/COB_13_Hanalei-Waioli" element={<HanaleiWaioli />} />
         <Route path="/COB_14_Waimea-Koula" element={<WaimeaKoula />} />
-        <Route path="/COB_15_Waimea-Manuahi" element={<WaimeManuahi />} />
+        <Route path="/COB_15_Waimea-Manuahi" element={<WaimeaManuahi />} />
         <Route path="/COB_17_Waimea-Hanapepe" element={<WaimeaHanapepe />} />
         <Route path="/COB_16_Waimea-Eleele" element={<WaimeaEleele />} />
         <Route path="/COB_18_Hanalei-Hanalei" element={<HanaleiHanalei />} />
@@ -268,7 +268,7 @@ function App() {
         <Route
           path="/COB_31_Halelea-Kalihi-Kai-Kalihi-Wai"
           element={<HaleleaKalihiKaiKalihiWai />}
-        /> */}
+        />
       </Routes>
     </div>
   );
