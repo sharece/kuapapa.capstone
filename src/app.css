@@ -12,9 +12,6 @@ body {
   color: rgba(2, 2, 2, 0.9);
   font-family: "Manrope", "Big Shoulder Display", sans-serif;
 }
-.logo {
-  width: 25px;
-}
 .click-map {
   display: none;
 }
@@ -28,8 +25,8 @@ body {
   display: none;
 }
 .text-banner {
-  padding-top: 45px;
-  border-bottom: 1rem solid #450068;
+  padding-top: 2rem;
+  border-bottom: 0.1rem solid #450068;
 }
 .mobile-menu {
   display: flex;
@@ -37,9 +34,9 @@ body {
   position: absolute;
   padding: 0.5rem;
   right: 0;
-  top: 2.5rem;
+  top: 2rem;
   width: 50%;
-  background-color: #450068;
+  background-color: #450068d4;
   z-index: 0;
   opacity: 0;
 }
@@ -54,8 +51,8 @@ body {
   top: 0;
   z-index: 0;
   justify-content: flex-start;
-  background-color: #450068;
-  height: 3rem;
+  background-color: #450068d4;
+  height: 2.5rem;
   width: 100%;
   position: fixed;
 }
@@ -63,14 +60,16 @@ body {
 .nav-link-active {
   display: none;
 }
+
 .ham-link {
   /* display: none; */
   /* text-transform: lowercase; */
-  z-index: 0;
+  /* opacity: 0; */
 }
 .ham-link-active {
   color: #8f76c2;
   font-weight: 500;
+  display: block;
 }
 .ham-link-active,
 .foot-link {
@@ -95,12 +94,24 @@ body {
 .title-header {
   width: 50%;
 }
-/* .title {
-  text-decoration: none;
-  font-size: large;
-  font-weight: 700;
-  width: 500px;
-} */
+.crumb,
+.current-crumb {
+  /* color: white; */
+  padding: 1rem;
+}
+.crumb:hover {
+  /* font-size: 18px; */
+  color: #8f76c2;
+  text-shadow: #f7fbf8;
+}
+.ahu-link-container,
+.moku-moku-sign {
+  display: flex;
+}
+.pin {
+  width: 33%;
+  color: #da242a;
+}
 .home-img {
   max-width: 100%;
   margin-top: 1rem;
@@ -108,20 +119,20 @@ body {
 }
 .ahu-link-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 80%;
+  flex-direction: column;
+  /* width: ; */
   padding: 3px;
 }
 .bio {
   padding: 1rem;
-  letter-spacing: 0.1rem;
+  /* letter-spacing: 0.1rem; */
 }
 .learn-more {
   padding: 1rem;
   font-size: 0.9rem;
 }
 .hanalei-bay {
-  border-bottom: 1rem solid #450068;
+  border-bottom: 0.1rem solid #450068;
 }
 .moku-text {
   padding: 1.9rem;
@@ -131,40 +142,55 @@ body {
 .moku-pic {
   max-width: 85%;
 }
+.moku-title {
+  font-family: "Unbounded", sans-serif;
+  display: flex;
+  justify-content: center;
+}
 .moku-map {
   padding-left: 4rem;
 }
 .moku-container {
   padding-top: 3.5rem;
-}
-.mobile-bio {
-  background-image: url("../../kuapapa.capstone/src/assets/bg-mountain.png");
+  background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+.home-bg {
+  background-image: url("../../kuapapa.capstone/src/assets/napalimokupic3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1rem;
+}
+.bio {
+  background-image: url("../../kuapapa.capstone/src/assets/petrog.png");
+  background-repeat: repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
 .ahu-elements {
   padding-top: 4rem;
+}
+.ahu-map-and-sign {
+  background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1,
 h2 {
   display: block;
   letter-spacing: 0.2rem;
-  /* font-size: 27px; */
   display: flex;
-  /* font-family: "IM Fell Double Pica", "sans-serif"; */
 }
 h2 {
   padding: 0.5rem;
 }
 .report-title {
-  letter-spacing: 0.2 rem;
-  background-color: #450068;
+  background-color: #450068d4;
   color: white;
 }
-
 .video,
 .reports {
-  /* padding: 0.5rem; */
   display: flex;
   flex-direction: column;
 }
@@ -179,8 +205,11 @@ h2 {
   padding: 0.2rem;
 }
 .moku-sign {
-  width: 60%;
+  width: 80%;
   /* z-index: 3; */
+}
+.moku-moku-sign {
+  width: 20%;
 }
 .back-to-moku-sign {
   width: 20%;
@@ -193,6 +222,37 @@ h2 {
 }
 .desktop-map {
   display: none;
+}
+.desktop-title {
+  display: none;
+}
+.mobile-title {
+  font-size: 1.9rem;
+}
+/* may need to take out boundry */
+.contact-page,
+.resources,
+.disclaimer {
+  padding-top: 2.5rem;
+  background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bc:hover {
+  font-size: 20px;
+  color: #8f76c2;
+  transition: 500ms;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.boundary-container {
+  padding-top: 10rem;
+  background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+.foot-container {
+  background-color: #450068d4;
+  color: white;
 }
 
 /* 1 tablet */
@@ -270,10 +330,11 @@ h2 {
   .reports {
     display: flex;
   }
-  .moku-links-and-map {
-    background-image: url("../../kuapapa.capstone/src/assets/bg-mountain.png");
+  .home-bg {
+    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 1rem;
   }
   .ahu-sign {
     max-width: 30%;
@@ -291,6 +352,12 @@ h2 {
   .ahu-text {
     padding: 2rem;
   }
+  .moku-links-and-map {
+    padding-bottom: 2rem;
+  }
+  .bio {
+    background-color: white;
+  }
 }
 @media screen and (min-width: 1024px) {
   .nav-desktop {
@@ -303,6 +370,7 @@ h2 {
     display: flex;
     cursor: pointer;
   }
+
   .mobile-menu {
     display: flex;
     color: white;
@@ -368,10 +436,11 @@ h2 {
       rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
       rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
-  .moku-links-and-map {
-    background-image: url("../../kuapapa.capstone/src/assets/bg-mountain.png");
+  .home-bg {
+    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 1rem;
   }
   .reports {
     display: flex;
@@ -386,6 +455,8 @@ h2 {
   }
   .bio {
     width: 70%;
+    background-color: white;
+    padding: 1rem;
   }
   .ahu-link-container {
     display: flex;
@@ -397,6 +468,9 @@ h2 {
   }
   .moku-link-container {
     width: 80%;
+  }
+  .moku-links-and-map {
+    padding-bottom: 2rem;
   }
   .ahu-text,
   .moku-text {
@@ -418,6 +492,7 @@ h2 {
   .title {
     display: none;
   }
+
   .text-banner {
     padding-top: 45px;
     border-bottom: 0.5rem solid #450068;
@@ -442,6 +517,11 @@ h2 {
   }
   .mobile-bio {
     display: none;
+  }
+  .desktop-bio {
+    display: flex;
+    font-weight: 600;
+    background-color: white;
   }
   .nav-link {
     display: flex;
@@ -488,6 +568,10 @@ h2 {
   .moku-link-container {
     width: 80%;
   }
+  .moku-links-and-map {
+    padding-bottom: 3rem;
+  }
+
   .moku-sign:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
@@ -497,23 +581,31 @@ h2 {
     font-size: medium;
   }
   .moku-pic {
-    width: 75%;
+    width: 50%;
   }
-  .moku-links-and-map {
-    background-image: url("../../kuapapa.capstone/src/assets/bg-mountain.png");
+  .moku-map {
+    width: 50%;
+  }
+  .home-bg {
+    background-image: url("../../kuapapa.capstone/src/assets/napalimokupic3.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .desktop-bio {
-    display: flex;
-    font-weight: 700;
+
+  .desktop-title {
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    font-family: "Unbounded";
+  }
+  .mobile-title {
+    display: none;
   }
   .ahu-elements {
     padding: 2.5rem;
+    /* background-image: url("../../kuapapa.capstone/src/assets/napalimokupic3.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
-  /* .img-container {
-    max-width: 40%;
-  } */
   .ahu-link-container {
     display: flex;
     flex-direction: row;
@@ -534,11 +626,26 @@ h2 {
     display: flex;
     flex-wrap: nowrap;
   }
-
+  .bc:hover {
+    font-size: 20px;
+    color: #8f76c2;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  .boundary-container {
+    padding-top: 10rem;
+    background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /* background-size: cover;
   /* this needs to be for the moku page not the home page styles need to rename */
   .moku-sign {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 1rem;
+    width: 80%;
+  }
+  .moku-moku-sign {
+    width: 40%;
   }
   .ahu-text {
     padding: 2rem;
@@ -552,35 +659,6 @@ h2 {
   .contact-icon {
     display: none;
   }
-  /* For pdf */
-  .react-pdf__Page {
-    margin-top: 10px;
-  }
-  .react-pdf__Page__textContent {
-    border: 1px solid darkgrey;
-    box-shadow: 5px 5px 5px 1px #ccc;
-    border-radius: 5px;
-  }
-  button {
-    margin-right: 10px;
-    background: #3f51b5;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    width: 100px;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px 1px #ccc;
-  }
-  .react-pdf__Page__annotations.annotationLayer {
-    padding: 20px;
-  }
-  .react-pdf__Page__canvas {
-    margin: 0 auto;
-  }
-  /* For all pages */
-  .all-page-container {
-    height: 100%;
-    max-height: 500px;
-    overflow: auto;
-  }
+
+  /* For accordion */
 }

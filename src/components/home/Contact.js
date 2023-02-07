@@ -10,7 +10,7 @@ import { Navbar } from "./Navbar";
 export const Contact = () => (
   <>
     <Navbar />
-    <div className="pt-10">
+    <div className="contact-page">
       <div className="contact-container flex flex-col  flex-wrap">
         <div className="text-3xl leading-relaxed">Share your mana'o</div>
         <ChatBubble />

@@ -1,9 +1,9 @@
 export const Bio = () => (
-  <div className="bio">
-    <h2>
+  <div className="bio font-extrabold ">
+    <div className="p-8">
       Kaua'i Nui Kuapapa can be interpreted in English as ‘the genealogy of
       Great Kaua‘i’ or ‘the entirety of Kaua‘i’.
-    </h2>
+    </div>
     <div className="pb-3">
       <p className="p-2">
         The phrase is found in certain Hawaiian mele, poems or chants, from

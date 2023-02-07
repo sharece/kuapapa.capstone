@@ -8,11 +8,11 @@ export const Navbar = () => {
   return (
     <div className="nav-container ">
       <div className="navbar">
-        <div className="title-header"></div>
-        <NavLink className="logo" to="/home">
-          <img src={logo} alt="kuapapa logo" />
-        </NavLink>
-
+        <div className="title-header">
+          <NavLink className="title" to="/home">
+            Kaua'i Nui Kuapapa
+          </NavLink>
+        </div>
         <div className="nav-desktop">
           <NavLink
             className={({ isActive }) =>

@@ -1,27 +1,37 @@
 import { Link } from "react-router-dom";
+import ahumap from "../../assets/koolau-bd.png";
 import { Navbar } from "../home/Navbar";
-import anaholabd from "../../assets/ahu-divisions/Anahola.png";
 import { Footer } from "../home/Footer";
-import koolausign from "../../assets/ahu-signs/koolausign.png";
 import anaholasign from "../../assets/ahu-signs/Koolau_anahola.png";
+import koolausign from "../../assets/ahu-signs/koolausign.png";
 export const Anahola = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
-      <div className="ahu-sign">
-        <img width="100%" src={anaholasign} alt="anahola road sign" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/koolau">
+          Ko'olau
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Anahola</div>
       </div>
-      <Link className="back-to-moku" to="/koolau">
-        <div className="moku-sign">
-          <img src={koolausign} alt="koolau sign" />
+      <div className="ahu-map-and-sign">
+        <div className="ahu-map">
+          <img src={ahumap} alt="koolau breakdown" />
         </div>
-      </Link>
-      {/* <div className="ahu-map-and-sign"> */}
-      <div className="anaholabd">
-        <img src={anaholabd} alt="anahola ahupuaa breakdown" />
+        <Link className="back-to-moku" to="/koolau">
+          <div className="moku-sign">
+            <img src={koolausign} alt="koolau sign" />
+          </div>
+        </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={anaholasign} alt="anahola road sign" />
+        </div>
       </div>
-
-      {/* </div> */}
     </div>
     <div className="ahu-text">
       Anahola: The name of a mo`o Anahola was a mo`o, a lizard kupua or

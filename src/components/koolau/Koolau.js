@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
-import koolaubd from "../../assets/ahu-divisions/koolaubd.png";
+import koolaubd from "../../assets/koolau-moku-map.png";
 import koolausign from "../../assets/ahu-signs/koolausign.png";
 import aliomanu from "../../assets/ahu-signs/Koolau_aliomanu.png";
 import anahola from "../../assets/ahu-signs/Koolau_anahola.png";
@@ -16,21 +16,21 @@ import waipake from "../../assets/ahu-signs/Koolau_waipake.png";
 import kilauea from "../../assets/ahu-signs/Koolau_kilauea.png";
 import kahili from "../../assets/ahu-signs/Koolau_kahili.png";
 import mokupic from "../../assets/moku-imgs/koolauimg.png";
+import { Dropdown } from "rsuite";
+import DropdownItem from "rsuite/esm/Dropdown/DropdownItem";
+
 export const Koolau = () => (
   <>
     <Navbar />
     <div className="moku-container">
-      <div className="pb-4 text-7xl tracking-widest flex justify-center">
+      <div className="moku-title pb-4 text-7xl tracking-widest flex justify-center">
         Ko'olau
       </div>
       <div className="moku-pic">
         <img src={mokupic} alt="koolau moku pic" />
       </div>
-      <div className="flex justify-center flex-col p-2">
-        <div className="flex"></div>
-        <div className="moku-map">
-          <img width="100%" src={koolaubd} alt="koolau map" />
-        </div>
+      <div className="moku-map">
+        <img src={koolaubd} alt="koolau map" />
       </div>
       <div className="moku-text">
         <p className="p-2">
@@ -52,52 +52,98 @@ export const Koolau = () => (
           fish) and purple, Kaua‘i’s designated color since the late 1940s.
         </p>
       </div>
-      <div className="learn-more text-2xl">
+      <div className="learn-more text-lg">
         Learn more about Ahupua'a's in the Moku of Ko'olau :
       </div>
-      <div className="moku-sign p-1">
+      <div className="moku-moku-sign">
         <img className="w-20" src={koolausign} alt="koolau road sign" />
       </div>
-      <div className="ahu-link-container">
-        <div className="ahu-link-col-1">
-          <Link className="ahu-link" to="/anahola">
-            <img src={anahola} alt="anahola road sign" />
-          </Link>
-          <Link className="ahu-link" to="/aliomanu">
-            <img src={aliomanu} alt="alimanu road sign" />
-          </Link>
-          <Link className="ahu-link" to="/papaa">
-            <img src={papaa} alt="papaa road sign" />
-          </Link>
-          <Link className="ahu-link" to="/moloaa">
-            <img src={moloaa} alt="moloaa road sign" />
-          </Link>
-          <Link className="ahu-link" to="/kaakaaniu">
-            <img src={kaakaaniu} alt="kaakaaniu road sign" />
-          </Link>
-          <Link className="ahu-link" to="/lepeuli">
-            <img src={lepeuli} alt="lepeuli road sign" />
-          </Link>
-        </div>
-        <div className="ahu-link-col-2">
-          <Link className="ahu-link" to="/waipake">
-            <img src={waipake} alt="waipake road sign" />
-          </Link>
-          <Link className="ahu-link" to="/pilaa">
-            <img src={pilaa} alt="pilaa road sign" />
-          </Link>
-          <Link className="ahu-link" to="/waiakalua">
-            <img src={waiakalua} alt="waiakalua road sign" />
-          </Link>
-          <Link className="ahu-link" to="/kahili road sign">
-            <img src={kahili} alt="kahili road sign" />
-          </Link>
-          <Link className="ahu-link" to="/kilauea">
-            <img src={kilauea} alt="kilauea road sign" />
-          </Link>
-          <Link className="ahu-link" to="/namahana">
-            <img src={namahana} alt="namahana road sign" />
-          </Link>
+      <div className="ahu-dropdown text-xl">
+        <div className="flex justify-center text-lrg">
+          <Dropdown title="Select an Ahupua'a">
+            <Dropdown.Item>
+              {" "}
+              <Link className="ahu-link" to="/anahola">
+                {/* Anahola */}
+                <img src={anahola} width="50%" alt="anahola road sign" />
+              </Link>
+            </Dropdown.Item>
+            <DropdownItem>
+              <Link className="ahu-link" to="/aliomanu">
+                {/* Aliomanu */}
+                <img src={aliomanu} width="50%" alt="alimanu road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              <Link className="ahu-link" to="/papaa">
+                {/* Papa'a */}
+                <img src={papaa} width="50%" alt="papaa road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              {" "}
+              <Link className="ahu-link" to="/moloaa">
+                {/* Moloa'a */}
+                <img src={moloaa} width="50%" alt="moloaa road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              {" "}
+              <Link className="ahu-link" to="/kaakaaniu">
+                {/* ka'aka'aniu */}
+                <img src={kaakaaniu} width="50%" alt="kaakaaniu road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              {" "}
+              <Link className="ahu-link" to="/lepeuli">
+                {/* Lepeuli */}
+                <img src={lepeuli} width="50%" alt="lepeuli road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              {" "}
+              <Link className="ahu-link" to="/waipake">
+                {/* Waipake */}
+                <img src={waipake} width="50%" alt="waipake road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              {" "}
+              <Link className="ahu-link" to="/pilaa">
+                {/* Pila'a */}
+                <img src={pilaa} width="50%" alt="pilaa road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              {" "}
+              <Link className="ahu-link" to="/waiakalua">
+                {/* Waiakalua */}
+                <img src={waiakalua} width="50%" alt="waiakalua road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              {" "}
+              <Link className="ahu-link" to="/kahili road sign">
+                {/* Kahili */}
+                <img src={kahili} width="50%" alt="kahili road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              {" "}
+              <Link className="ahu-link" to="/kilauea">
+                {/* Kilauea */}
+                <img src={kilauea} width="50%" alt="kilauea road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              {" "}
+              <Link className="ahu-link" to="/namahana">
+                {/* Namahana */}
+                <img src={namahana} width="50%" alt="namahana road sign" />
+              </Link>
+            </DropdownItem>
+          </Dropdown>
         </div>
       </div>
     </div>

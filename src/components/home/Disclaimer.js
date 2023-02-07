@@ -5,7 +5,7 @@ import { Navbar } from "./Navbar";
 export const Disclaimer = () => (
   <>
     <Navbar />
-    <div className="p-12">
+    <div className="disclaimer p-12">
       <h1 className="text-3xl pt-8 pb-6 p-3">
         Disclaimer about Kauaʻi Nui Kuapapa:
       </h1>{" "}

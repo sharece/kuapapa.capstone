@@ -1,15 +1,24 @@
 import { Link } from "react-router-dom";
-import ahumap from "../../assets/ahu-divisions/Lawai.png";
+import ahumap from "../../assets/kona-bd.png";
 import { Navbar } from "../home/Navbar";
 import { Footer } from "../home/Footer";
-import konasign from "../../assets/ahu-signs/konasign.png";
 import lawaisign from "../../assets/ahu-signs/Kona_lawai.png";
+import konasign from "../../assets/ahu-signs/konasign.png";
+
 export const Lawai = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
-      <div className="ahu-sign">
-        <img width="100%" src={lawaisign} alt="lawai road sign" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/kona">
+          Kona
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Lawai</div>
       </div>
       <div className="ahu-map-and-sign">
         <div className="ahu-map">
@@ -17,9 +26,12 @@ export const Lawai = () => (
         </div>
         <Link className="back-to-moku" to="/kona">
           <div className="moku-sign">
-            <img src={konasign} alt="kona sign" />
+            <img src={konasign} alt="Kona sign" />
           </div>
         </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={lawaisign} alt="lawai road sign" />
+        </div>
       </div>
     </div>
     <div className="ahu-text">

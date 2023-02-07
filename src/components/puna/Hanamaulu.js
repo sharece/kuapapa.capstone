@@ -2,30 +2,42 @@ import { Link } from "react-router-dom";
 import hanamaulusign from "../../assets/ahu-signs/Puna_hanamaulu.png";
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
-import hanamaulubd from "../../assets/ahu-divisions/Hanamaulu.png";
+import ahumap from "../../assets/puna-bd.png";
 import punasign from "../../assets/punasign.png";
+
 export const Hanamaulu = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
-      <div className="ahu-sign">
-        <img width="100%" src={hanamaulusign} alt="hanamaulu road sign" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/puna">
+          Puna
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Hanamaulu</div>
       </div>
       <div className="ahu-map-and-sign">
-        <div className="hanamaulubd">
-          <img src={hanamaulubd} alt="hanamaulu ahupuaa breakdown" />
+        <div className="ahu-map">
+          <img src={ahumap} alt="hanamaulu ahupuaa breakdown" />
         </div>
         <Link className="back-to-moku" to="/puna">
           <div className="moku-sign">
             <img src={punasign} alt="puna sign" />
           </div>
         </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={hanamaulusign} alt="hanamaulu road sign" />
+        </div>
       </div>
       <div className="ahu-text">
         HANAMAULU Hanamā`ulu: Tired-bay (as from walking) Alt: Hana-mā`ula -If
         pronounced Ha-na-ma-oo-la, it means "work at plant culture." If
         pronounced Hana-maula, it means make legs tired." #This ahupua`a was
-        ruled by Kawelo-lei-makua’s parents in the late 1600s. When they were
+        ruled by Kawelo-lei-makua’s parents in the late 1600s. When they were
         killed by Ai-kanaka, it began a civil war which Ai-kanaka lost. O
         Hanamāulu ipu puehu. Hanamāulu’s calabashes are hidden. Hanamāulu was
         considered a very stingy place. Once a party from the Kona side came to

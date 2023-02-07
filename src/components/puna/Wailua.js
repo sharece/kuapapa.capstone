@@ -2,24 +2,35 @@ import { Link } from "react-router-dom";
 import wailuasign from "../../assets/ahu-signs/Puna_wailua.png";
 import { Footer } from "../home/Footer";
 import { Navbar } from "../home/Navbar";
-import wailuabd from "../../assets/ahu-divisions/Wailua.png";
+import ahumap from "../../assets/puna-bd.png";
 import punasign from "../../assets/punasign.png";
 export const Wailua = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
-      <div className="ahu-sign">
-        <img width="100%" src={wailuasign} alt="wailua road sign" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/puna">
+          Puna
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Wailua</div>
       </div>
       <div className="ahu-map-and-sign">
-        <div className="wailuabd">
-          <img src={wailuabd} alt="wailua ahupuaa breakdown" />
+        <div className="ahu-map">
+          <img src={ahumap} alt="Puna ahupuaa breakdown" />
         </div>
         <Link className="back-to-moku" to="/puna">
           <div className="moku-sign">
             <img src={punasign} alt="puna sign" />
           </div>
         </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={wailuasign} alt="wailua road sign" />
+        </div>
       </div>
       <div className="ahu-text">
         Wailua stretches from the sea to the top of mount Wai`alea`le. Wailua

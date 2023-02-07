@@ -15,83 +15,90 @@ import napali from "../../assets/ahu-signs/napali-label.jpg";
 import niihau from "../../assets/ahu-signs/niihau-label.jpg";
 import halelea from "../../assets/ahu-signs/halelea-label.jpg";
 import { Link } from "react-router-dom";
-import { Title } from "./Title";
 import { DesktopMap } from "./DesktopMap";
 import ReactPlayer from "react-player";
 import kuapapaimg from "../../assets/homeimg.png";
-import textbanner from "../../assets/text-banner.png";
 // import { ClickableMap } from "./ClickableMap";
+import { Title } from "./Title";
 import { TabletMap } from "./TabletMap";
 import React from "react";
-
 export const HomePage = () => {
   const playerRef = React.useRef(null);
   return (
     <>
-      <div className="">
+      <div className="pb-2">
         <Navbar />
       </div>
       <div className="text-banner">
-        <img src={textbanner} alt="kauai nui kuapapa" />
+        {/* <img src={textbanner} alt="kauai nui kuapapa" /> */}
       </div>
-      {/* <div className="flex justify-center text-7xl">
-        <Title />
-      </div> */}
-      <div className="click-map">
-        <div className="flex justify-center pb-2 text-xlrg">
-          Click the map to select a moku!
+      <div className="home-bg">
+        <div className="desktop-title  flex justify-center">
+          <Title />
         </div>
-      </div>
-      <div className="moku-links-and-map  flex flex-col justify-center">
-        <div className="tablet-map">
-          <TabletMap />
+        <div className="click-map">
+          <div className="flex justify-center pb-2 text-xlrg">
+            Click the map to select a moku!
+          </div>
         </div>
-        <div className="desktop-bio-n-map">
+        <div className="moku-links-and-map  pb-4 flex flex-col justify-center">
+          <div className="tablet-map">
+            <TabletMap />
+          </div>
+          <div className="desktop-bio-n-map">
+            <div className="desktop-map">
+              <DesktopMap />
+            </div>
+          </div>
+          {/* <div className="mobile-title p-8 text-white text-lrg tracking-wide">
+            <Title />
+          </div> */}
+          <div className="click-moku">
+            <div className="p-4 text-white text-lrg tracking-wide">
+              Click on a Moku to learn more!
+            </div>
+          </div>
+
+          <div className="moku-link-container">
+            <Link to="/niihau" element={Niihau}>
+              <div className="moku-sign">
+                <img src={niihau} alt="niihau sign" />
+              </div>
+            </Link>
+            <Link to="/kona" element={Kona}>
+              <div className="moku-sign">
+                <img src={kona} alt="kona sign" />
+              </div>
+            </Link>
+            <Link to="/napali" element={Napali}>
+              <div className="moku-sign">
+                <img src={napali} alt="napali sign" />
+              </div>
+            </Link>
+            <Link to="/halelea" element={Halelea}>
+              <div className="moku-sign">
+                <img src={halelea} alt="niihau sign" />
+              </div>
+            </Link>
+            <Link to="/koolau" element={Koolau}>
+              <div className="moku-sign">
+                <img src={koolau} alt="koolau sign" />
+              </div>
+            </Link>
+            <Link to="/puna" element={Puna}>
+              <div className="moku-sign">
+                <img src={puna} alt="puna sign" />
+              </div>
+            </Link>
+          </div>
           <div className="desktop-bio">
             <Bio />
           </div>
-          <div className="desktop-map">
-            <DesktopMap />
-          </div>
         </div>
-        <div className="click-map">
-          <div className="pb-2 text-3xl">Click on a Moku to learn more!</div>
+
+        <div className="mobile-bio">
+          <Bio />
         </div>
-        <div className="moku-link-container p-3">
-          <Link to="/niihau" element={Niihau}>
-            <div className="moku-sign">
-              <img src={niihau} alt="niihau sign" />
-            </div>
-          </Link>
-          <Link to="/kona" element={Kona}>
-            <div className="moku-sign">
-              <img src={kona} alt="kona sign" />
-            </div>
-          </Link>
-          <Link to="/napali" element={Napali}>
-            <div className="moku-sign">
-              <img src={napali} alt="napali sign" />
-            </div>
-          </Link>
-          <Link to="/halelea" element={Halelea}>
-            <div className="moku-sign">
-              <img src={halelea} alt="niihau sign" />
-            </div>
-          </Link>
-          <Link to="/koolau" element={Koolau}>
-            <div className="moku-sign">
-              <img src={koolau} alt="koolau sign" />
-            </div>
-          </Link>
-          <Link to="/puna" element={Puna}>
-            <div className="moku-sign">
-              <img src={puna} alt="puna sign" />
-            </div>
-          </Link>
-        </div>
-      </div>
-      <div className="mobile-bio">
-        <Bio />
       </div>
       <div className="report-title">
         <div className="flex justify-center text-xl p-3 font-xtra-bold w-full">

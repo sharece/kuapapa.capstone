@@ -1,26 +1,37 @@
 import { Link } from "react-router-dom";
+import ahumap from "../../assets/koolau-bd.png";
 import { Navbar } from "../home/Navbar";
-import aliomanubd from "../../assets/ahu-divisions/Aliomanu.png";
 import { Footer } from "../home/Footer";
-import koolausign from "../../assets/ahu-signs/koolausign.png";
 import aliomanusign from "../../assets/ahu-signs/Koolau_aliomanu.png";
+import koolausign from "../../assets/ahu-signs/koolausign.png";
 
 export const Aliomanu = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
-      <div className="ahu-sign">
-        <img width="100%" src={aliomanusign} alt="aliomanu road sign" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/koolau">
+          Ko'olau
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Aliomanu</div>
       </div>
       <div className="ahu-map-and-sign">
-        <div className="anaholabd">
-          <img src={aliomanubd} alt="aliomanu ahupuaa breakdown" />
+        <div className="ahu-map">
+          <img src={ahumap} alt="koolau breakdown" />
         </div>
         <Link className="back-to-moku" to="/koolau">
           <div className="moku-sign">
             <img src={koolausign} alt="koolau sign" />
           </div>
         </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={aliomanusign} alt="aliomanu road sign" />
+        </div>
       </div>
     </div>
     <div className="ahu-text">

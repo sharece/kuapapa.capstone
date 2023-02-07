@@ -4,13 +4,28 @@ import "./app.css";
 import "./index.css";
 import { Resources } from "./components/home/Resources";
 import { MayorMsg } from "./components/home/MayorMsg";
-import { BoundryCert } from "./components/home/BoundryCert";
+import { BoundaryCert } from "./components/home/BoundaryCert";
 import { Niihau } from "./components/niihau/Niihau";
 import { Kona } from "./components/kona/Kona";
 import { Puna } from "./components/puna/Puna";
 import { Koolau } from "./components/koolau/Koolau";
 import { Halelea } from "./components/halelea/Halelea";
+import { Kalihikai } from "./components/halelea/Kalihikai";
+import { Kalihiwai } from "./components/halelea/Kalihiwai";
+import { Hanalei } from "./components/halelea/Hanalei";
+import { Waioli } from "./components/halelea/Waioli";
+import { Waikoko } from "./components/halelea/Waikoko";
+import { Waipa } from "./components/halelea/Waipa";
+import { Lumahai } from "./components/halelea/Lumahai";
+import { Wainiha } from "./components/halelea/Wainiha";
+import { Haena } from "./components/halelea/Haena";
 import { Napali } from "./components/napali/Napali";
+import { Hanakapiai } from "./components/napali/Hanakapiai";
+import { Hanakoa } from "./components/napali/Hanakoa";
+import { Pohakuau } from "./components/napali/Pohakuau";
+import { Kalalau } from "./components/napali/Kalalau";
+import { Honopu } from "./components/napali/Honopu";
+import { Awaawapuhi } from "./components/napali/Awaawapuhi";
 import { HomePage } from "./components/home/HomePage";
 import { Disclaimer } from "./components/home/Disclaimer";
 import { Contact } from "./components/home/Contact";
@@ -50,6 +65,38 @@ import { Kahili } from "./components/koolau/Kahili";
 import { Kilauea } from "./components/koolau/Kilauea";
 import { Namahana } from "./components/koolau/Namahana";
 
+import { BCLawai } from "./components/boundries/BCLawai";
+import { BCKalihi } from "./components/boundries/BCKalihi";
+import { BCKealia1 } from "./components/boundries/BCKealia1";
+import { BCKealia2 } from "./components/boundries/BCKealia2";
+import { BCKuiloa } from "./components/boundries/BCKuiloa";
+import { BCWaimea } from "./components/boundries/BCWaimea";
+import { BCKikiaola } from "./components/boundries/BCKikiaola";
+import { BCKoloa } from "./components/boundries/BCKoloa";
+import { BCWawapuhi } from "./components/boundries/BCWawapuhi";
+import { BCHonopu } from "./components/boundries/BCHonopu";
+import { BCKalalau } from "./components/boundries/BCKalalau";
+import { BCPohakuau } from "./components/boundries/BCPohakuau";
+import { BCHanakapiai } from "./components/boundries/BCHanakapiai";
+import { BCOlohena } from "./components/boundries/BCOlohena";
+import { BCKamalomalo } from "./components/boundries/BCKamalomalo";
+import { BCAnahola } from "./components/boundries/BCAnahola";
+import { BCManuahi } from "./components/boundries/BCManuahi";
+import { BCEleele } from "./components/boundries/BCEleele";
+import { BCHanapepe } from "./components/boundries/BCHanapepe";
+import { BCKoula } from "./components/boundries/BCKoula";
+import { BCWahiawa } from "./components/boundries/BCWahiawa";
+import { BCKalaheo } from "./components/boundries/BCKalaheo";
+import { BCWaipaa } from "./components/boundries/BCWaipaa";
+import { BCWailua } from "./components/boundries/BCWailua";
+import { BCKapaa } from "./components/boundries/BCKapaa";
+import { BCKahili } from "./components/boundries/BCKahili";
+import { BCPilaa } from "./components/boundries/BCPilaa";
+import { BCHanalei } from "./components/boundries/BCHanalei";
+import { BCWaioli } from "./components/boundries/BCWaioli";
+import { BCWaipouli } from "./components/boundries/BCWaipouli";
+import { BCLumahai } from "./components/boundries/BCLumahai";
+
 function App() {
   return (
     <div className="app">
@@ -58,7 +105,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/mayorMsg" element={<MayorMsg />} />
-        <Route path="/boundryCert" element={<BoundryCert />} />
+        <Route path="/BoundryCert" element={<BoundaryCert />} />
         <Route path="/niihau" element={<Niihau />} />
         <Route path="/kona" element={<Kona />} />
         <Route path="/puna" element={<Puna />} />
@@ -76,6 +123,15 @@ function App() {
         <Route path="/kamalomaloo" element={<Kamalomaloo />} />
         <Route path="/koolau" element={<Koolau />} />
         <Route path="/halelea" element={<Halelea />} />
+        <Route path="/kalihikai" element={<Kalihikai />} />
+        <Route path="/kalihiwai" element={<Kalihiwai />} />
+        <Route path="/hanalei" element={<Hanalei />} />
+        <Route path="/waioli" element={<Waioli />} />
+        <Route path="/waikoko" element={<Waikoko />} />
+        <Route path="/waipa" element={<Waipa />} />
+        <Route path="/lumahai" element={<Lumahai />} />
+        <Route path="/wainiha" element={<Wainiha />} />
+        <Route path="/haena" element={<Haena />} />
         <Route path="/napali" element={<Napali />} />
         <Route path="/mana" element={<Mana />} />
         <Route path="/waimea" element={<Waimea />} />
@@ -100,8 +156,78 @@ function App() {
         <Route path="/kahili" element={<Kahili />} />
         <Route path="/kilauea" element={<Kilauea />} />
         <Route path="/namahana" element={<Namahana />} />
+        <Route path="/awaawapuhi" element={<Awaawapuhi />} />
+        <Route path="/hanakapiai" element={<Hanakapiai />} />
+        <Route path="/hanakoa" element={<Hanakoa />} />
+        <Route path="/pohakuau" element={<Pohakuau />} />
+        <Route path="/kalalau" element={<Kalalau />} />
+        <Route path="/honopu" element={<Honopu />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/contact" element={<Contact />} />
+        {/* 31 boundry comm ,? boundry cert */}
+        <Route path="/BC_01_10_1_Lawai" element={<BCLawai />} />
+        <Route path="/BC_02_01_Kealia" element={<BCKealia1 />} />
+        <Route path="/BC_03_02_Kuiloa-Ili" element={<BCKuiloa />} />
+        <Route path="/BC_04_03_Pilaa" element={<BCPilaa />} />
+        <Route path="/BC_05_04_Waipouli" element={<BCWaipouli />} />
+        <Route path="/BC_06_05_Kapaa" element={<BCKapaa />} />
+        <Route path="/BC_07_07_Wailua" element={<BCWailua />} />
+        <Route path="/BC_09_08_Kalaheo" element={<BCKalaheo />} />
+        <Route path="/BC_10_09_Wahiawa" element={<BCWahiawa />} />
+        <Route path="/BC_11_11_Lumahai" element={<BCLumahai />} />
+        <Route path="/BC_12_13_1_Waioli" element={<BCWaioli />} />
+        <Route path="/BC_13_13_2_Waipaa" element={<BCWaipaa />} />
+        <Route path="/BC_14_14_Koula-Ili" element={<BCKoula />} />
+        <Route path="/BC_15_15_Manuahi" element={<BCManuahi />} />
+        <Route path="/BC_16_16_Eleele-Ili" element={<BCEleele />} />
+        <Route path="/BC_17_17_Hanapepe" element={<BCHanapepe />} />
+        <Route path="/BC_18_18_Hanalei" element={<BCHanalei />} />
+        <Route path="/BC_19_30_Kahili" element={<BCKahili />} />
+        <Route path="/BC_20_20_Anahola" element={<BCAnahola />} />
+        <Route path="/BC_21_19_Kamalomalo" element={<BCKamalomalo />} />
+        <Route path="/BC_22_06_Olohena" element={<BCOlohena />} />
+        <Route path="/BC_23_21_Hanakapiai" element={<BCHanakapiai />} />
+        <Route path="/BC_24_23_Pohakuau" element={<BCPohakuau />} />
+        <Route path="/BC_25_24_Kalalau" element={<BCKalalau />} />
+        <Route path="/BC_26_25_Honopu" element={<BCHonopu />} />
+        <Route path="/BC_27_26_Wawapuhi" element={<BCWawapuhi />} />
+        <Route path="/BC_28_27_Koloa" element={<BCKoloa />} />
+        <Route path="/BC_29_29_Kikiaola" element={<BCKikiaola />} />
+        <Route path="/BC_30_28_Waimea" element={<BCWaimea />} />
+        <Route path="/BC_31_01_Kealia" element={<BCKealia2 />} />
+        <Route path="/BC_32_31_Kalihi-Kai-Kalihi-Wai" element={<BCKalihi />} />
+
+        {/* // cob next erase bcs */}
+        {/* <Route path="/BC_02_01_Kealia" element={<BCKealia1 />} />
+        <Route path="/BC_03_02_Kuiloa-Ili" element={<BCKuiloa />} />
+        <Route path="/BC_04_03_Pilaa" element={<BCPiliaa />} />
+        <Route path="/BC_05_04_Waipouli" element={<BCWaipouli />} />
+        <Route path="/BC_06_05_Kapaa" element={<BCKapaa />} />
+        <Route path="/BC_07_07_Wailua" element={<BCWailua />} />
+        <Route path="/BC_09_08_Kalaheo" element={<BCKalaheo />} />
+        <Route path="/BC_10_09_Wahiawa" element={<BCWahiawa />} />
+        <Route path="/BC_11_11_Lumahai" element={<BCLumahai />} />
+        <Route path="/BC_12_13_1_Waioli" element={<BCWaioli />} />
+        <Route path="/BC_13_13_2_Waipaa" element={<BCWaipaa />} />
+        <Route path="/BC_14_14_Koula-Ili" element={<BCKoula />} />
+        <Route path="/BC_15_15_Manuahi" element={<BCManuahi />} />
+        <Route path="/BC_16_16_Eleele-Ili" element={<BCEleele />} />
+        <Route path="/BC_17_17_Hanapepe" element={<BCHanapepe />} />
+        <Route path="/BC_18_18_Hanalei" element={<BCHanalei />} />
+        <Route path="/BC_19_30_Kahili" element={<BCKahili />} />
+        <Route path="/BC_20_20_Anahola" element={<BCAnahola />} />
+        <Route path="/BC_21_19_Kamalomalo" element={<BCKamalomalo />} />
+        <Route path="/BC_22_06_Olohena" element={<BCOlohena />} />
+        <Route path="/BC_23_21_Hanakapiai" element={<BCHanakapiai />} />
+        <Route path="/BC_24_23_Pohakuau" element={<BCPohakuau />} />
+        <Route path="/BC_25_24_Kalalau" element={<BCKalalau />} />
+        <Route path="/BC_26_25_Honopu" element={<BCHonopu />} />
+        <Route path="/BC_27_26_Wawapuhi" element={<BCWawapuhi />} />
+        <Route path="/BC_28_27_Koloa" element={<BCKoloa />} />
+        <Route path="/BC_29_29_Kikiaola" element={<BCKikiaola />} />
+        <Route path="/BC_30_28_Waimea" element={<BCWaimea />} />
+        <Route path="/BC_31_01_Kealia" element={<BCKealia2 />} />
+        <Route path="/BC_32_31_Kalihi-Kai-Kalihi-Wai" element={<BCKalihi />} /> */}
       </Routes>
     </div>
   );

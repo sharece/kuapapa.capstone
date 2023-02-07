@@ -1,29 +1,41 @@
 import { Link } from "react-router-dom";
-import ahumap from "../../assets/ahu-divisions/Makaweli.png";
+import ahumap from "../../assets/kona-bd.png";
 import { Navbar } from "../home/Navbar";
 import { Footer } from "../home/Footer";
 import konasign from "../../assets/ahu-signs/konasign.png";
 import makawelisign from "../../assets/ahu-signs/Kona_makaweli.png";
+
 export const Makaweli = () => (
   //possibly create a read more at the end of links
   <>
     <Navbar />
     <div className="ahu-elements">
-      <div className="ahu-sign">
-        <img width="100%" src={makawelisign} alt="makaweli road sign" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/kona">
+          Kona
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Makaweli</div>
       </div>
       <div className="ahu-map-and-sign">
         <div className="ahu-map">
-          <img src={ahumap} alt="makaweli ahupuaa breakdown" />
+          <img src={ahumap} alt="kona breakdown" />
         </div>
         <Link className="back-to-moku" to="/kona">
           <div className="moku-sign">
-            <img src={konasign} alt="kona sign" />
+            <img src={konasign} alt="Kona sign" />
           </div>
         </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={makawelisign} alt="makaweli road sign" />
+        </div>
       </div>
     </div>
-    <div className="ahu-text">
+    <div className="ahu-text p-2">
       Makaweli: Burning-eyes; Lit: Phosphorescent eyes; Lit: Fearful eyes An
       ahupua`a of the Kona district. It lies between Hanapēpē on the east and
       Waimea on the west. Ho`olele ka uila o Makaweli. Send the lightning of

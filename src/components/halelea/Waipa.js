@@ -1,0 +1,34 @@
+import { Link } from "react-router-dom";
+import ahumap from "../../assets/halelea-bd.png";
+import { Navbar } from "../home/Navbar";
+import { Footer } from "../home/Footer";
+import waipasign from "../../assets/ahu-signs/Halelea_waipa.png";
+
+export const Waipa = () => (
+  <>
+    <Navbar />
+    <div className="ahu-elements">
+      <div className="breadcrumb-menu pt-14 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/halelea">
+          Halelea
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Waipa</div>
+      </div>
+      <div className="ahu-map-and-sign">
+        <div className="ahu-map">
+          <img src={ahumap} alt="halelea breakdown" />
+        </div>
+        <div className="ahu-sign">
+          <img width="100%" src={waipasign} alt="waipa road sign" />
+        </div>
+      </div>
+    </div>
+    <div className="ahu-text"></div>
+    <Footer />
+  </>
+);

@@ -4,8 +4,8 @@ import { Navbar } from "./Navbar";
 export const Resources = () => (
   <>
     <Navbar />
-    <div className="">
-      <div className="pt-20 flex justify-center text-3xl">BIBLIOGRAPHY</div>
+    <div className="resources">
+      <div className=" pt-20 flex justify-center text-3xl">BIBLIOGRAPHY</div>
       <div className="resource-text p-10">
         <p className="p-3">
           Kaua‘i Nui Kuapapa: Talking About Our Island is a project developed by

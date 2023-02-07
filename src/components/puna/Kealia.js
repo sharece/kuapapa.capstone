@@ -1,25 +1,37 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "../home/Navbar";
-import kealiabd from "../../assets/ahu-divisions/Kealia.png";
+import ahumap from "../../assets/puna-bd.png";
 import kealiasign from "../../assets/ahu-signs/Puna_kealia.png";
 import punasign from "../../assets/punasign.png";
 import { Footer } from "../home/Footer";
+
 export const Kealia = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
-      <div className="ahu-sign">
-        <img width="100%" src={kealiasign} alt="kealia road sign" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/puna">
+          Puna
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Kealia</div>
       </div>
       <div className="ahu-map-and-sign">
-        <div className="kealiabd">
-          <img src={kealiabd} alt="kealia ahupuaa breakdown" />
+        <div className="ahu-map">
+          <img src={ahumap} alt="Puna ahupua'a breakdown" />
         </div>
         <Link className="back-to-moku" to="/puna">
           <div className="moku-sign">
             <img src={punasign} alt="puna sign" />
           </div>
         </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={kealiasign} alt="kealia road sign" />
+        </div>
       </div>
       <div className="ahu-text">
         Keālia: The-salt-encrustation; Lit: Salt-land; Salt-pan Hele ka ho`i a

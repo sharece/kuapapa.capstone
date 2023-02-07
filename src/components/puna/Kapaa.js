@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "../home/Navbar";
-import kapaabd from "../../assets/ahu-divisions/Kapaa.png";
+import ahumap from "../../assets/puna-bd.png";
 import kapaasign from "../../assets/ahu-signs/Puna_kapaa.png";
 import punasign from "../../assets/punasign.png";
 import { Footer } from "../home/Footer";
@@ -8,18 +8,29 @@ export const Kapaa = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
-      <div className="ahu-sign">
-        <img width="100%" src={kapaasign} alt="kapaa road sign" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/puna">
+          Puna
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Kapa'a</div>
       </div>
       <div className="ahu-map-and-sign">
-        <div className="kipubd">
-          <img src={kapaabd} alt="kapaa ahupuaa breakdown" />
+        <div className="ahu-map">
+          <img src={ahumap} alt="Puna ahupua'a breakdown" />
         </div>
         <Link className="back-to-moku" to="/puna">
           <div className="moku-sign">
             <img src={punasign} alt="puna sign" />
           </div>
         </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={kapaasign} alt="kapaa road sign" />
+        </div>
       </div>
       <div className="ahu-text">
         Kapa`a: The-solid; The-closing; The-enclosure; To hold; firm Ka lulu o

@@ -1,25 +1,36 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "../home/Navbar";
-import olohenabd from "../../assets/ahu-divisions/Olohena.png";
 import { Footer } from "../home/Footer";
+import ahumap from "../../assets/puna-bd.png";
 import punasign from "../../assets/punasign.png";
 import olohenasign from "../../assets/ahu-signs/Puna_olohena.png";
 export const Olohena = () => (
   <>
     <Navbar />
     <div className="ahu-elements">
-      <div className="ahu-sign">
-        <img width="100%" src={olohenasign} alt="olohena road sign" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/puna">
+          Puna
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Olohena</div>
       </div>
       <div className="ahu-map-and-sign">
-        <div className="olohenabd">
-          <img src={olohenabd} alt="olohena ahupuaa breakdown" />
+        <div className="ahu-map">
+          <img src={ahumap} alt="Puna ahupuaa breakdown" />
         </div>
         <Link className="back-to-moku" to="/puna">
           <div className="moku-sign">
             <img src={punasign} alt="puna sign" />
           </div>
         </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={olohenasign} alt="olohena road sign" />
+        </div>
       </div>
       <div className="ahu-text">
         `Olohena: Hill-(shaped)-like-buttocks; Rubbing-the-mon-veneris;

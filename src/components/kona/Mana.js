@@ -1,28 +1,37 @@
 import { Link } from "react-router-dom";
-import ahumap from "../../assets/ahu-divisions/Mana.png";
+import ahumap from "../../assets/kona-bd.png";
 import { Navbar } from "../home/Navbar";
 import { Footer } from "../home/Footer";
-import konasign from "../../assets/ahu-signs/konasign.png";
 import manasign from "../../assets/ahu-signs/Kona_mana.png";
-import { SubNav } from "../home/SubNav";
+import konasign from "../../assets/ahu-signs/konasign.png";
+
 export const Mana = () => (
   <>
     <Navbar />
-    <div className="pt-14">
-      <SubNav />
-    </div>
-
     <div className="ahu-elements">
-      {/* <Link className="back-to-moku" to="/kona">
-        <div className="back-to-moku-sign">
-          <img className="" src={konasign} alt="kona sign" />
-        </div>
-      </Link> */}
-      <div className="ahu-map">
-        <img src={ahumap} alt="mana ahupuaa breakdown" />
+      <div className="breadcrumb-menu pt-4 flex color-white">
+        <Link className="crumb" to="/">
+          Home
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <Link className="crumb" to="/kona">
+          Kona
+        </Link>
+        <div className="breadcrumb-arrow">&gt;</div>
+        <div className="current-crumb">Mana</div>
       </div>
-      <div className="ahu-sign">
-        <img width="100%" src={manasign} alt="mana road sign" />
+      <div className="ahu-map-and-sign">
+        <div className="ahu-map">
+          <img src={ahumap} alt="kona ahupuaa breakdown" />
+        </div>
+        <Link className="back-to-moku" to="/kona">
+          <div className="moku-sign">
+            <img src={konasign} alt="Kona sign" />
+          </div>
+        </Link>
+        <div className="ahu-sign">
+          <img width="100%" src={manasign} alt="mana road sign" />
+        </div>
       </div>
     </div>
     <div className="ahu-text">

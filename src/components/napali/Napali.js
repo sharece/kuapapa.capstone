@@ -8,22 +8,23 @@ import pohakuau from "../../assets/ahu-signs/Napali_pohakuau.png";
 import kalalau from "../../assets/ahu-signs/Napali_kalalau.png";
 import honopu from "../../assets/ahu-signs/Napali_honopu.png";
 import { Link } from "react-router-dom";
-import mokupic from "../../assets/moku-imgs/napalimokupic.png";
-import napalimap from "../../assets/napalimap.png";
+import mokupic from "../../assets/moku-imgs/napali-pic.png";
+import napalimap from "../../assets/napali-moku-map.png";
+import { Dropdown } from "rsuite";
+import DropdownItem from "rsuite/esm/Dropdown/DropdownItem";
 
 export const Napali = () => (
   <>
     <Navbar />
     <div className="moku-container">
-      <div className="pb-4 text-7xl flex justify-center">Napali</div>
+      <div className="moku-title pb-4 text-7xl tracking-widest flex justify-center">
+        Napali
+      </div>
       <div className="moku-pic">
         <img src={mokupic} alt="na pali coast" />
       </div>
-      <div className="flex justify-center flex-col p-2">
-        <div className="flex"></div>
-        <div className="moku-map">
-          <img width="100%" src={napalimap} alt="napali map" />
-        </div>
+      <div className="moku-map">
+        <img src={napalimap} alt="napali map" />
       </div>
       <div className="moku-text">
         <p className="p-2">
@@ -52,37 +53,49 @@ export const Napali = () => (
           turquoise blue in the sunshine.
         </p>
       </div>
-      <div className="learn-more text-2xl">
+      <div className="learn-more text-xl">
         Learn more about Ahupua'a's in the Moku of Napali :
       </div>
-      <div className="moku-sign p-1">
+      <div className="moku-moku-sign p-1">
         <img className="w-28" src={napalisign} alt="napali road sign" />
       </div>
-      <div className="ahu-link-container">
-        <div className="ahu-link-col-1">
-          <Link className="ahu-link" to="/awaawapuhi">
-            <img src={awaawapuhi} alt="awaawapuhi road rign" />
-          </Link>
-          <Link className="ahu-link" to="/hanakapiai">
-            <img src={hanakapiai} alt="hanakapiai road sign" />
-          </Link>
-          <Link className="ahu-link" to="/hanakoa">
-            <img src={hanakoa} alt="hanakoa road sign" />
-          </Link>
-        </div>
-        <div className="ahu-link-col-2">
-          <Link className="ahu-link" to="/pohakuau">
-            <img src={pohakuau} alt="pohakuau road sign" />
-          </Link>
-          <Link className="ahu-link" to="/kalalau">
-            <img src={kalalau} alt="kalalau road sign" />
-          </Link>
-          <Link className="ahu-link" to="/honopu">
-            <img src={honopu} alt="honopu road sign" />
-          </Link>
+      <div className="ahu-dropdown text-xl">
+        <div className="flex justify-center text-2xl">
+          <Dropdown title="Select an Ahupua'a">
+            <DropdownItem>
+              <Link className="ahu-link" to="/awaawapuhi">
+                <img src={awaawapuhi} width="50%" alt="awaawapuhi road rign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              <Link className="ahu-link" to="/hanakapiai">
+                <img src={hanakapiai} width="50%" alt="hanakapiai road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              <Link className="ahu-link" to="/hanakoa">
+                <img src={hanakoa} width="50%" alt="hanakoa road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              <Link className="ahu-link" to="/pohakuau">
+                <img src={pohakuau} width="50%" alt="pohakuau road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              <Link className="ahu-link" to="/kalalau">
+                <img src={kalalau} width="50%" alt="kalalau road sign" />
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              <Link className="ahu-link" to="/honopu">
+                <img src={honopu} width="50%" alt="honopu road sign" />
+              </Link>
+            </DropdownItem>
+          </Dropdown>
         </div>
       </div>
-      <Footer />
     </div>
+    <Footer />
   </>
 );
