@@ -29,75 +29,69 @@ export const HomePage = () => {
       <div className="pb-2">
         <Navbar />
       </div>
-      <div className="text-banner">
-        {/* <img src={textbanner} alt="kauai nui kuapapa" /> */}
-      </div>
-      <div className="home-bg">
-        <div className="desktop-title  flex justify-center">
-          <Title />
-        </div>
-        <div className="click-map">
-          <div className="flex justify-center pb-2 text-xlrg">
-            Click the map to select a moku!
-          </div>
-        </div>
-        <div className="moku-links-and-map  pb-4 flex flex-col justify-center">
-          <div className="tablet-map">
-            <TabletMap />
-          </div>
-          <div className="desktop-bio-n-map">
-            <div className="desktop-map">
-              <DesktopMap />
-            </div>
-          </div>
-          {/* <div className="mobile-title p-8 text-white text-lrg tracking-wide">
+      <div className="home-bg-container">
+        <div className="home-bg">
+          <div className="desktop-title  flex justify-center">
             <Title />
-          </div> */}
-          <div className="click-moku">
-            <div className="p-4 text-white text-lrg tracking-wide">
-              Click on a Moku to learn more!
-            </div>
           </div>
 
-          <div className="moku-link-container">
-            <Link to="/niihau" element={Niihau}>
-              <div className="moku-sign">
-                <img src={niihau} alt="niihau sign" />
+          <div className="moku-links-and-map  pb-4 flex flex-col justify-center">
+            <div className="tablet-map">
+              <TabletMap />
+            </div>
+            <div className="desktop-bio-n-map">
+              <div className="desktop-map">
+                <DesktopMap />
               </div>
-            </Link>
-            <Link to="/kona" element={Kona}>
-              <div className="moku-sign">
-                <img src={kona} alt="kona sign" />
+            </div>
+            {/* <div className="mobile-title p-8 text-white text-lrg tracking-wide">
+            <Title />
+          </div> */}
+            <div className="click-moku">
+              <div className="p-4 text-white text-med tracking-wide">
+                Click on a Moku to learn more!
               </div>
-            </Link>
-            <Link to="/napali" element={Napali}>
-              <div className="moku-sign">
-                <img src={napali} alt="napali sign" />
-              </div>
-            </Link>
-            <Link to="/halelea" element={Halelea}>
-              <div className="moku-sign">
-                <img src={halelea} alt="niihau sign" />
-              </div>
-            </Link>
-            <Link to="/koolau" element={Koolau}>
-              <div className="moku-sign">
-                <img src={koolau} alt="koolau sign" />
-              </div>
-            </Link>
-            <Link to="/puna" element={Puna}>
-              <div className="moku-sign">
-                <img src={puna} alt="puna sign" />
-              </div>
-            </Link>
+            </div>
+
+            <div className="moku-link-container">
+              <Link to="/niihau" element={Niihau}>
+                <div className="home-moku-sign">
+                  <img src={niihau} alt="niihau sign" />
+                </div>
+              </Link>
+              <Link to="/kona" element={Kona}>
+                <div className="home-moku-sign">
+                  <img src={kona} alt="kona sign" />
+                </div>
+              </Link>
+              <Link to="/napali" element={Napali}>
+                <div className="home-moku-sign">
+                  <img src={napali} alt="napali sign" />
+                </div>
+              </Link>
+              <Link to="/halelea" element={Halelea}>
+                <div className="home-moku-sign">
+                  <img src={halelea} alt="niihau sign" />
+                </div>
+              </Link>
+              <Link to="/koolau" element={Koolau}>
+                <div className="home-moku-sign">
+                  <img src={koolau} alt="koolau sign" />
+                </div>
+              </Link>
+              <Link to="/puna" element={Puna}>
+                <div className="home-moku-sign">
+                  <img src={puna} alt="puna sign" />
+                </div>
+              </Link>
+            </div>
           </div>
           <div className="desktop-bio">
             <Bio />
           </div>
-        </div>
-
-        <div className="mobile-bio">
-          <Bio />
+          <div className="mobile-bio">
+            <Bio />
+          </div>
         </div>
       </div>
       <div className="report-title">

@@ -7,29 +7,31 @@ import olohenasign from "../../assets/ahu-signs/Puna_olohena.png";
 export const Olohena = () => (
   <>
     <Navbar />
-    <div className="ahu-elements">
-      <div className="breadcrumb-menu pt-4 flex color-white">
-        <Link className="crumb" to="/">
-          Home
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <Link className="crumb" to="/puna">
-          Puna
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <div className="current-crumb">Olohena</div>
-      </div>
-      <div className="ahu-map-and-sign">
-        <div className="ahu-map">
-          <img src={ahumap} alt="Puna ahupuaa breakdown" />
+    <div className="ahu-bg">
+      <div className="ahu-elements">
+        <div className="breadcrumb-menu pt-4 flex color-white">
+          <Link className="crumb" to="/">
+            Home
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <Link className="crumb" to="/puna">
+            Puna
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <div className="current-crumb">Olohena</div>
         </div>
-        <Link className="back-to-moku" to="/puna">
-          <div className="moku-sign">
-            <img src={punasign} alt="puna sign" />
+        <div className="ahu-map-and-sign">
+          <div className="ahu-map">
+            <img src={ahumap} alt="Puna ahupuaa breakdown" />
           </div>
-        </Link>
-        <div className="ahu-sign">
-          <img width="100%" src={olohenasign} alt="olohena road sign" />
+          <Link className="back-to-moku" to="/puna">
+            <div className="moku-sign">
+              <img src={punasign} alt="puna sign" />
+            </div>
+          </Link>
+          <div className="ahu-sign">
+            <img width="100%" src={olohenasign} alt="olohena road sign" />
+          </div>
         </div>
       </div>
       <div className="ahu-text">
@@ -53,7 +55,7 @@ export const Olohena = () => (
         Barren `Ili bordered on the N = kahawai, E = aina "Waipouli", S = kula,
         W = kula of Hō-lau.[LCA 3831]
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 );

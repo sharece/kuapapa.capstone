@@ -15,7 +15,6 @@ import koloa from "../../assets/ahu-signs/Kona_koloa.png";
 import weliweli from "../../assets/ahu-signs/Kona_weliweli.png";
 import paa from "../../assets/ahu-signs/Kona_paa.png";
 import mahaulepu from "../../assets/ahu-signs/Kona_mahaulepu.png";
-import { Pin } from "../../assets/icons/Pin";
 import mokumap from "../../assets/kona-moku-map.png";
 import { Dropdown } from "rsuite";
 import DropdownItem from "rsuite/esm/Dropdown/DropdownItem";

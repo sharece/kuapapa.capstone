@@ -37,7 +37,7 @@ body {
   top: 2rem;
   width: 50%;
   background-color: #450068d4;
-  z-index: 0;
+  z-index: 3000;
   opacity: 0;
 }
 .page-burger-open {
@@ -63,6 +63,7 @@ body {
 
 .ham-link {
   /* display: none; */
+
   /* text-transform: lowercase; */
   /* opacity: 0; */
 }
@@ -95,22 +96,22 @@ body {
   width: 50%;
 }
 .crumb,
-.current-crumb {
-  /* color: white; */
+.current-crumb,
+.breadcrumb-arrow {
+  color: white;
   padding: 1rem;
 }
 .crumb:hover {
   /* font-size: 18px; */
   color: #8f76c2;
-  text-shadow: #f7fbf8;
+  text-shadow: #020202;
 }
 .ahu-link-container,
 .moku-moku-sign {
   display: flex;
 }
-.pin {
-  width: 33%;
-  color: #da242a;
+.moku-moku-sign {
+  width: 20%;
 }
 .home-img {
   max-width: 100%;
@@ -139,6 +140,7 @@ body {
   letter-spacing: 0.5px;
   width: 100%;
 }
+
 .moku-pic {
   max-width: 85%;
 }
@@ -152,26 +154,36 @@ body {
 }
 .moku-container {
   padding-top: 3.5rem;
-  background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
+  background-image: url("../../kuapapa.capstone/src/assets/moku-plumeria.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
+.home-bg-container {
+  padding-top: 2rem;
+}
 .home-bg {
   background-image: url("../../kuapapa.capstone/src/assets/napalimokupic3.png");
-  background-repeat: no-repeat;
   background-size: contain;
-  padding: 1rem;
 }
 .bio {
   background-image: url("../../kuapapa.capstone/src/assets/petrog.png");
   background-repeat: repeat;
   background-size: cover;
-  border-radius: 25px;
+}
+.ahu-text {
+  background-image: url("../../kuapapa.capstone/src/assets/petrog.png");
+  background-repeat: repeat;
+  background-size: cover;
+  /* border-radius: 25px; */
+  padding: 2rem;
+  font-size: x-large;
+  padding-bottom: 1rem;
 }
 .ahu-elements {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
-.ahu-map-and-sign {
+
+.ahu-bg {
   background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,8 +220,8 @@ h2 {
   width: 80%;
   /* z-index: 3; */
 }
-.moku-moku-sign {
-  width: 20%;
+.home-moku-sign {
+  padding: 2px;
 }
 .back-to-moku-sign {
   width: 20%;
@@ -219,6 +231,7 @@ h2 {
 }
 .moku-link-container {
   display: flex;
+  width: 100%;
 }
 .desktop-map {
   display: none;
@@ -229,30 +242,36 @@ h2 {
 .mobile-title {
   font-size: 1.9rem;
 }
-/* may need to take out boundry */
 .contact-page,
 .resources,
 .disclaimer {
-  padding-top: 2.5rem;
+  /* padding-top: 2.5rem; */
   background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
 }
-.bc:hover {
+.contact-page {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.bc:hover,
+.cob:hover {
   font-size: 20px;
   color: #8f76c2;
   transition: 500ms;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .boundary-container {
   padding-top: 10rem;
   background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
   /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+  background-size: cover;
 }
 .foot-container {
   background-color: #450068d4;
   color: white;
+}
+.niihau-text {
+  padding: 1rem;
 }
 
 /* 1 tablet */
@@ -336,6 +355,11 @@ h2 {
     background-size: cover;
     padding: 1rem;
   }
+  .weather-section {
+    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .ahu-sign {
     max-width: 30%;
   }
@@ -357,6 +381,9 @@ h2 {
   }
   .bio {
     background-color: white;
+  }
+  .niihau-text {
+    padding: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -428,7 +455,7 @@ h2 {
     transform: scaleY(1);
     opacity: 1;
   }
-  .moku-sign:hover {
+  .home-moku-sign:hover {
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
       rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
       rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
@@ -442,21 +469,12 @@ h2 {
     background-size: cover;
     padding: 1rem;
   }
-  .reports {
-    display: flex;
-  }
-  .video,
-  .reports {
-    display: flex;
-    flex-direction: row;
-  }
   .contact-icon {
     display: none;
   }
   .bio {
-    width: 70%;
     background-color: white;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .ahu-link-container {
     display: flex;
@@ -467,15 +485,19 @@ h2 {
     color: #8f76c2;
   }
   .moku-link-container {
-    width: 80%;
+    width: 100%;
   }
   .moku-links-and-map {
     padding-bottom: 2rem;
   }
-  .ahu-text,
+
   .moku-text {
     padding: 3rem;
     font-size: medium;
+  }
+  .ahu-text {
+    padding: 2rem;
+    font-size: x-large;
   }
   .moku-pic {
     width: 75%;
@@ -486,6 +508,18 @@ h2 {
     font-size: larger;
     padding: 1rem;
   }
+  .crumb,
+  .current-crumb,
+  .breadcrumb-arrow {
+    color: white;
+    padding: 1rem;
+    font-size: 25px;
+  }
+  .crumb:hover {
+    /* font-size: 18px; */
+    color: #8f76c2;
+    text-shadow: #020202;
+  }
 }
 @media screen and (min-width: 1380px) {
   .title-header,
@@ -493,10 +527,6 @@ h2 {
     display: none;
   }
 
-  .text-banner {
-    padding-top: 45px;
-    border-bottom: 0.5rem solid #450068;
-  }
   .nav-desktop {
     display: flex;
     align-items: flex-end;
@@ -506,22 +536,18 @@ h2 {
     color: white;
     background-color: #450068;
   }
-
-  .click-text {
+  .click-map {
     display: flex;
+    color: #020202;
     font-size: larger;
     padding: 1rem;
-  }
-  .bio {
-    width: 80%;
   }
   .mobile-bio {
     display: none;
   }
   .desktop-bio {
-    display: flex;
+    display: block;
     font-weight: 600;
-    background-color: white;
   }
   .nav-link {
     display: flex;
@@ -562,20 +588,17 @@ h2 {
   }
   .ahu-sign {
     max-width: 30%;
-    display: inline-block;
+    display: flex;
     padding: 1rem;
   }
+
   .moku-link-container {
-    width: 80%;
+    width: 100%;
   }
   .moku-links-and-map {
     padding-bottom: 3rem;
   }
 
-  .moku-sign:hover {
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  }
-  .ahu-text,
   .moku-text {
     padding: 3rem;
     font-size: medium;
@@ -587,9 +610,10 @@ h2 {
     width: 50%;
   }
   .home-bg {
-    background-image: url("../../kuapapa.capstone/src/assets/napalimokupic3.png");
+    background-image: url("../../kuapapa.capstone/src/assets/home-img.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 45px;
   }
 
   .desktop-title {
@@ -599,6 +623,9 @@ h2 {
   }
   .mobile-title {
     display: none;
+  }
+  .ahu-map {
+    width: 70%;
   }
   .ahu-elements {
     padding: 2.5rem;
@@ -619,26 +646,28 @@ h2 {
   }
   .weather-section {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+  }
+  .weather-report {
+    padding-right: 12rem;
   }
   .all-contact {
     /* padding: 2rem; */
     display: flex;
     flex-wrap: nowrap;
   }
+  .cob:hover,
   .bc:hover {
+    color: #0a3726;
     font-size: 20px;
-    color: #8f76c2;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: 500ms;
   }
   .boundary-container {
     padding-top: 10rem;
     background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
   }
-  /* background-size: cover;
-  /* this needs to be for the moku page not the home page styles need to rename */
   .moku-sign {
     /* display: inline-block; */
     padding: 1rem;
@@ -648,8 +677,8 @@ h2 {
     width: 40%;
   }
   .ahu-text {
-    padding: 2rem;
-    font-size: small;
+    padding: 8rem;
+    font-size: xx-large;
   }
   .learn-more {
     font-size: larger;
@@ -659,6 +688,29 @@ h2 {
   .contact-icon {
     display: none;
   }
-
+  .niihau-text {
+    padding: 6rem;
+  }
+  .home-moku-sign:hover {
+    transition: 300ms;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .crumb,
+  .current-crumb,
+  .breadcrumb-arrow {
+    color: white;
+    padding: 1rem;
+    font-size: 25px;
+  }
+  .crumb:hover {
+    /* font-size: 18px; */
+    color: #8f76c2;
+    text-shadow: #020202;
+  }
   /* For accordion */
 }

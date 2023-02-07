@@ -9,39 +9,41 @@ export const Makaweli = () => (
   //possibly create a read more at the end of links
   <>
     <Navbar />
-    <div className="ahu-elements">
-      <div className="breadcrumb-menu pt-4 flex color-white">
-        <Link className="crumb" to="/">
-          Home
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <Link className="crumb" to="/kona">
-          Kona
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <div className="current-crumb">Makaweli</div>
-      </div>
-      <div className="ahu-map-and-sign">
-        <div className="ahu-map">
-          <img src={ahumap} alt="kona breakdown" />
+    <div className="ahu-bg">
+      <div className="ahu-elements">
+        <div className="breadcrumb-menu pt-4 flex color-white">
+          <Link className="crumb" to="/">
+            Home
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <Link className="crumb" to="/kona">
+            Kona
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <div className="current-crumb">Makaweli</div>
         </div>
-        <Link className="back-to-moku" to="/kona">
-          <div className="moku-sign">
-            <img src={konasign} alt="Kona sign" />
+        <div className="ahu-map-and-sign">
+          <div className="ahu-map">
+            <img src={ahumap} alt="kona breakdown" />
           </div>
-        </Link>
-        <div className="ahu-sign">
-          <img width="100%" src={makawelisign} alt="makaweli road sign" />
+          <Link className="back-to-moku" to="/kona">
+            <div className="moku-sign">
+              <img src={konasign} alt="Kona sign" />
+            </div>
+          </Link>
+          <div className="ahu-sign">
+            <img width="100%" src={makawelisign} alt="makaweli road sign" />
+          </div>
         </div>
       </div>
-    </div>
-    <div className="ahu-text p-2">
-      Makaweli: Burning-eyes; Lit: Phosphorescent eyes; Lit: Fearful eyes An
-      ahupua`a of the Kona district. It lies between Hanapēpē on the east and
-      Waimea on the west. Ho`olele ka uila o Makaweli. Send the lightning of
-      Makaweli flying. A play on maka-weli (terrifying eyes), this saying refers
-      to the sending of a god on an errand of destruction. (Pukui 1097).
-      {/* to the sending of a god on an errand of destruction. (Pukui 1097) Pueo
+      <div className="ahu-text p-2">
+        Makaweli: Burning-eyes; Lit: Phosphorescent eyes; Lit: Fearful eyes An
+        ahupua`a of the Kona district. It lies between Hanapēpē on the east and
+        Waimea on the west. Ho`olele ka uila o Makaweli. Send the lightning of
+        Makaweli flying. A play on maka-weli (terrifying eyes), this saying
+        refers to the sending of a god on an errand of destruction. (Pukui
+        1097).
+        {/* to the sending of a god on an errand of destruction. (Pukui 1097) Pueo
       Lit: Owl A rock in the sea, also a place of surf-riding For VI: 454 & 456
       Ka-pai-loa-hiki Lit: The tall rising pai fern The highest point on which
       the copper plate of the U.S. Geological Survey is enclosed. * Pai is a
@@ -585,7 +587,8 @@ export const Makaweli = () => (
       [6333] [6353] [6552-B] Kū‘ai-‘ohe Lit: Place to barter for bamboo Mo‘o
       bordered mauka by Ka-hui, east by Ka-hue lo‘i, makai by Kū‘ai--niho, and
       west by Kāne-akula. [6333] [6552-B] Kumuahane Lit: Alt: Kumuakāne,? */}
+      </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 );

@@ -7,29 +7,31 @@ import { Footer } from "../home/Footer";
 export const Kapaa = () => (
   <>
     <Navbar />
-    <div className="ahu-elements">
-      <div className="breadcrumb-menu pt-4 flex color-white">
-        <Link className="crumb" to="/">
-          Home
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <Link className="crumb" to="/puna">
-          Puna
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <div className="current-crumb">Kapa'a</div>
-      </div>
-      <div className="ahu-map-and-sign">
-        <div className="ahu-map">
-          <img src={ahumap} alt="Puna ahupua'a breakdown" />
+    <div className="ahu-bg">
+      <div className="ahu-elements">
+        <div className="breadcrumb-menu pt-4 flex color-white">
+          <Link className="crumb" to="/">
+            Home
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <Link className="crumb" to="/puna">
+            Puna
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <div className="current-crumb">Kapa'a</div>
         </div>
-        <Link className="back-to-moku" to="/puna">
-          <div className="moku-sign">
-            <img src={punasign} alt="puna sign" />
+        <div className="ahu-map-and-sign">
+          <div className="ahu-map">
+            <img src={ahumap} alt="Puna ahupua'a breakdown" />
           </div>
-        </Link>
-        <div className="ahu-sign">
-          <img width="100%" src={kapaasign} alt="kapaa road sign" />
+          <Link className="back-to-moku" to="/puna">
+            <div className="moku-sign">
+              <img src={punasign} alt="puna sign" />
+            </div>
+          </Link>
+          <div className="ahu-sign">
+            <img width="100%" src={kapaasign} alt="kapaa road sign" />
+          </div>
         </div>
       </div>
       <div className="ahu-text">
@@ -79,7 +81,7 @@ export const Kapaa = () => (
         Lit: Purse or scrotum hill Pali on the south side of Ulu-kiu. [LCA 8837]
         Ulu-kiu-lalo Lit: ? `Ili on the west of Ulu-kiu. [LCA 8837]
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 );

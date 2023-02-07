@@ -1,5 +1,10 @@
 export const Bio = () => (
   <div className="bio font-extrabold ">
+    <div className="click-map">
+      <div className="flex justify-center text-xlrg">
+        Click the map to select a moku!
+      </div>
+    </div>
     <div className="p-8">
       Kaua'i Nui Kuapapa can be interpreted in English as ‘the genealogy of
       Great Kaua‘i’ or ‘the entirety of Kaua‘i’.

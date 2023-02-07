@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { Burger } from "../Burger";
 import clsx from "clsx";
-import logo from "../../assets/circle-kuapapa.png";
+// import logo from "../../assets/circle-kuapapa.png";
 // import homeicon from "../../assets/homeicon.png";
 
 export const Navbar = () => {
   return (
-    <div className="nav-container ">
+    <div className="nav-container">
       <div className="navbar">
         <div className="title-header">
           <NavLink className="title" to="/home">
@@ -56,7 +56,7 @@ export const Navbar = () => {
             className={({ isActive }) =>
               clsx("nav-link", { "nav-link-active": isActive })
             }
-            to="/boundryCert"
+            to="/BoundryCert"
           >
             Boundry Certificates
           </NavLink>

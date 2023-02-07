@@ -7,29 +7,31 @@ import punasign from "../../assets/punasign.png";
 export const Waipouli = () => (
   <>
     <Navbar />
-    <div className="ahu-elements">
-      <div className="breadcrumb-menu pt-4 flex color-white">
-        <Link className="crumb" to="/">
-          Home
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <Link className="crumb" to="/puna">
-          Puna
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <div className="current-crumb">Waipouli</div>
-      </div>
-      <div className="ahu-map-and-sign">
-        <div className="ahu-map">
-          <img src={ahumap} alt="Puna ahupua'a breakdown" />
+    <div className="ahu-bg">
+      <div className="ahu-elements">
+        <div className="breadcrumb-menu pt-4 flex color-white">
+          <Link className="crumb" to="/">
+            Home
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <Link className="crumb" to="/puna">
+            Puna
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <div className="current-crumb">Waipouli</div>
         </div>
-        <Link className="back-to-moku" to="/puna">
-          <div className="moku-sign">
-            <img src={punasign} alt="puna sign" />
+        <div className="ahu-map-and-sign">
+          <div className="ahu-map">
+            <img src={ahumap} alt="Puna ahupua'a breakdown" />
           </div>
-        </Link>
-        <div className="ahu-sign">
-          <img width="100%" src={waipoulisign} alt="waipouli road sign" />
+          <Link className="back-to-moku" to="/puna">
+            <div className="moku-sign">
+              <img src={punasign} alt="puna sign" />
+            </div>
+          </Link>
+          <div className="ahu-sign">
+            <img width="100%" src={waipoulisign} alt="waipouli road sign" />
+          </div>
         </div>
       </div>
       <div className="ahu-text">
@@ -50,7 +52,7 @@ export const Waipouli = () => (
         o Waipouli me Honoma`ele. A humorous reference to very dark people. A
         play on pouli (dark) and`ele (black). (Pukui 2237)
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 );

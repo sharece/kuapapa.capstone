@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "../home/Navbar";
-import niumalubd from "../../assets/ahu-divisions/Niumalu.png";
 import { Footer } from "../home/Footer";
 import ahumap from "../../assets/puna-bd.png";
 import punasign from "../../assets/punasign.png";
@@ -9,29 +8,31 @@ import niumalusign from "../../assets/ahu-signs/Puna_niumalu.png";
 export const Niumalu = () => (
   <>
     <Navbar />
-    <div className="ahu-elements">
-      <div className="breadcrumb-menu pt-4 flex color-white">
-        <Link className="crumb" to="/">
-          Home
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <Link className="crumb" to="/puna">
-          Puna
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <div className="current-crumb">Niumalu</div>
-      </div>
-      <div className="ahu-map-and-sign">
-        <div className="ahu-map">
-          <img src={ahumap} alt="Puna ahupuaa breakdown" />
+    <div className="ahu-bg">
+      <div className="ahu-elements">
+        <div className="breadcrumb-menu pt-4 flex color-white">
+          <Link className="crumb" to="/">
+            Home
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <Link className="crumb" to="/puna">
+            Puna
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <div className="current-crumb">Niumalu</div>
         </div>
-        <Link className="back-to-moku" to="/puna">
-          <div className="moku-sign">
-            <img src={punasign} alt="puna sign" />
+        <div className="ahu-map-and-sign">
+          <div className="ahu-map">
+            <img src={ahumap} alt="Puna ahupuaa breakdown" />
           </div>
-        </Link>
-        <div className="ahu-sign">
-          <img width="100%" src={niumalusign} alt="niumalu road sign" />
+          <Link className="back-to-moku" to="/puna">
+            <div className="moku-sign">
+              <img src={punasign} alt="puna sign" />
+            </div>
+          </Link>
+          <div className="ahu-sign">
+            <img width="100%" src={niumalusign} alt="niumalu road sign" />
+          </div>
         </div>
       </div>
       <div className="ahu-text">
@@ -43,7 +44,7 @@ export const Niumalu = () => (
         which continued until it cast its shadow on the coconut trees here, thus
         the name Niu-malu. Which two heros were involved depends upon the story.
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 );

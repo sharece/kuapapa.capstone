@@ -97,6 +97,38 @@ import { BCWaioli } from "./components/boundries/BCWaioli";
 import { BCWaipouli } from "./components/boundries/BCWaipouli";
 import { BCLumahai } from "./components/boundries/BCLumahai";
 
+// import { PunaKealia } from "./components/boundries/PunaKealia";
+// import { WaimeaKuiloa } from "./components/boundries/WaimeaKuiloa";
+// import { KoolauPilaa } from "./components/boundries/KoolauPilaa";
+// import { PunaWaipouli } from "./components/boundries/PunaWaipouli";
+// import { PunaKapaa } from "./components/boundries/PunaKapaa";
+// import { PunaOlohena } from "./components/boundries/PunaOlohena";
+// import { PunaWailua } from "./components/boundries/PunaWailua";
+// import { KoloaKalaheo } from "./components/boundries/KoloaKalaheo";
+// import { KoloaWahiawa } from "./components/boundries/KoloaWahiawa";
+// import { KoloaLawai } from "./components/boundries/KoloaLawai";
+// import { HanaleiLumahai } from "./components/boundries/HanaleiLumahai";
+// import { HanaleiWaipaa } from "./components/boundries/HanaleiWaipaa";
+// import { HanaleiWaioli } from "./components/boundries/HanaleiWaioli";
+// import { WaimeaKoula } from "./components/boundries/WaimeaKoula";
+// import { WaimeManuahi } from "./components/boundries/WaimeManuahi";
+// import { WaimeaHanapepe } from "./components/boundries/WaimeaHanapepe";
+// import { WaimeaEleele } from "./components/boundries/WaimeaEleele";
+// import { HanaleiHanalei } from "./components/boundries/HanaleiHanalei";
+// import { KoolauAnahola } from "./components/boundries/KoolauAnahola";
+// import { KoolauKamalomalo } from "./components/boundries/KoolauKamalomalo";
+// import { HanaleiHanakapiai } from "./components/boundries/HanaleiHanakapiai";
+// import { HanaleiHanakoa } from "./components/boundries/HanaleiHanakoa";
+// import { HanaleiPohakuau } from "./components/boundries/HanaleiPohakuau";
+// import { HanaleiKalalau } from "./components/boundries/HanaleiKalalau";
+// import { HanaleiHonopu } from "./components/boundries/HanaleiHonopu";
+// import { HanaleiWawapuhi } from "./components/boundries/HanaleiWawapuhi";
+// import { KoloaKoloa } from "./components/boundries/KoloaKoloa";
+// import { WaimeaWaimea } from "./components/boundries/WaimeaWaimea";
+// import { WaimeaKikiaola } from "./components/boundries/WaimeaKikiaola";
+// import { KoolauKahili } from "./components/boundries/KoolauKahili";
+// import { HaleleaKalihiKaiKalihiWai } from "./components/boundries/HaleleaKalihiKaiKalihiWai";
+
 function App() {
   return (
     <div className="app">
@@ -197,37 +229,46 @@ function App() {
         <Route path="/BC_31_01_Kealia" element={<BCKealia2 />} />
         <Route path="/BC_32_31_Kalihi-Kai-Kalihi-Wai" element={<BCKalihi />} />
 
-        {/* // cob next erase bcs */}
-        {/* <Route path="/BC_02_01_Kealia" element={<BCKealia1 />} />
-        <Route path="/BC_03_02_Kuiloa-Ili" element={<BCKuiloa />} />
-        <Route path="/BC_04_03_Pilaa" element={<BCPiliaa />} />
-        <Route path="/BC_05_04_Waipouli" element={<BCWaipouli />} />
-        <Route path="/BC_06_05_Kapaa" element={<BCKapaa />} />
-        <Route path="/BC_07_07_Wailua" element={<BCWailua />} />
-        <Route path="/BC_09_08_Kalaheo" element={<BCKalaheo />} />
-        <Route path="/BC_10_09_Wahiawa" element={<BCWahiawa />} />
-        <Route path="/BC_11_11_Lumahai" element={<BCLumahai />} />
-        <Route path="/BC_12_13_1_Waioli" element={<BCWaioli />} />
-        <Route path="/BC_13_13_2_Waipaa" element={<BCWaipaa />} />
-        <Route path="/BC_14_14_Koula-Ili" element={<BCKoula />} />
-        <Route path="/BC_15_15_Manuahi" element={<BCManuahi />} />
-        <Route path="/BC_16_16_Eleele-Ili" element={<BCEleele />} />
-        <Route path="/BC_17_17_Hanapepe" element={<BCHanapepe />} />
-        <Route path="/BC_18_18_Hanalei" element={<BCHanalei />} />
-        <Route path="/BC_19_30_Kahili" element={<BCKahili />} />
-        <Route path="/BC_20_20_Anahola" element={<BCAnahola />} />
-        <Route path="/BC_21_19_Kamalomalo" element={<BCKamalomalo />} />
-        <Route path="/BC_22_06_Olohena" element={<BCOlohena />} />
-        <Route path="/BC_23_21_Hanakapiai" element={<BCHanakapiai />} />
-        <Route path="/BC_24_23_Pohakuau" element={<BCPohakuau />} />
-        <Route path="/BC_25_24_Kalalau" element={<BCKalalau />} />
-        <Route path="/BC_26_25_Honopu" element={<BCHonopu />} />
-        <Route path="/BC_27_26_Wawapuhi" element={<BCWawapuhi />} />
-        <Route path="/BC_28_27_Koloa" element={<BCKoloa />} />
-        <Route path="/BC_29_29_Kikiaola" element={<BCKikiaola />} />
-        <Route path="/BC_30_28_Waimea" element={<BCWaimea />} />
-        <Route path="/BC_31_01_Kealia" element={<BCKealia2 />} />
-        <Route path="/BC_32_31_Kalihi-Kai-Kalihi-Wai" element={<BCKalihi />} /> */}
+        {/* <Route path="/COB_01_Puna-Kealia" element={<PunaKealia />} />
+        <Route path="/COB_02_Waimea-Kuiloa" element={<WaimeaKuiloa />} />
+        <Route path="/COB_03_Koolau-Pilaa" element={<KoolauPilaa />} />
+        <Route path="/COB_04_Puna-Waipouli" element={<PunaWaipouli />} />
+        <Route path="/COB_05_Puna-Kapaa" element={<PunaKapaa />} />
+        <Route path="/COB_06_Puna-Olohena" element={<PunaOlohena />} />
+        <Route path="/COB_07_Puna-Wailua" element={<PunaWailua />} />
+        <Route path="/COB_08_Koloa-Kalaheo" element={<KoloaKalaheo />} />
+        <Route path="/COB_09_Koloa-Wahiawa" element={<KoloaWahiawa />} />
+        <Route path="/COB_10_Koloa-Lawai" element={<KoloaLawai />} />
+        <Route path="/COB_11_Hanalei-Lumahai" element={<HanaleiLumahai />} />
+        <Route path="/COB_12_Hanalei-Waipaa" element={<HanaleiWaipaa />} />
+        <Route path="/COB_13_Hanalei-Waioli" element={<HanaleiWaioli />} />
+        <Route path="/COB_14_Waimea-Koula" element={<WaimeaKoula />} />
+        <Route path="/COB_15_Waimea-Manuahi" element={<WaimeManuahi />} />
+        <Route path="/COB_17_Waimea-Hanapepe" element={<WaimeaHanapepe />} />
+        <Route path="/COB_16_Waimea-Eleele" element={<WaimeaEleele />} />
+        <Route path="/COB_18_Hanalei-Hanalei" element={<HanaleiHanalei />} />
+        <Route
+          path="/COB_19_Koolau-Kamalomalo"
+          element={<KoolauKamalomalo />}
+        />
+        <Route path="/COB_20_Koolau-Anahola" element={<KoolauAnahola />} />
+        <Route
+          path="/COB_21_Hanalei-Hanakapiai"
+          element={<HanaleiHanakapiai />}
+        />
+        <Route path="/COB_22_Hanalei-Hanakoa" element={<HanaleiHanakoa />} />
+        <Route path="/COB_23_Hanalei-Pohakuau" element={<HanaleiPohakuau />} />
+        <Route path="/COB_24_Hanalei-Kalalau" element={<HanaleiKalalau />} />
+        <Route path="/COB_25_Hanalei-Honopu" element={<HanaleiHonopu />} />
+        <Route path="/COB_26_Hanalei-Wawapuhi" element={<HanaleiWawapuhi />} />
+        <Route path="/COB_27_Koloa-Koloa" element={<KoloaKoloa />} />
+        <Route path="/COB_28_Waimea-Waimea" element={<WaimeaWaimea />} />
+        <Route path="/COB_29_Waimea-Kikiaola" element={<WaimeaKikiaola />} />
+        <Route path="/COB_30_Koolau-Kahili" element={<KoolauKahili />} />
+        <Route
+          path="/COB_31_Halelea-Kalihi-Kai-Kalihi-Wai"
+          element={<HaleleaKalihiKaiKalihiWai />}
+        /> */}
       </Routes>
     </div>
   );

@@ -8,29 +8,31 @@ import { Footer } from "../home/Footer";
 export const Kealia = () => (
   <>
     <Navbar />
-    <div className="ahu-elements">
-      <div className="breadcrumb-menu pt-4 flex color-white">
-        <Link className="crumb" to="/">
-          Home
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <Link className="crumb" to="/puna">
-          Puna
-        </Link>
-        <div className="breadcrumb-arrow">&gt;</div>
-        <div className="current-crumb">Kealia</div>
-      </div>
-      <div className="ahu-map-and-sign">
-        <div className="ahu-map">
-          <img src={ahumap} alt="Puna ahupua'a breakdown" />
+    <div className="ahu-bg">
+      <div className="ahu-elements">
+        <div className="breadcrumb-menu pt-4 flex color-white">
+          <Link className="crumb" to="/">
+            Home
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <Link className="crumb" to="/puna">
+            Puna
+          </Link>
+          <div className="breadcrumb-arrow">&gt;</div>
+          <div className="current-crumb">Kealia</div>
         </div>
-        <Link className="back-to-moku" to="/puna">
-          <div className="moku-sign">
-            <img src={punasign} alt="puna sign" />
+        <div className="ahu-map-and-sign">
+          <div className="ahu-map">
+            <img src={ahumap} alt="Puna ahupua'a breakdown" />
           </div>
-        </Link>
-        <div className="ahu-sign">
-          <img width="100%" src={kealiasign} alt="kealia road sign" />
+          <Link className="back-to-moku" to="/puna">
+            <div className="moku-sign">
+              <img src={punasign} alt="puna sign" />
+            </div>
+          </Link>
+          <div className="ahu-sign">
+            <img width="100%" src={kealiasign} alt="kealia road sign" />
+          </div>
         </div>
       </div>
       <div className="ahu-text">
@@ -45,7 +47,7 @@ export const Kealia = () => (
         Hi`iaka uttered a prayer and at once health was given back to the woman.
         [Rice]
       </div>
+      <Footer />
     </div>
-    <Footer />
   </>
 );
