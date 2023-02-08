@@ -8,7 +8,7 @@ export const Niihau = () => (
     <Navbar />
     <div className="moku-container">
       <h1 className="moku-title pb-4 text-7xl tracking-widest flex justify-center">
-        Ni'ihau
+        Ni‘ihau
       </h1>
       <div className="flex justify-center p-4">
         <div className="flex justify-center">

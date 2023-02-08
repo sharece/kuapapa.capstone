@@ -24,11 +24,12 @@ export const Koolau = () => (
     <Navbar />
     <div className="moku-container">
       <div className="moku-title pb-4 text-7xl tracking-widest flex justify-center">
-        Ko'olau
+        Ko‘olau{" "}
       </div>
       <div className="moku-pic">
         <img src={mokupic} alt="koolau moku pic" />
       </div>
+      <div className="img-cap flex justify-center text-xs">Ko‘olau, Kaua‘i</div>
       <div className="moku-map">
         <img src={koolaubd} alt="koolau map" />
       </div>
@@ -52,8 +53,8 @@ export const Koolau = () => (
           fish) and purple, Kaua‘i’s designated color since the late 1940s.
         </p>
       </div>
-      <div className="learn-more text-lg">
-        Learn more about Ahupua'a's in the Moku of Ko'olau :
+      <div className="learn-more flex justify-center text-lg">
+        Learn more about Ahupua'a's in the Moku of Ko‘olau :
       </div>
       <div className="moku-moku-sign">
         <img className="w-20" src={koolausign} alt="koolau road sign" />

@@ -1,5 +1,4 @@
 import bernsign from "../../assets/bernard-sig.png";
-import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 export const MayorMsg = () => (
   <>
@@ -37,12 +36,10 @@ export const MayorMsg = () => (
       environment, agriculture, economy, culture, and development. Mahalo to the
       Nā Hōkū Welo team from the bottom of my heart for all of their hard work,
       patience and perseverance in helping us get this project up and running.
-      <div className="flex flex-col justify-center">
+      <div className="">
         <img alt="bernard signature" className="signature" src={bernsign} />
         Bernard P. Carvalho, Jr. Mayor, County of Kaua‘i
       </div>
     </div>
-
-    <Footer />
   </>
 );

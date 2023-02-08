@@ -19,7 +19,7 @@ export const Kipu = () => (
             Puna
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Kipu</div>
+          <div className="current-crumb">Kīpū</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">

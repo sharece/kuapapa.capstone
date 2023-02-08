@@ -19,7 +19,7 @@ export const Waioli = () => (
             Halelea
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Waioli</div>
+          <div className="current-crumb">Wai‘oli</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">

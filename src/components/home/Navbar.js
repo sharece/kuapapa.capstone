@@ -56,9 +56,9 @@ export const Navbar = () => {
             className={({ isActive }) =>
               clsx("nav-link", { "nav-link-active": isActive })
             }
-            to="/BoundryCert"
+            to="/BoundaryCert"
           >
-            Boundry Certificates
+            Boundary Certificates
           </NavLink>
           <NavLink
             className={({ isActive }) =>

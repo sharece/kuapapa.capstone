@@ -18,7 +18,7 @@ export const Olohena = () => (
             Puna
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Olohena</div>
+          <div className="current-crumb">`Olohena</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">

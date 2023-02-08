@@ -6,19 +6,19 @@ export const Disclaimer = () => (
   <>
     <Navbar />
     <div className="disclaimer">
-      <div className="disclaimer-text p-10">
+      <div className="">
         <h1 className="text-3xl pt-20 pb-6 p-3">
           Disclaimer about Kauaʻi Nui Kuapapa:
         </h1>{" "}
-        <p className="p-3">
+        <div className="p-3">
           This project is not survey grade and is not checked for legal validity
           regarding personal land ownership or various claims. This project hss
           been developed for historical and archaeological purposes. The sole
           intention of this project is to document the historical record of
           Kauaʻi's place names, which in some cases has not been recorded in any
           any existing publication or mapping survey.
-        </p>
-        <p className="p-3">
+        </div>
+        <div className="p-3">
           {" "}
           The place name boundaries that make up Kauaʻi Nui Kuapapa correspond
           to several 18th and 19th century survey maps. The intent of this
@@ -37,8 +37,8 @@ export const Disclaimer = () => (
           question: - pronunciation and meaning are uncertain - not found in any
           existing database, archive, written or published in any record
           regarding place names of Hawaiʻi
-        </p>
-        <p className="p-3">
+        </div>
+        <div className="p-3">
           Disclaimer: There are no expressed warranties associated with the
           release of this information. Specifically, no warranty is made that
           the GIS data or any subsequent updates will be error free and no
@@ -49,7 +49,7 @@ export const Disclaimer = () => (
           purposes. Nā Hōkū Welo, LLC and the County of Kaua‘i encourages users
           to report any discrepancies with regards to moku and ahupua‘a borders
           as represented in Kaua‘i Nui Kuapapa project.
-        </p>
+        </div>
       </div>
     </div>
     <Footer />

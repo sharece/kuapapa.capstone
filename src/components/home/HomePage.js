@@ -44,15 +44,14 @@ export const HomePage = () => {
                 <DesktopMap />
               </div>
             </div>
+            <div className="click-map">
+              <div className="flex text-white justify-center text-xlrg">
+                Click the map to select a moku!
+              </div>
+            </div>
             {/* <div className="mobile-title p-8 text-white text-lrg tracking-wide">
             <Title />
           </div> */}
-            <div className="click-moku">
-              <div className="p-4 text-white text-med tracking-wide">
-                Click on a Moku to learn more!
-              </div>
-            </div>
-
             <div className="moku-link-container">
               <Link to="/niihau" element={Niihau}>
                 <div className="home-moku-sign">

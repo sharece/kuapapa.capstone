@@ -19,7 +19,7 @@ export const Wahiawa = () => (
             Kona
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Wahiawa</div>
+          <div className="current-crumb">Wāhiawā</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">
@@ -35,8 +35,8 @@ export const Wahiawa = () => (
           </div>
         </div>
       </div>
-      <div className="ahu-text p-2">
-        Wāhiawā: Milkfish place Ahupua‘a between Hanapēpē and Kalāheo. The
+      <div className="ahu-text">
+        Wā hiawā: Milkfish place Ahupua‘a between Hanapēpē and Kalāheo. The
         ahupua‘a was divided further into Wahi-awa-uka (Upland Wahi-awa) and
         Wahi-awa-loa (Long Wahi-awa), which was located on the plains next to
         Kalāheo. The remains of terraces are remarkable in places for their

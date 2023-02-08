@@ -9,14 +9,14 @@ export const BoundaryCert = () => (
   <>
     <Navbar />
     <div className="boundary-container">
-      <div className="top-boundary-text w-96">
-        <div className="text-5xl">Kauaʻi Boundary Certificates</div>
-        <div>
+      <div className="top-boundary-text w-96 p-3">
+        <div className="text-5xl p-3">Kauaʻi Boundary Certificates</div>
+        <div className="p-1">
           The following resource data has contributed to the research used to
           help determine moku and ahupuaʻa boundary designation and location.
         </div>
 
-        <div className="">
+        <div className="p-1">
           The Kauai Boundary Commission data and viewable pdf documents include
           the records of commision of boundaries for the island of Kauai between
           the years of 1864 - 1901.
@@ -24,10 +24,10 @@ export const BoundaryCert = () => (
       </div>
       {/*  */}
 
-      <div className="flex">
+      <div className="flex p-3">
         <img src={bcomm} alt="Kaua'i Boundry Certificates" />
       </div>
-      <div className="flex justify-center">
+      <div className="dropdown1 flex justify-center p-8 text-lg">
         <Dropdown title="Kauai Boundary Commission Vol 1, No 1. Hawaii State Archives">
           <Dropdown.Item>
             <Link to="/COB_01_Puna-Kealia" className="bc" target="_blank">
@@ -190,7 +190,7 @@ export const BoundaryCert = () => (
             </Link>
           </Dropdown.Item>
           <Dropdown.Item>
-            <Link to="/COB_28_Waimea-Waimea" className="cob" target="_blank">
+            <Link to="/COB_28_Waimea-Waimea" className="bc" target="_blank">
               Waimea-Waimea
             </Link>
           </Dropdown.Item>
@@ -220,10 +220,10 @@ export const BoundaryCert = () => (
       </div>
 
       {/*  */}
-      <div className="">
+      <div className="p-3">
         <img src={bc} alt="Kaua'i Boundry Certificates" />
       </div>
-      <div className="flex justify-center">
+      <div className="dropdown2 flex justify-center p-8 text-lg">
         <Dropdown title="Boundary Certificates. Department of Land and Natural Resources">
           <Dropdown.Item>
             <Link to="/BC_01_10_1_Lawai" className="bc" target="_blank">

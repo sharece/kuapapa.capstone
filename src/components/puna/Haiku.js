@@ -18,7 +18,7 @@ export const Haiku = () => (
             Puna
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Haiku</div>
+          <div className="current-crumb">Ha‘ikū</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">

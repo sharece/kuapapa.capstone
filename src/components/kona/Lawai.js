@@ -19,7 +19,7 @@ export const Lawai = () => (
             Kona
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Lawai</div>
+          <div className="current-crumb">Lāwa’i</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">
@@ -36,14 +36,14 @@ export const Lawai = () => (
         </div>
       </div>
       <div className="ahu-text">
-        Lit: Day to end the fishing taboo An ahupua`a of the Kona district
-        between Kalāheo and Koloa. Petroglyphs have been found in this valley on
-        the east side of a large rock a short distance toward the sea from the
-        former cannery. These are the regular type of scratched or pecked
-        petroglyphs. #There was an altar to the fish god on the east coast of
-        Lāwa’i just below the road at the lower end of the entrance road
-        destroyed by a land slide a few years ago, but on the rocks below is
-        still a round hole about nine inches in diameter, worn very smooth,
+        Lāwa’i Lit: Day to end the fishing taboo An ahupua`a of the Kona
+        district between Kalāheo and Koloa. Petroglyphs have been found in this
+        valley on the east side of a large rock a short distance toward the sea
+        from the former cannery. These are the regular type of scratched or
+        pecked petroglyphs. #There was an altar to the fish god on the east
+        coast of Lāwa’i just below the road at the lower end of the entrance
+        road destroyed by a land slide a few years ago, but on the rocks below
+        is still a round hole about nine inches in diameter, worn very smooth,
         apparently by rocks coursing around in it, which the Hawaiians used as
         an `awa bowl in which to offer `awa to a fish god. Hawaiians prepared
         the `awa and placed it in the bowl, mixed and then taken out and

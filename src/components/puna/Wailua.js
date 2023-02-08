@@ -18,7 +18,7 @@ export const Wailua = () => (
             Puna
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Wailua</div>
+          <div className="current-crumb">Wailuanuiho‘āno</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">

@@ -19,7 +19,7 @@ export const Hanapepe = () => (
             Kona
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Hanapepe</div>
+          <div className="current-crumb">Hanapēpē</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">
@@ -35,7 +35,7 @@ export const Hanapepe = () => (
           </div>
         </div>
       </div>
-      <div className="ahu-text p-2">
+      <div className="ahu-text">
         Hanapēpē: Crushed-bay Alt: Hana-pepehi Killing bay #According to Gabriel
         I (March 14, 1992) and Ilei Beniamina (March 15, 1992) this is the
         correct name for this ahupuaØa. An ahupua`a of the Kona district,

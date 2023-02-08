@@ -18,10 +18,13 @@ export const Napali = () => (
     <Navbar />
     <div className="moku-container">
       <div className="moku-title pb-4 text-7xl tracking-widest flex justify-center">
-        Napali
+        Nāpali
       </div>
       <div className="moku-pic">
         <img src={mokupic} alt="na pali coast" />
+      </div>
+      <div className="img-cap flex justify-center text-xs">
+        Nāpali Coastline, Kaua‘i
       </div>
       <div className="moku-map">
         <img src={napalimap} alt="napali map" />
@@ -29,7 +32,7 @@ export const Napali = () => (
       <div className="moku-text">
         <p className="p-2">
           {" "}
-          Nāpali’s plant is the olonā, a plant that grows straight whose stems
+          Nā pali’s plant is the olonā, a plant that grows straight whose stems
           are used to make among the strongest rope to come out of the Pacific
           through native ingenuity. Nineteenth-century western ships would often
           trade their own rope for olonā rope, including Capt. Cook himself, and
@@ -53,8 +56,8 @@ export const Napali = () => (
           turquoise blue in the sunshine.
         </p>
       </div>
-      <div className="learn-more text-xl">
-        Learn more about Ahupua'a's in the Moku of Napali :
+      <div className="learn-more flex justify-center text-xl">
+        Learn more about Ahupua'a's in the Moku of Nāpali :
       </div>
       <div className="moku-moku-sign p-1">
         <img className="w-28" src={napalisign} alt="napali road sign" />

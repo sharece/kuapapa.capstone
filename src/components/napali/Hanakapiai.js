@@ -16,7 +16,7 @@ export const Hanakapiai = () => (
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
           <Link className="crumb" to="/napali">
-            Napali
+            Nāpali
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
           <div className="current-crumb">Hanakāpi‘ai</div>

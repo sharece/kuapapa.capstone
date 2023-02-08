@@ -71,7 +71,7 @@ export const Kona = () => (
           Waimea Canyon.
         </p>
       </div>
-      <div className="learn-more text-lg">
+      <div className="learn-more flex justify-center text-lg">
         Learn more about Ahupua'a's in the Moku of Kona :
       </div>
       <div className="moku-moku-sign p-1">

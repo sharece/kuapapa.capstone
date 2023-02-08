@@ -19,7 +19,7 @@ export const Waipa = () => (
             Halelea
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Waipa</div>
+          <div className="current-crumb">Waipā</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">

@@ -29,7 +29,9 @@ export const Puna = () => (
       <div className="moku-pic">
         <img src={mokupic} alt="menehune fish pond" />
       </div>
-      <div className="img-cap flex text-xs">Menehune Fish Pond, Lihue</div>
+      <div className="img-cap flex justify-center text-xs">
+        Menehune Fish Pond, Lihue
+      </div>
       <div className="flex justify-center flex-col p-2">
         <div className="moku-map">
           <img width="100%" src={punamap} alt="puna map" />
@@ -63,7 +65,7 @@ export const Puna = () => (
           royal feather capes of Kaua‘i’s mō‘ī.
         </p>
       </div>
-      <div className="learn-more text-lg">
+      <div className="learn-more flex justify-center text-lg">
         Learn more about Ahupua'a's in the Moku of Puna :
       </div>
       <div className="moku-moku-sign p-1">

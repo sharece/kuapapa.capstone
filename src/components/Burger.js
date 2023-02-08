@@ -10,57 +10,61 @@ export const Burger = () => {
     <div className="hamburger">
       <Hamburger toggled={isOpen} toggle={setOpen} />
 
-      <div className={clsx(`mobile-menu ${isOpen ? "page-burger-open" : ""}`)}>
-        <NavLink
-          className={({ isActive }) =>
-            clsx("ham-link", { "ham-link-active": isActive })
-          }
-          to="/"
+      {isOpen && (
+        <div
+          className={clsx(`mobile-menu ${isOpen ? "page-burger-open" : ""}`)}
         >
-          Home
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            clsx("ham-link", { "ham-link-active": isActive })
-          }
-          to="/resources"
-        >
-          Resources
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            clsx("ham-link", { "ham-link-active": isActive })
-          }
-          to="/disclaimer"
-        >
-          Disclaimer
-        </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              clsx("ham-link", { "ham-link-active": isActive })
+            }
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              clsx("ham-link", { "ham-link-active": isActive })
+            }
+            to="/resources"
+          >
+            Resources
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              clsx("ham-link", { "ham-link-active": isActive })
+            }
+            to="/disclaimer"
+          >
+            Disclaimer
+          </NavLink>
 
-        <NavLink
-          className={({ isActive }) =>
-            clsx("ham-link", { "ham-link-active": isActive })
-          }
-          to="/contact"
-        >
-          Contact
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            clsx("ham-link", { "ham-link-active": isActive })
-          }
-          to="/boundrycerts"
-        >
-          Boundry Certificates
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            clsx("ham-link", { "ham-link-active": isActive })
-          }
-          to="/mayormsg"
-        >
-          Message from the Mayor
-        </NavLink>
-      </div>
+          <NavLink
+            className={({ isActive }) =>
+              clsx("ham-link", { "ham-link-active": isActive })
+            }
+            to="/contact"
+          >
+            Contact
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              clsx("ham-link", { "ham-link-active": isActive })
+            }
+            to="/BoundaryCert"
+          >
+            Boundry Certificates
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              clsx("ham-link", { "ham-link-active": isActive })
+            }
+            to="/mayormsg"
+          >
+            Message from the Mayor
+          </NavLink>
+        </div>
+      )}
     </div>
   );
 };

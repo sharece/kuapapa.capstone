@@ -19,8 +19,9 @@ export const Mana = () => (
             Kona
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Mana</div>
+          <div className="current-crumb">Mānā</div>
         </div>
+
         <div className="ahu-map-and-sign">
           <div className="ahu-map">
             <img src={ahumap} alt="kona ahupuaa breakdown" />

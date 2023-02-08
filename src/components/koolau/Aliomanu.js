@@ -19,7 +19,7 @@ export const Aliomanu = () => (
             Ko'olau
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Aliomanu</div>
+          <div className="current-crumb">`Aliomanu</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">

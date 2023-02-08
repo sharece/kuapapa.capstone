@@ -24,9 +24,11 @@ body {
 .desktop-bio {
   display: none;
 }
-.text-banner {
-  padding-top: 2rem;
-  border-bottom: 0.1rem solid #450068;
+
+.bio {
+  font-size: large;
+  padding: 4rem;
+  font-family: "Unbounded";
 }
 .mobile-menu {
   display: flex;
@@ -34,12 +36,13 @@ body {
   position: absolute;
   padding: 0.5rem;
   right: 0;
-  top: 2rem;
-  width: 50%;
-  background-color: #450068d4;
+  top: 2.5rem;
+  width: 60%;
+  background-color: #450068;
   z-index: 3000;
   opacity: 0;
 }
+
 .page-burger-open {
   opacity: 1;
   transition: all 390ms ease-in-out;
@@ -47,12 +50,12 @@ body {
 }
 .navbar {
   display: flex;
-  color: #adadc2;
+  color: #000000;
   top: 0;
   z-index: 0;
   justify-content: flex-start;
-  background-color: #450068d4;
-  height: 2.5rem;
+  background-color: #450068;
+  height: 2.8rem;
   width: 100%;
   position: fixed;
 }
@@ -61,12 +64,6 @@ body {
   display: none;
 }
 
-.ham-link {
-  /* display: none; */
-
-  /* text-transform: lowercase; */
-  /* opacity: 0; */
-}
 .ham-link-active {
   color: #8f76c2;
   font-weight: 500;
@@ -75,7 +72,6 @@ body {
 .ham-link-active,
 .foot-link {
   padding: 2px;
-  text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 600;
@@ -94,6 +90,14 @@ body {
 }
 .title-header {
   width: 50%;
+}
+.home-moku-sign:hover {
+  transition: 500ms;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .crumb,
 .current-crumb,
@@ -124,6 +128,10 @@ body {
   /* width: ; */
   padding: 3px;
 }
+.ahu-text {
+  padding: 3rem;
+  font-size: large;
+}
 .bio {
   padding: 1rem;
   /* letter-spacing: 0.1rem; */
@@ -133,7 +141,7 @@ body {
   font-size: 0.9rem;
 }
 .hanalei-bay {
-  border-bottom: 0.1rem solid #450068;
+  border-bottom: 0.1rem solid #85808896;
 }
 .moku-text {
   padding: 1.9rem;
@@ -206,6 +214,10 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+.video {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
 .ahu-text {
   font-size: larger;
   padding: 1.5rem;
@@ -216,6 +228,7 @@ h2 {
 .ahu-map {
   padding: 0.2rem;
 }
+
 .moku-sign {
   width: 80%;
   /* z-index: 3; */
@@ -236,24 +249,33 @@ h2 {
 .desktop-map {
   display: none;
 }
-.desktop-title {
+.mobile-title {
   display: none;
 }
-.mobile-title {
-  font-size: 1.9rem;
+.desktop-title {
+  font-family: "Unbounded";
+  line-height: 67px;
 }
 .contact-page,
 .resources,
 .disclaimer {
   /* padding-top: 2.5rem; */
   background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .contact-page {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  height: 100vh;
 }
+.contact-icon {
+  display: none;
+}
+.contact-container {
+  padding: 5rem;
+}
+
 .bc:hover,
 .cob:hover {
   font-size: 20px;
@@ -266,18 +288,31 @@ h2 {
   /* background-repeat: no-repeat; */
   background-size: cover;
 }
-.foot-container {
-  background-color: #450068d4;
-  color: white;
-}
+
 .niihau-text {
   padding: 1rem;
+}
+
+.weather-section {
+  background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foot-container {
+  background-color: #450068;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 /* 1 tablet */
 @media screen and (min-width: 640px) {
   .desktop-map {
     display: none;
+  }
+  .desktop-title {
+    display: block;
+    text-align: center;
   }
   .nav-desktop {
     display: none;
@@ -289,6 +324,9 @@ h2 {
   .click-map {
     display: none;
   }
+  .ham-links {
+    z-index: 0;
+  }
   .mobile-menu {
     display: flex;
     color: white;
@@ -299,7 +337,7 @@ h2 {
     top: 2.5rem;
     width: 50%;
     background-color: #450068;
-    z-index: 0;
+    z-index: 1000;
     opacity: 0;
   }
   .page-burger-open {
@@ -385,10 +423,50 @@ h2 {
   .niihau-text {
     padding: 2rem;
   }
+  .disclaimer,
+  .contact-page,
+  .mayor-msg {
+    height: 100vh;
+  }
+  .contact-icons {
+    display: none;
+  }
+  .home-moku-sign {
+    width: 75%;
+  }
+  .moku-map {
+    width: 50%;
+  }
+  .desktop-title {
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    font-family: "Unbounded";
+  }
+  .contact-page,
+  .resources,
+  .disclaimer {
+    /* padding-top: 2.5rem; */
+    background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .foot-container {
+    background-color: #450068;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1024px) {
+  .ahu-map {
+    width: 70%;
+  }
   .nav-desktop {
     display: none;
+  }
+  .desktop-title {
+    display: block;
+    text-align: center;
   }
   .tablet-map {
     display: none;
@@ -397,7 +475,9 @@ h2 {
     display: flex;
     cursor: pointer;
   }
-
+  .ham-links {
+    z-index: 0;
+  }
   .mobile-menu {
     display: flex;
     color: white;
@@ -408,7 +488,7 @@ h2 {
     top: 2.5rem;
     width: 50%;
     background-color: #450068;
-    z-index: 0;
+    z-index: 10000;
     opacity: 0;
   }
   .page-burger-open {
@@ -433,7 +513,7 @@ h2 {
   }
   .ham-link-active {
     color: #8f76c2;
-    font-weight: 500;
+    font-weight: 400;
   }
   .ham-link,
   .foot-link {
@@ -449,19 +529,11 @@ h2 {
   .foot-link:hover {
     font-size: 1rem;
     text-shadow: rgba(2, 90, 32, 0.86);
-    color: rgb(1, 40, 8);
+    color: rgba(1, 40, 8, 0.717);
   }
   .ham-link:after {
     transform: scaleY(1);
     opacity: 1;
-  }
-  .home-moku-sign:hover {
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-      rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
   .home-bg {
     background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
@@ -520,13 +592,50 @@ h2 {
     color: #8f76c2;
     text-shadow: #020202;
   }
+  .disclaimer,
+  .contact-page,
+  .mayor-msg {
+    height: 100vh;
+  }
+
+  .home-moku-sign {
+    width: 75%;
+  }
+  .moku-map {
+    width: 50%;
+  }
+  .desktop-title {
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    font-family: "Unbounded";
+  }
+  .ahu-text {
+    padding: 6rem;
+    font-size: large;
+  }
+  .foot-container {
+    background-color: #450068;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .report-title {
+    letter-spacing: 0.5rem;
+  }
 }
 @media screen and (min-width: 1380px) {
   .title-header,
   .title {
     display: none;
   }
-
+  .report-title {
+    letter-spacing: 0.5rem;
+  }
+  .bio {
+    font-size: large;
+    padding: 4rem;
+    font-family: "Unbounded";
+  }
   .nav-desktop {
     display: flex;
     align-items: flex-end;
@@ -539,22 +648,24 @@ h2 {
   .click-map {
     display: flex;
     color: #020202;
-    font-size: larger;
-    padding: 1rem;
+    font-size: xx-large;
+    padding: 2rem;
+    font-family: "Unbounded";
   }
   .mobile-bio {
     display: none;
   }
   .desktop-bio {
     display: block;
-    font-weight: 600;
+
+    /* font-weight: 600; */
   }
   .nav-link {
     display: flex;
   }
   .nav-link-active {
     color: #8f76c2;
-    font-size: 20px;
+    font-size: 19px;
   }
   .nav-link,
   .foot-link {
@@ -584,14 +695,17 @@ h2 {
     flex-direction: row;
   }
   .signature {
-    width: 50%;
+    width: 30%;
   }
   .ahu-sign {
     max-width: 30%;
     display: flex;
     padding: 1rem;
   }
-
+  .ahu-text {
+    padding: 8rem;
+    font-size: large;
+  }
   .moku-link-container {
     width: 100%;
   }
@@ -610,8 +724,8 @@ h2 {
     width: 50%;
   }
   .home-bg {
-    background-image: url("../../kuapapa.capstone/src/assets/home-img.png");
-    background-repeat: no-repeat;
+    background-image: url("../../kuapapa.capstone/src/assets/wailuaforever.png");
+    /* background-repeat: repeat; */
     background-size: cover;
     padding-top: 45px;
   }
@@ -632,6 +746,9 @@ h2 {
     /* background-image: url("../../kuapapa.capstone/src/assets/napalimokupic3.png");
     background-repeat: no-repeat;
     background-size: cover; */
+  }
+  .ahu-map-and-sign {
+    padding: 4.5rem;
   }
   .ahu-link-container {
     display: flex;
@@ -677,8 +794,8 @@ h2 {
     width: 40%;
   }
   .ahu-text {
-    padding: 8rem;
-    font-size: xx-large;
+    padding: 6rem;
+    font-size: large;
   }
   .learn-more {
     font-size: larger;
@@ -688,29 +805,62 @@ h2 {
   .contact-icon {
     display: none;
   }
+  .contact-container {
+    padding: 5rem;
+  }
+  .disclaimer,
+  .contact-page,
+  .mayor-msg {
+    height: 100vh;
+  }
   .niihau-text {
-    padding: 6rem;
+    padding: 8rem;
   }
   .home-moku-sign:hover {
-    transition: 300ms;
+    transition: 500ms;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
       rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
       rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
       rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
       rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      rgba(0, 0, 0, 0.09) 0px 80px 16px;
   }
   .crumb,
-  .current-crumb,
   .breadcrumb-arrow {
     color: white;
     padding: 1rem;
-    font-size: 25px;
+    font-size: 20px;
+  }
+  .current-crumb {
+    color: #030304;
   }
   .crumb:hover {
     /* font-size: 18px; */
     color: #8f76c2;
     text-shadow: #020202;
   }
-  /* For accordion */
+
+  .dropdown:hover {
+    font-size: 21px;
+    transition: 100ms;
+    text-shadow: #020202;
+  }
+  .home-moku-sign {
+    width: 75%;
+  }
+  .bc {
+    display: flex;
+    justify-content: center;
+  }
+  .dropdown1,
+  .dropdown2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .foot-container {
+    background-color: #450068;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
 }

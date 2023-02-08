@@ -137,7 +137,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/mayorMsg" element={<MayorMsg />} />
-        <Route path="/BoundryCert" element={<BoundaryCert />} />
+        <Route path="/BoundaryCert" element={<BoundaryCert />} />
         <Route path="/niihau" element={<Niihau />} />
         <Route path="/kona" element={<Kona />} />
         <Route path="/puna" element={<Puna />} />

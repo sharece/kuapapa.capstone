@@ -21,10 +21,13 @@ export const Halelea = () => (
     <Navbar />
     <div className="moku-container">
       <div className="moku-title pb-4 text-7xl tracking-widest flex justify-center">
-        Halelea
+        Halele‘a
       </div>
       <div className="moku-pic">
         <img src={mokupic} alt="halelea moku pic" />
+      </div>
+      <div className="img-cap flex text-xs justify-center">
+        Halele‘a, Kaua‘i
       </div>
       <div className="moku-map">
         <img src={haleleamap} alt="halelea map" />
@@ -53,7 +56,7 @@ export const Halelea = () => (
           Halele‘a. There is no place in this moku that is not green.
         </p>
       </div>
-      <div className="learn-more text-xl">
+      <div className="learn-more flex justify-center text-xl">
         Learn more about Ahupua'a's in the Moku of Ko'olau :
       </div>
       <div className="moku-moku-sign p-1">
@@ -62,13 +65,6 @@ export const Halelea = () => (
       <div className="ahu-dropdown text-xl">
         <div className="flex justify-center text-2xl">
           <Dropdown title="Select an Ahupua'a">
-            <DropdownItem>
-              {" "}
-              <Link className="ahu-link" to="/kalihikai">
-                {/* Kalihikai */}
-                <img src={kalihikai} width="50%" alt="kalihikai road sign" />
-              </Link>
-            </DropdownItem>
             <DropdownItem>
               <Link className="ahu-link" to="/kalihiwai">
                 {/* Kalihiwai */}

@@ -18,7 +18,7 @@ export const Nawiliwili = () => (
             Puna
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
-          <div className="current-crumb">Nawiliwili</div>
+          <div className="current-crumb">Nāwiliwili</div>
         </div>
         <div className="ahu-map-and-sign">
           <div className="ahu-map">
@@ -40,8 +40,7 @@ export const Nawiliwili = () => (
         arrived? How did Hawaiian settlers use their new home? What happened
         when sugar plantations began? Why is Nawiliwili Bay one of the most
         polluted bays in the state? What can we do to restore the health of
-        Nawiliwili Bay? Explore these questions as we tour the ahupua'a of
-        Nawiliwili Bay.
+        Nawiliwili Bay? Explore these questions as you enjoy Nāwiliwili Bay.
       </div>
       <Footer />
     </div>
