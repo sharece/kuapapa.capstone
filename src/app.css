@@ -12,6 +12,10 @@ body {
   color: rgba(2, 2, 2, 0.9);
   font-family: "Manrope", "Big Shoulder Display", sans-serif;
 }
+.main-title {
+  text-align: center;
+  font-size: xxx-large;
+}
 .click-map {
   display: none;
 }
@@ -50,7 +54,7 @@ body {
 }
 .navbar {
   display: flex;
-  color: #000000;
+  color: white;
   top: 0;
   z-index: 0;
   justify-content: flex-start;
@@ -100,10 +104,13 @@ body {
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .crumb,
-.current-crumb,
-.breadcrumb-arrow {
+.breadcrumb-arrow,
+.img-cap {
   color: white;
   padding: 1rem;
+}
+.current-crumb {
+  color: #020202;
 }
 .crumb:hover {
   /* font-size: 18px; */
@@ -155,6 +162,7 @@ body {
 .moku-title {
   font-family: "Unbounded", sans-serif;
   display: flex;
+  color: white;
   justify-content: center;
 }
 .moku-map {
@@ -162,7 +170,7 @@ body {
 }
 .moku-container {
   padding-top: 3.5rem;
-  background-image: url("../../kuapapa.capstone/src/assets/moku-plumeria.png");
+  background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -187,6 +195,14 @@ body {
   font-size: x-large;
   padding-bottom: 1rem;
 }
+.moku-text {
+  background-image: url("../../kuapapa.capstone/src/assets/petrog.png");
+  background-repeat: repeat;
+  background-size: cover;
+  /* border-radius: 25px; */
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
 .ahu-elements {
   padding-top: 2rem;
 }
@@ -206,7 +222,7 @@ h2 {
   padding: 0.5rem;
 }
 .report-title {
-  background-color: #450068d4;
+  background-color: #450068;
   color: white;
 }
 .video,
@@ -245,6 +261,10 @@ h2 {
 .moku-link-container {
   display: flex;
   width: 100%;
+  padding-bottom: 20px;
+}
+.mobile-bio-text {
+  font-size: small;
 }
 .desktop-map {
   display: none;
@@ -724,7 +744,7 @@ h2 {
     width: 50%;
   }
   .home-bg {
-    background-image: url("../../kuapapa.capstone/src/assets/wailuaforever.png");
+    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
     /* background-repeat: repeat; */
     background-size: cover;
     padding-top: 45px;

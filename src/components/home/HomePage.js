@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import { DesktopMap } from "./DesktopMap";
 import ReactPlayer from "react-player";
 import kuapapaimg from "../../assets/homeimg.png";
+import { MobileBio } from "./MobileBio";
 // import { ClickableMap } from "./ClickableMap";
 import { Title } from "./Title";
 import { TabletMap } from "./TabletMap";
@@ -34,7 +35,6 @@ export const HomePage = () => {
           <div className="desktop-title  flex justify-center">
             <Title />
           </div>
-
           <div className="moku-links-and-map  pb-4 flex flex-col justify-center">
             <div className="tablet-map">
               <TabletMap />
@@ -84,11 +84,11 @@ export const HomePage = () => {
                 </div>
               </Link>
             </div>
+            <div className="mobile-bio">
+              <MobileBio />
+            </div>
           </div>
           <div className="desktop-bio">
-            <Bio />
-          </div>
-          <div className="mobile-bio">
             <Bio />
           </div>
         </div>

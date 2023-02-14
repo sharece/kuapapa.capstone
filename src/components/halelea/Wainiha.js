@@ -16,7 +16,7 @@ export const Wainiha = () => (
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
           <Link className="crumb" to="/halelea">
-            Halelea
+            Halele‘a
           </Link>
           <div className="breadcrumb-arrow">&gt;</div>
           <div className="current-crumb">Wainiha</div>
