@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import "react-pdf/dist/esm/Page/TextLayer.css";
+import React, { useState } from 'react';
+import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export const PdfViewer = ({ pdf }) => {
@@ -20,25 +20,21 @@ export const PdfViewer = ({ pdf }) => {
     if (pageNumber >= numPages) return null;
     setPageNumber((p) => p + 1);
   };
-  const buttonStyle = {
-    padding: "1rem",
-    fontSize: "2rem",
-  };
   const renderBtns = () => (
     <p
       style={{
-        display: "grid",
-        placeItems: "center",
-        gridTemplateColumns: "1fr 1fr 1fr",
+        display: 'grid',
+        placeItems: 'center',
+        gridTemplateColumns: '1fr 1fr 1fr',
       }}
     >
-      <button onClick={onPrev} style={buttonStyle}>
+      <button onClick={onPrev} className="p-4 text-3xl">
         &lt;
       </button>
       <div>
         Page {pageNumber} of {numPages}
       </div>
-      <button style={buttonStyle} onClick={onNext}>
+      <button onClick={onNext} className="p-4 text-3xl">
         &gt;
       </button>
     </p>
