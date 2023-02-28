@@ -16,6 +16,11 @@ body {
   text-align: center;
   font-size: xxx-large;
 }
+.foot-container {
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+  padding: 6px;
+}
 .click-map {
   display: none;
 }
@@ -28,11 +33,17 @@ body {
 .desktop-bio {
   display: none;
 }
-
+.ahu-row-1,
+.ahu-row-2,
+.ahu-row-3 {
+  display: flex;
+  flex-direction: column;
+}
 .bio {
   font-size: large;
   padding: 4rem;
-  font-family: "Unbounded";
+  font-weight: 500;
+  /* font-family: "Unbounded"; */
 }
 .mobile-menu {
   display: flex;
@@ -109,9 +120,31 @@ body {
   color: white;
   padding: 1rem;
 }
-.current-crumb {
-  color: #020202;
+.crumb,
+.breadcrumb-arrow {
+  color: white;
+  padding: 1rem;
+  text-shadow: 2px 2px 2px black;
+  /* font-size: 20px; */
 }
+.current-crumb {
+  color: #8f76c2;
+  /* text-shadow: #020202; */
+  text-shadow: 2px 2px 2px black;
+}
+.moku-title,
+.main-title,
+.nav-link,
+.hamburger,
+a,
+.foot-container,
+.img-cap {
+  text-shadow: 2px 2px 4px #000000;
+}
+.img-cap {
+  font-size: 0.7rem;
+}
+
 .crumb:hover {
   /* font-size: 18px; */
   color: #8f76c2;
@@ -182,12 +215,12 @@ body {
   background-size: contain;
 }
 .bio {
-  background-image: url("../../kuapapa.capstone/src/assets/petrog.png");
+  background-image: url("../../kuapapa.capstone/src/assets/petro2.png");
   background-repeat: repeat;
   background-size: cover;
 }
 .ahu-text {
-  background-image: url("../../kuapapa.capstone/src/assets/petrog.png");
+  background-image: url("../../kuapapa.capstone/src/assets/petro2.png");
   background-repeat: repeat;
   background-size: cover;
   /* border-radius: 25px; */
@@ -196,17 +229,38 @@ body {
   padding-bottom: 1rem;
 }
 .moku-text {
-  background-image: url("../../kuapapa.capstone/src/assets/petrog.png");
+  background-image: url("../../kuapapa.capstone/src/assets/petro2.png");
   background-repeat: repeat;
   background-size: cover;
   /* border-radius: 25px; */
   padding: 2rem;
   padding-bottom: 1rem;
 }
-.ahu-elements {
-  padding-top: 2rem;
+.disclaimer-container,
+.disclaimer-img,
+.resource-container {
+  background-image: url("../../kuapapa.capstone/src/assets/petro2.png");
 }
 
+.resource-img,
+.disclaimer-img {
+  display: none;
+}
+.disclaimer-text,
+.resource-text {
+  padding: 1.9rem;
+}
+.ahu-elements {
+  padding-top: 2rem;
+  padding: 2.5rem;
+}
+.ahu-link {
+  padding: 0.5rem;
+}
+.mobile-ahu-row {
+  display: flex;
+  flex-direction: column;
+}
 .ahu-bg {
   background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
   background-repeat: no-repeat;
@@ -276,18 +330,10 @@ h2 {
   font-family: "Unbounded";
   line-height: 67px;
 }
-.contact-page,
-.resources,
-.disclaimer {
-  /* padding-top: 2.5rem; */
-  background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .contact-page {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  /* min-height: 100vh; */
 }
 .contact-icon {
   display: none;
@@ -295,7 +341,6 @@ h2 {
 .contact-container {
   padding: 5rem;
 }
-
 .bc:hover,
 .cob:hover {
   font-size: 20px;
@@ -303,20 +348,10 @@ h2 {
   transition: 500ms;
 }
 .boundary-container {
-  padding-top: 10rem;
-  background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
-  /* background-repeat: no-repeat; */
-  background-size: cover;
+  padding-top: 5rem;
 }
-
 .niihau-text {
   padding: 1rem;
-}
-
-.weather-section {
-  background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .foot-container {
   background-color: #450068;
@@ -344,6 +379,7 @@ h2 {
   .click-map {
     display: none;
   }
+
   .ham-links {
     z-index: 0;
   }
@@ -388,9 +424,9 @@ h2 {
   .foot-link {
     padding: 2px;
     margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: lowercase;
+    /* font-size: 20px; */
+    /* font-weight: 600; */
+    /* text-transform: lowercase; */
     transition: 300ms;
     cursor: pointer;
   }
@@ -404,9 +440,6 @@ h2 {
     transform: scaleY(1);
     opacity: 1;
   }
-  .reports {
-    display: flex;
-  }
   .home-bg {
     background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
     background-repeat: no-repeat;
@@ -414,10 +447,9 @@ h2 {
     padding: 1rem;
   }
   .weather-section {
-    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
   }
+
   .ahu-sign {
     max-width: 30%;
   }
@@ -437,17 +469,26 @@ h2 {
   .moku-links-and-map {
     padding-bottom: 2rem;
   }
+  .home-moku-sign:hover {
+    transition: 500ms;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 80px 16px;
+  }
   .bio {
     background-color: white;
   }
   .niihau-text {
     padding: 2rem;
   }
-  .disclaimer,
+  /* .disclaimer,
   .contact-page,
   .mayor-msg {
     height: 100vh;
-  }
+  } */
   .contact-icons {
     display: none;
   }
@@ -462,19 +503,36 @@ h2 {
     font-size: 4rem;
     font-family: "Unbounded";
   }
-  .contact-page,
-  .resources,
-  .disclaimer {
-    /* padding-top: 2.5rem; */
-    background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  .report-title {
+    letter-spacing: 0.5rem;
+    text-shadow: 2px 2px 4px #000000;
   }
   .foot-container {
     background-color: #450068;
     color: white;
     display: flex;
     justify-content: center;
+  }
+  .top-r-text,
+  .bottom-r-text,
+  .disclaimer-top,
+  .disclaimer-bottom {
+    background-image: url("./assets/petro2.png");
+    padding: 2rem;
+  }
+  .resource-img,
+  .disclaimer-img {
+    display: block;
+  }
+  .mobile-ahu-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .ahu-row-1,
+  .ahu-row-2,
+  .ahu-row-3 {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -520,7 +578,7 @@ h2 {
     display: flex;
     top: 0;
     color: white;
-    /* z-index: 0; */
+    z-index: 1;
     justify-content: flex-start;
     background-color: #450068;
     height: 3rem;
@@ -564,25 +622,39 @@ h2 {
   .contact-icon {
     display: none;
   }
+  .moku-title,
+  .main-title,
+  .click-map,
+  .nav-link,
+  a,
+  .foot-container,
+  .img-cap {
+    text-shadow: 2px 2px 4px #000000;
+  }
   .bio {
     background-color: white;
     /* padding: 1rem; */
   }
   .ahu-link-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
-  .ahu-link:hover {
-    font-size: 20px;
-    color: #8f76c2;
-  }
+
   .moku-link-container {
     width: 100%;
   }
   .moku-links-and-map {
     padding-bottom: 2rem;
   }
-
+  .home-moku-sign:hover {
+    transition: 500ms;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 80px 16px;
+  }
   .moku-text {
     padding: 3rem;
     font-size: medium;
@@ -614,8 +686,9 @@ h2 {
   }
   .disclaimer,
   .contact-page,
-  .mayor-msg {
-    height: 100vh;
+  .mayor-msg,
+  .boundary-container {
+    min-height: 100vh;
   }
 
   .home-moku-sign {
@@ -633,6 +706,22 @@ h2 {
     padding: 6rem;
     font-size: large;
   }
+  .ahu-link {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  .ahu-link:hover,
+  .ahu-link:focus,
+  .ahu-link:active {
+    transform: scale(1.1);
+  }
   .foot-container {
     background-color: #450068;
     color: white;
@@ -641,6 +730,40 @@ h2 {
   }
   .report-title {
     letter-spacing: 0.5rem;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .video,
+  .reports {
+    display: flex;
+    flex-direction: row;
+  }
+  .weather-section {
+    display: flex;
+    /* justify-content: space-around; */
+  }
+  .weather-report {
+    padding-right: 8rem;
+  }
+  /* .top-r-text,
+  .bottom-r-text,
+  .disclaimer-top,
+  .disclaimer-bottom {
+    background-image: url("./assets/petro2.png");
+    padding: 2.5rem;
+  } */
+  .resource-img,
+  .disclaimer-img {
+    display: block;
+  }
+  .mobile-ahu-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .ahu-row-1,
+  .ahu-row-2,
+  .ahu-row-3 {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1380px) {
@@ -650,11 +773,26 @@ h2 {
   }
   .report-title {
     letter-spacing: 0.5rem;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .moku-title,
+  .main-title,
+  .click-map,
+  .nav-link,
+  a,
+  .foot-container,
+  .img-cap {
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .moku-title {
+    padding: 2rem;
   }
   .bio {
-    font-size: large;
+    font-size: xlarge;
     padding: 4rem;
-    font-family: "Unbounded";
+    font-weight: 500;
+    /* font-family: "Unbounded"; */
   }
   .nav-desktop {
     display: flex;
@@ -677,15 +815,13 @@ h2 {
   }
   .desktop-bio {
     display: block;
-
-    /* font-weight: 600; */
   }
   .nav-link {
     display: flex;
   }
   .nav-link-active {
     color: #8f76c2;
-    font-size: 19px;
+    /* font-size: 19px; */
   }
   .nav-link,
   .foot-link {
@@ -696,26 +832,73 @@ h2 {
     /* text-transform: lowercase; */
     cursor: pointer;
   }
+  .nav-link,
+  .foot-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-link:before,
+  .foot-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .nav-link:hover:before,
+  .nav-link:focus:before,
+  .nav-link:active:before,
+  .foot-item:hover:before,
+  .foot-item:focus:before,
+  .foot-item:active:before {
+    left: 0;
+    right: 0;
+  }
   .nav-link:hover,
-  .foot-link:hover {
-    font-size: 20px;
+  .foot-item:hover {
+    /* font-size: 20px; */
     color: #8f76c2;
     text-shadow: #f7fbf8;
   }
-  .nav-link:after {
+  /* .nav-link:after {
     transform: scaleY(0.2);
     opacity: 1;
-  }
+  } */
   .hamburger {
     display: none;
   }
-  .video,
-  .reports {
-    display: flex;
-    flex-direction: row;
-  }
   .signature {
     width: 30%;
+  }
+  .ahu-link {
+    padding: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  .ahu-link:hover,
+  .ahu-link:focus,
+  .ahu-link:active {
+    transform: scale(1.1);
   }
   .ahu-sign {
     max-width: 30%;
@@ -723,40 +906,8 @@ h2 {
     padding: 1rem;
   }
   .ahu-text {
-    padding: 8rem;
+    padding: 6rem;
     font-size: large;
-  }
-  .moku-link-container {
-    width: 100%;
-  }
-  .moku-links-and-map {
-    padding-bottom: 3rem;
-  }
-
-  .moku-text {
-    padding: 3rem;
-    font-size: medium;
-  }
-  .moku-pic {
-    width: 50%;
-  }
-  .moku-map {
-    width: 50%;
-  }
-  .home-bg {
-    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
-    /* background-repeat: repeat; */
-    background-size: cover;
-    padding-top: 45px;
-  }
-
-  .desktop-title {
-    letter-spacing: 1rem;
-    font-size: 4rem;
-    font-family: "Unbounded";
-  }
-  .mobile-title {
-    display: none;
   }
   .ahu-map {
     width: 70%;
@@ -772,38 +923,64 @@ h2 {
   }
   .ahu-link-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 3px;
   }
-  .ahu-link:hover {
-    font-size: 20px;
-    color: #8f76c2;
+  .moku-link-container {
+    width: 100%;
   }
-  .contact-container {
-    padding: 5rem;
+  .moku-links-and-map {
+    padding-bottom: 3rem;
   }
+  .moku-text {
+    padding: 3rem;
+    font-size: medium;
+  }
+  .moku-map {
+    width: 50%;
+  }
+  .home-bg {
+    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
+    /* background-repeat: repeat; */
+    background-size: cover;
+    padding-top: 45px;
+  }
+  .desktop-title {
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    font-family: "Unbounded";
+  }
+  .mobile-title {
+    display: none;
+  }
+
   .weather-section {
     display: flex;
-    /* justify-content: space-around; */
   }
   .weather-report {
-    padding-right: 12rem;
+    padding-right: 10rem;
+  }
+  .video,
+  .reports {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-icon {
+    display: none;
   }
   .all-contact {
     /* padding: 2rem; */
     display: flex;
     flex-wrap: nowrap;
   }
+  .contact-container {
+    padding: 5rem;
+  }
   .cob:hover,
   .bc:hover {
     color: #0a3726;
     font-size: 20px;
     transition: 500ms;
-  }
-  .boundary-container {
-    padding-top: 10rem;
-    background-image: url("../../kuapapa.capstone/src/assets/contact-bg.png");
-    /* background-repeat: no-repeat; */
-    background-size: cover;
   }
   .moku-sign {
     /* display: inline-block; */
@@ -813,25 +990,16 @@ h2 {
   .moku-moku-sign {
     width: 40%;
   }
-  .ahu-text {
-    padding: 6rem;
-    font-size: large;
-  }
   .learn-more {
+    /* color: white; */
     font-size: larger;
     display: flex;
     justify-content: center;
   }
-  .contact-icon {
-    display: none;
-  }
-  .contact-container {
-    padding: 5rem;
-  }
   .disclaimer,
   .contact-page,
   .mayor-msg {
-    height: 100vh;
+    min-height: 100vh;
   }
   .niihau-text {
     padding: 8rem;
@@ -849,10 +1017,17 @@ h2 {
   .breadcrumb-arrow {
     color: white;
     padding: 1rem;
-    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+    /* font-size: 20px; */
   }
   .current-crumb {
-    color: #030304;
+    color: #8f76c2;
+    /* text-shadow: #020202; */
+    text-shadow: 2px 2px 2px black;
+  }
+  .crumb,
+  .current-crumb {
+    font-size: medium;
   }
   .crumb:hover {
     /* font-size: 18px; */
@@ -860,11 +1035,6 @@ h2 {
     text-shadow: #020202;
   }
 
-  .dropdown:hover {
-    font-size: 21px;
-    transition: 100ms;
-    text-shadow: #020202;
-  }
   .home-moku-sign {
     width: 75%;
   }
@@ -872,15 +1042,31 @@ h2 {
     display: flex;
     justify-content: center;
   }
-  .dropdown1,
-  .dropdown2 {
-    display: flex;
-    flex-direction: row;
-  }
   .foot-container {
     background-color: #450068;
     color: white;
     display: flex;
     justify-content: center;
+  }
+  .disclaimer-text,
+  .resource-text {
+    padding: 3rem;
+    line-height: 200%;
+  }
+  .resource-img,
+  .disclaimer-img {
+    display: block;
+  }
+  .mobile-ahu-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .ahu-row-1,
+  .ahu-row-2,
+  .ahu-row-3 {
+    display: flex;
+    flex-direction: row;
+  }
+  .pdf-container {
   }
 }

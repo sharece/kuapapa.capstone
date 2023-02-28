@@ -55,47 +55,43 @@ export const Napali = () => (
           Nāpali is the color of the sea on this coast, which is the brightest
           turquoise blue in the sunshine.
         </p>
-      </div>
-      <div className="learn-more flex justify-center text-xl">
-        Learn more about Ahupua'a's in the Moku of Nāpali :
-      </div>
-      <div className="moku-moku-sign p-1">
-        <img className="w-28" src={napalisign} alt="napali road sign" />
-      </div>
-      <div className="ahu-dropdown text-xl">
-        <div className="flex justify-center text-2xl">
-          <Dropdown title="Select an Ahupua'a">
-            <DropdownItem>
+        <div className="moku-moku-sign p-1">
+          <img className="w-60" src={napalisign} alt="napali road sign" />
+        </div>
+        <div className="learn-more flex justify-center text-xl">
+          Learn more about Ahupua'a's in the Moku of Nāpali :
+        </div>
+        <div className="ahu-link-container">
+          <div className="ahu-row-1 flex">
+            <div className="mobile-ahu-row">
               <Link className="ahu-link" to="/awaawapuhi">
-                <img src={awaawapuhi} width="50%" alt="awaawapuhi road rign" />
+                <img src={awaawapuhi} width="80%" alt="awaawapuhi road rign" />
               </Link>
-            </DropdownItem>
-            <DropdownItem>
+
               <Link className="ahu-link" to="/hanakapiai">
-                <img src={hanakapiai} width="50%" alt="hanakapiai road sign" />
+                <img src={hanakapiai} width="80%" alt="hanakapiai road sign" />
               </Link>
-            </DropdownItem>
-            <DropdownItem>
+            </div>
+            <div className="mobile-ahu-row">
               <Link className="ahu-link" to="/hanakoa">
-                <img src={hanakoa} width="50%" alt="hanakoa road sign" />
+                <img src={hanakoa} width="80%" alt="hanakoa road sign" />
               </Link>
-            </DropdownItem>
-            <DropdownItem>
+
               <Link className="ahu-link" to="/pohakuau">
-                <img src={pohakuau} width="50%" alt="pohakuau road sign" />
+                <img src={pohakuau} width="80%" alt="pohakuau road sign" />
               </Link>
-            </DropdownItem>
-            <DropdownItem>
+            </div>
+          </div>
+          <div className="ahu-row-1 flex">
+            <div className="mobile-ahu-row">
               <Link className="ahu-link" to="/kalalau">
-                <img src={kalalau} width="50%" alt="kalalau road sign" />
+                <img src={kalalau} width="80%" alt="kalalau road sign" />
               </Link>
-            </DropdownItem>
-            <DropdownItem>
               <Link className="ahu-link" to="/honopu">
-                <img src={honopu} width="50%" alt="honopu road sign" />
+                <img src={honopu} width="80%" alt="honopu road sign" />
               </Link>
-            </DropdownItem>
-          </Dropdown>
+            </div>
+          </div>
         </div>
       </div>
     </div>

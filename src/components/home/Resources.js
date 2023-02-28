@@ -1,20 +1,20 @@
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
+import resourceimg from "../../assets/ahustones.png";
 
 export const Resources = () => (
   <>
     <Navbar />
-    <div className="resources">
-      <div className="pt-20 flex justify-center text-3xl">BIBLIOGRAPHY</div>
-      <div className="resource-text p-10">
-        <p className="p-3">
-          Kaua‘i Nui Kuapapa: Talking About Our Island is a project developed by
-          Nā Hōkū Welo Inc. , a consultant to the County of Kaua‘i, starting in
-          2011. Although not survey grade, and not checked for legal validity,
-          the boundaries correspond to several 18th and 19th century survey
-          maps.
-        </p>
-        <p className="p-3">
+    <div className="resource-container">
+      <div className="moku-title p-10 pt-20 flex justify-center text-3xl">
+        BIBLIOGRAPHY
+      </div>
+      <div className="resource-text">
+        Kaua‘i Nui Kuapapa: Talking About Our Island is a project developed by
+        Nā Hōkū Welo Inc. , a consultant to the County of Kaua‘i, starting in
+        2011. Although not survey grade, and not checked for legal validity, the
+        boundaries correspond to several 18th and 19th century survey maps.
+        <p className="">
           {" "}
           The intent of Kaua‘i Nui Kuapapa: Talking About Our Island is to
           represent three (3) periods in time with respect to moku and ahupua‘a
@@ -34,6 +34,11 @@ export const Resources = () => (
           LLC. from various sources and have not been checked against land
           survey records for legal validity.
         </p>
+      </div>
+      <div className="resource-img">
+        <img src={resourceimg} width="75%" alt="kaua'i valley" />
+      </div>
+      <div className="resource-text">
         <p>
           {""}PROJECT SUPPORT FOR KAUA‘I NUI KUAPAPA:{""}
           <br></br> The project has so far enjoyed the warm support of Kaua‘i
@@ -48,7 +53,7 @@ export const Resources = () => (
           Office of Hawaiian Affairs DataSpace Industries Pass-the-Projects Inc.
           Private individuals whose support means a whole lot
         </p>
-        <p className="p-3">
+        <p className="">
           Sources: Akina, Joseph. The Story of the Menehune People. .
           Unpublished holographic manuscript in Hawaiian, transcribed by Frances
           Frazier. In private collection; [Alex] original list of names sent by

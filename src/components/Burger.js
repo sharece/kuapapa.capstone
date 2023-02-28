@@ -34,26 +34,9 @@ export const Burger = () => {
             className={({ isActive }) =>
               clsx("ham-link", { "ham-link-active": isActive })
             }
-            to="/disclaimer"
-          >
-            Disclaimer
-          </NavLink>
-
-          <NavLink
-            className={({ isActive }) =>
-              clsx("ham-link", { "ham-link-active": isActive })
-            }
-            to="/contact"
-          >
-            Contact
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              clsx("ham-link", { "ham-link-active": isActive })
-            }
             to="/BoundaryCert"
           >
-            Boundry Certificates
+            Boundary Certificates
           </NavLink>
           <NavLink
             className={({ isActive }) =>

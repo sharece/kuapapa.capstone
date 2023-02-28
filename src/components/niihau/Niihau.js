@@ -20,7 +20,7 @@ export const Niihau = () => (
           </div>
         </div>
       </div>
-      <p className="niihau-text">
+      <p className="moku-text">
         Ni‘ihau: The whole island plus Ka‘ula and Lehua ‘Uala (sweet potato) is
         a staple in the native diet. This plant embodies the deeply rooted
         nature of the people of Ni‘ihau as people of the earth. Still a
