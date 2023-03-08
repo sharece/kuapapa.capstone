@@ -1,21 +1,21 @@
-import { Link } from 'react-router-dom';
-import { Footer } from '../home/Footer';
-import { Navbar } from '../home/Navbar';
-import konamap from '../../assets/kona-moku-map.png';
-import konasign from '../../assets/ahu-signs/konasign.png';
-import mokupic from '../../assets/konamokuimg.png';
-import mana from '../../assets/ahu-signs/Kona_mana.png';
-import waimea from '../../assets/ahu-signs/Kona_waimea.png';
-import makaweli from '../../assets/ahu-signs/Kona_makaweli.png';
-import hanapepe from '../../assets/ahu-signs/Kona_hanapepe.png';
-import wahiawa from '../../assets/ahu-signs/Kona_wahiawa.png';
-import kalaheo from '../../assets/ahu-signs/Kona_kalaheo.png';
-import lawai from '../../assets/ahu-signs/Kona_lawai.png';
-import koloa from '../../assets/ahu-signs/Kona_koloa.png';
-import weliweli from '../../assets/ahu-signs/Kona_weliweli.png';
-import paa from '../../assets/ahu-signs/Kona_paa.png';
-import mahaulepu from '../../assets/ahu-signs/Kona_mahaulepu.png';
-import mokumap from '../../assets/kona-moku-map.png';
+import { Link } from "react-router-dom";
+import { Footer } from "../home/Footer";
+import { Navbar } from "../home/Navbar";
+import konamap from "../../assets/kona-moku-map.png";
+import konasign from "../../assets/ahu-signs/konasign.png";
+import mokupic from "../../assets/konamokuimg.png";
+import mana from "../../assets/ahu-signs/Kona_mana.png";
+import waimea from "../../assets/ahu-signs/Kona_waimea.png";
+import makaweli from "../../assets/ahu-signs/Kona_makaweli.png";
+import hanapepe from "../../assets/ahu-signs/Kona_hanapepe.png";
+import wahiawa from "../../assets/ahu-signs/Kona_wahiawa.png";
+import kalaheo from "../../assets/ahu-signs/Kona_kalaheo.png";
+import lawai from "../../assets/ahu-signs/Kona_lawai.png";
+import koloa from "../../assets/ahu-signs/Kona_koloa.png";
+import weliweli from "../../assets/ahu-signs/Kona_weliweli.png";
+import paa from "../../assets/ahu-signs/Kona_paa.png";
+import mahaulepu from "../../assets/ahu-signs/Kona_mahaulepu.png";
+import mokumap from "../../assets/kona-moku-map.png";
 
 export const Kona = () => (
   <>
@@ -49,12 +49,12 @@ export const Kona = () => (
           highlight Kona's position on the west end of Kaua‘i.
         </p>
         <p className="p-2">
-          {' '}
+          {" "}
           The color association for Kona is red as the brightest red dirt of
           Waimea Canyon.
         </p>
         <p className="p-2">
-          {' '}
+          {" "}
           The fish is pāpio, a common and well-loved fish among Kaua‘i fishermen
           and locals in general.
         </p>
@@ -71,48 +71,49 @@ export const Kona = () => (
         <div className="learn-more flex justify-center text-lg">
           Learn more about Ahupua'a's in the Moku of Kona
         </div>
+        {/* i dont understand how to create an array of these ahupua'a link images */}
         <div className="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-4xl">
-          <Link to="/mana">
+          <Link className="ahu-link" to="/mana">
             {/* Mana */}
             <img src={mana} alt="mana ahupuaa link" />
           </Link>
-          <Link to="/waimea">
+          <Link className="ahu-link" to="/waimea">
             {/* Waimea */}
             <img src={waimea} alt="waimea ahupuaa link" />
           </Link>
-          <Link to="/makaweli">
+          <Link className="ahu-link" to="/makaweli">
             {/* Makaweli */}
             <img src={makaweli} alt="makaweli ahupuaa link" />
           </Link>
-          <Link to="/hanapepe">
+          <Link className="ahu-link" to="/hanapepe">
             <img src={hanapepe} alt="hanapepe ahupuaa link" />
             {/* Hanapepe */}
           </Link>
-          <Link to="/wahiawa">
+          <Link className="ahu-link" to="/wahiawa">
             <img src={wahiawa} alt="wahiawa ahupuaa link" />
             {/* Wahiawa */}
           </Link>
-          <Link to="/kalaheo">
+          <Link className="ahu-link" to="/kalaheo">
             <img src={kalaheo} alt="kalaheo ahupuaa link" />
             {/* Kalaheo */}
           </Link>
-          <Link to="/lawai">
+          <Link className="ahu-link" to="/lawai">
             <img src={lawai} alt="lawai ahupuaa link" />
             {/* Lawai */}
           </Link>
-          <Link to="/koloa">
+          <Link className="ahu-link" to="/koloa">
             {/* Koloa */}
             <img src={koloa} alt="koloa ahupuaa link" />
           </Link>
-          <Link to="/weliweli">
+          <Link className="ahu-link" to="/weliweli">
             {/* Weli weli */}
             <img src={weliweli} alt="weliweli ahupuaa link" />
           </Link>
-          <Link to="/paa">
+          <Link className="ahu-link" to="/paa">
             {/* Pa'a */}
             <img src={paa} alt="paa ahupuaa link" />
           </Link>
-          <Link to="/mahaulepu">
+          <Link className="ahu-link" to="/mahaulepu">
             {/* Mahaulepu */}
             <img src={mahaulepu} alt="mahaulepu ahupuaa link" />
           </Link>
@@ -120,11 +121,6 @@ export const Kona = () => (
       </div>
     </div>
 
-    {/* <div className="ahu-dropdown text-xl">
-        <div className="flex justify-center">
-          <Dropdown title="Select an Ahupua'a">
-            <Dropdown.Item>
-              {" "} */}
     <Footer />
   </>
 );

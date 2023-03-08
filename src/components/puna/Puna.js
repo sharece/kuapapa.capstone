@@ -64,83 +64,49 @@ export const Puna = () => (
           The color yellow is associated with royalty, as seen in ahu‘ula, the
           royal feather capes of Kaua‘i’s mō‘ī.
         </p>
-      </div>
-      <div className="learn-more flex justify-center text-lg">
-        Learn more about Ahupua'a's in the Moku of Puna :
-      </div>
-      <div className="moku-moku-sign p-1">
-        <img className="w-20" src={punasign} alt="puna road sign" />
-      </div>
-      <div className="ahu-dropdown text-xl">
-        <div className="flex justify-center">
-          <Dropdown title="Select an Ahupua'a">
-            <DropdownItem>
-              {" "}
-              <Link className="ahu-link" to="/kipu">
-                <img src={kipu} width="50%" alt="kipu road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/haiku">
-                <img src={haiku} width="50%" alt="haiku road rign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/niumalu">
-                <img src={niumalu} width="50%" alt="niumalu road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/nawiliwili">
-                <img src={nawiliwili} width="50%" alt="nawiliwii road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/kalapaki">
-                <img src={kalapaki} width="50%" alt="kalapaki road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/hanamaulu">
-                <img src={hanamaulu} width="50%" alt="hanamaulu road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              {" "}
-              <Link className="ahu-link" to="/wailua">
-                <img src={wailua} width="50%" alt="wailua road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/olohena">
-                <img src={olohena} width="50%" alt="olohena road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/waipouli">
-                <img src={waipouli} width="50%" alt="waipouli road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/kapaa">
-                <img src={kapaa} width="50%" alt="kapaa road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/kealia">
-                <img src={kealia} width="50%" alt="kealia road sign" />
-              </Link>
-            </DropdownItem>
-            <DropdownItem>
-              <Link className="ahu-link" to="/kamalomaloo">
-                <img
-                  src={kamalomaloo}
-                  width="50%"
-                  alt="kamalomaloo road sign"
-                />
-              </Link>
-            </DropdownItem>
-          </Dropdown>
+        <div className="moku-moku-sign p-1">
+          <img src={punasign} alt="puna road sign" />
+        </div>
+        <div className="learn-more flex justify-center text-lg">
+          Learn more about Ahupua'a's in the Moku of Puna :
+        </div>
+        <div className="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-4xl">
+          <Link className="ahu-link" to="/kipu">
+            <img src={kipu} alt="kipu road sign" />
+          </Link>
+          <Link className="ahu-link" to="/haiku">
+            <img src={haiku} alt="haiku road rign" />
+          </Link>
+          <Link className="ahu-link" to="/niumalu">
+            <img src={niumalu} alt="niumalu road sign" />
+          </Link>
+          <Link className="ahu-link" to="/nawiliwili">
+            <img src={nawiliwili} alt="nawiliwii road sign" />
+          </Link>
+          <Link className="ahu-link" to="/kalapaki">
+            <img src={kalapaki} alt="kalapaki road sign" />
+          </Link>
+          <Link className="ahu-link" to="/hanamaulu">
+            <img src={hanamaulu} alt="hanamaulu road sign" />
+          </Link>
+          <Link className="ahu-link" to="/wailua">
+            <img src={wailua} alt="wailua road sign" />
+          </Link>
+          <Link className="ahu-link" to="/olohena">
+            <img src={olohena} alt="olohena road sign" />
+          </Link>
+          <Link className="ahu-link" to="/waipouli">
+            <img src={waipouli} alt="waipouli road sign" />
+          </Link>
+          <Link className="ahu-link" to="/kapaa">
+            <img src={kapaa} alt="kapaa road sign" />
+          </Link>
+          <Link className="ahu-link" to="/kealia">
+            <img src={kealia} alt="kealia road sign" />
+          </Link>
+          <Link className="ahu-link" to="/kamalomaloo">
+            <img src={kamalomaloo} alt="kamalomaloo road sign" />
+          </Link>
         </div>
       </div>
     </div>

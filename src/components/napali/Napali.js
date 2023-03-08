@@ -10,8 +10,6 @@ import honopu from "../../assets/ahu-signs/Napali_honopu.png";
 import { Link } from "react-router-dom";
 import mokupic from "../../assets/moku-imgs/napali-pic.png";
 import napalimap from "../../assets/napali-moku-map.png";
-import { Dropdown } from "rsuite";
-import DropdownItem from "rsuite/esm/Dropdown/DropdownItem";
 
 export const Napali = () => (
   <>
@@ -61,37 +59,25 @@ export const Napali = () => (
         <div className="learn-more flex justify-center text-xl">
           Learn more about Ahupua'a's in the Moku of Nāpali :
         </div>
-        <div className="ahu-link-container">
-          <div className="ahu-row-1 flex">
-            <div className="mobile-ahu-row">
-              <Link className="ahu-link" to="/awaawapuhi">
-                <img src={awaawapuhi} width="80%" alt="awaawapuhi road rign" />
-              </Link>
-
-              <Link className="ahu-link" to="/hanakapiai">
-                <img src={hanakapiai} width="80%" alt="hanakapiai road sign" />
-              </Link>
-            </div>
-            <div className="mobile-ahu-row">
-              <Link className="ahu-link" to="/hanakoa">
-                <img src={hanakoa} width="80%" alt="hanakoa road sign" />
-              </Link>
-
-              <Link className="ahu-link" to="/pohakuau">
-                <img src={pohakuau} width="80%" alt="pohakuau road sign" />
-              </Link>
-            </div>
-          </div>
-          <div className="ahu-row-1 flex">
-            <div className="mobile-ahu-row">
-              <Link className="ahu-link" to="/kalalau">
-                <img src={kalalau} width="80%" alt="kalalau road sign" />
-              </Link>
-              <Link className="ahu-link" to="/honopu">
-                <img src={honopu} width="80%" alt="honopu road sign" />
-              </Link>
-            </div>
-          </div>
+        <div className="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-4xl">
+          <Link className="ahu-link" to="/awaawapuhi">
+            <img src={awaawapuhi} alt="awaawapuhi road rign" />
+          </Link>
+          <Link className="ahu-link" to="/hanakapiai">
+            <img src={hanakapiai} alt="hanakapiai road sign" />
+          </Link>
+          <Link className="ahu-link" to="/hanakoa">
+            <img src={hanakoa} alt="hanakoa road sign" />
+          </Link>
+          <Link className="ahu-link" to="/pohakuau">
+            <img src={pohakuau} alt="pohakuau road sign" />
+          </Link>
+          <Link className="ahu-link" to="/kalalau">
+            <img src={kalalau} alt="kalalau road sign" />
+          </Link>
+          <Link className="ahu-link" to="/honopu">
+            <img src={honopu} alt="honopu road sign" />
+          </Link>
         </div>
       </div>
     </div>
