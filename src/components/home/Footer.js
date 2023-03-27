@@ -7,7 +7,7 @@ export const Footer = () => (
   <>
     <div className="foot-container p-2 pt-4 text-xs w-full flex">
       <div className="foot-item flex p-1">
-        <a alt="devisland link" target="_blank" href="www.dev-island.org">
+        <a target="_blank" rel="noreferrer" href="https://dev-island.org">
           <Website /> Made by Dev Island
         </a>
       </div>
