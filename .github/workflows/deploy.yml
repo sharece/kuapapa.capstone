@@ -27,5 +27,5 @@ jobs:
           server: giowm1040.siteground.biz
           username: sharece@kauainuikuapapa.com
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: public_html/test/
+          server-dir: public_html/
           local-dir: ./build/
