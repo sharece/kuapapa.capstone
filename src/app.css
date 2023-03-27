@@ -1,0 +1,1409 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;600&display=swap");
+
+* {
+  font-family: "Manrope", "IM Fell Double Pica" sans-serif;
+  margin: auto;
+}
+
+body {
+  color: rgba(2, 2, 2, 0.9);
+  font-family: "Manrope", "Big Shoulder Display", sans-serif;
+}
+
+.main-title {
+  text-align: center;
+  font-size: xxx-large;
+  letter-spacing: 0.6rem;
+  padding-bottom: 0.1rem;
+}
+
+.foot-container {
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+  padding: 6px;
+}
+
+.click-map {
+  display: none;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+.tablet-map {
+  display: none;
+}
+
+.desktop-bio {
+  display: none;
+}
+
+.ahu-row-1,
+.ahu-row-2,
+.ahu-row-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio {
+  font-size: large;
+  padding: 4rem;
+  font-weight: 500;
+  /* font-family: "Unbounded"; */
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 0.5rem;
+  right: 0;
+  top: 2.5rem;
+  width: 60%;
+  background-color: #450068;
+  z-index: 3000;
+  opacity: 0;
+}
+
+.page-burger-open {
+  opacity: 1;
+  transition: all 390ms ease-in-out;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  color: white;
+  top: 0;
+  z-index: 0;
+  justify-content: flex-start;
+  background-color: #450068;
+  height: 2.8rem;
+  width: 100%;
+  position: fixed;
+}
+
+.nav-link,
+.nav-link-active {
+  display: none;
+}
+
+.ham-link-active {
+  color: #8f76c2;
+  font-weight: 500;
+  display: block;
+}
+
+.ham-link-active,
+.foot-link {
+  padding: 2px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.ham-link:hover,
+.foot-link:hover {
+  font-size: 1rem;
+  text-shadow: rgba(2, 90, 32, 0.86);
+}
+.boundary-page {
+  min-height: calc(100vh - 168px);
+}
+.foot-container {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.ham-link-active:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.title-header {
+  width: 50%;
+}
+
+.home-moku-sign:hover {
+  transition: 500ms;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.crumb,
+.breadcrumb-arrow,
+.img-cap {
+  color: white;
+  padding: 1rem;
+}
+
+.crumb,
+.breadcrumb-arrow {
+  color: white;
+  padding: 1rem;
+  text-shadow: 2px 2px 2px black;
+  /* font-size: 20px; */
+}
+
+.current-crumb {
+  color: white;
+  text-shadow: 2px 2px 2px #8f76c2;
+}
+
+.moku-title,
+.main-title,
+.nav-link,
+.hamburger,
+a,
+.foot-container,
+.img-cap {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.img-cap {
+  font-size: 0.7rem;
+}
+
+.crumb:hover {
+  /* font-size: 18px; */
+  color: #8f76c2;
+  text-shadow: #020202;
+}
+
+.ahu-link-container,
+.moku-moku-sign {
+  display: flex;
+}
+
+.home-img {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.ahu-link-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.ahu-text {
+  padding: 3rem;
+  font-size: large;
+}
+
+.bio {
+  padding: 1rem;
+  /* letter-spacing: 0.1rem; */
+}
+
+.learn-more {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.hanalei-bay {
+  border-bottom: 0.1rem solid #85808896;
+}
+
+.moku-text {
+  padding: 1.9rem;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.moku-pic {
+  max-width: 85%;
+}
+
+.moku-title {
+  font-family: "Unbounded", sans-serif;
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.moku-map {
+  padding-left: 4rem;
+}
+
+.moku-container {
+  padding-top: 3.5rem;
+  background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-bg-container {
+  padding-top: 2rem;
+}
+
+.home-bg {
+  background-image: url("../../kuapapa.capstone/src/assets/napalimokupic3.png");
+  background-size: contain;
+}
+
+.bio {
+  background-image: url("../../kuapapa.capstone/src/assets/petro2.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.ahu-text {
+  background-image: url("../../kuapapa.capstone/src/assets/petro2.png");
+  background-repeat: repeat;
+  background-size: cover;
+  /* border-radius: 25px; */
+  padding: 2rem;
+  font-size: x-large;
+  padding-bottom: 1rem;
+}
+
+.moku-text {
+  background-image: url("../../kuapapa.capstone/src/assets/petro2.png");
+  background-repeat: repeat;
+  background-size: cover;
+  /* border-radius: 25px; */
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+.disclaimer-container,
+.disclaimer-img,
+.resource-container {
+  background-image: url("../../kuapapa.capstone/src/assets/petro2.png");
+}
+
+.resource-img,
+.disclaimer-img {
+  display: none;
+}
+
+.disclaimer-text,
+.resource-text {
+  padding: 1.9rem;
+}
+
+.ahu-elements {
+  padding-top: 2rem;
+  padding: 2.5rem;
+}
+
+.ahu-link {
+  padding: 0.1rem;
+}
+
+.mobile-ahu-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.ahu-bg {
+  background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2 {
+  display: block;
+  letter-spacing: 0.2rem;
+  display: flex;
+}
+
+h2 {
+  padding: 0.5rem;
+}
+
+.report-title {
+  background-color: #450068;
+  color: white;
+}
+
+.video,
+.reports {
+  display: flex;
+  flex-direction: column;
+}
+
+.video {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.ahu-text {
+  font-size: larger;
+  padding: 1.5rem;
+}
+
+.ahu-sign {
+  padding: 1rem;
+}
+
+.ahu-map {
+  padding: 0.2rem;
+}
+
+.moku-sign {
+  width: 80%;
+  /* z-index: 3; */
+}
+
+.home-moku-sign {
+  padding: 2px;
+}
+
+.back-to-moku-sign {
+  width: 20%;
+  /* position: flex; */
+  /* bottom: 20rem; */
+  /* need to fix for bigger scrn */
+}
+
+.moku-link-container {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.mobile-bio-text {
+  font-size: medium;
+}
+
+.desktop-map {
+  display: none;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.desktop-title {
+  font-family: "Unbounded";
+  line-height: 67px;
+}
+
+.contact-page {
+  display: flex;
+  flex-wrap: wrap;
+  /* min-height: 100vh; */
+}
+
+.contact-icon {
+  display: none;
+}
+
+.contact-container {
+  padding: 5rem;
+}
+
+.bc:hover,
+.cob:hover {
+  font-size: 20px;
+  color: #8f76c2;
+  transition: 500ms;
+}
+
+.disclaimer-text,
+.resource-text,
+.moku-text,
+.ahu-text,
+.bio {
+  padding: 1.3rem;
+  line-height: 160%;
+}
+
+.niihau-text {
+  padding: 1rem;
+}
+
+.foot-container {
+  background-color: #450068;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* 1 tablet */
+@media screen and (min-width: 640px) {
+  .desktop-map {
+    display: none;
+  }
+
+  .desktop-title {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .tablet-map {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .click-map {
+    display: none;
+  }
+
+  .ham-links {
+    z-index: 0;
+  }
+
+  .mobile-menu {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    /* position: absolute; */
+    padding: 0.5rem;
+    right: 0;
+    top: 2.5rem;
+    width: 50%;
+    background-color: #450068;
+    z-index: 1000;
+    opacity: 0;
+  }
+
+  .page-burger-open {
+    opacity: 1;
+    transition: all 390ms ease-in-out;
+    /* z-index: 1; */
+  }
+
+  .navbar {
+    display: flex;
+    color: white;
+    top: 0;
+    /* z-index: 0; */
+    justify-content: flex-start;
+    background-color: #450068;
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+  }
+
+  .nav-link,
+  .nav-link-active {
+    display: none;
+  }
+
+  .ham-link-active {
+    color: #8f76c2;
+    font-weight: 500;
+  }
+
+  .ham-link,
+  .foot-link {
+    padding: 2px;
+    margin-bottom: 10px;
+    /* font-size: 20px; */
+    /* font-weight: 600; */
+    /* text-transform: lowercase; */
+    transition: 300ms;
+    cursor: pointer;
+  }
+
+  .ham-link:hover,
+  .foot-link:hover {
+    font-size: 1rem;
+    text-shadow: rgba(2, 90, 32, 0.86);
+  }
+
+  .ham-link:after {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  .home-bg {
+    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+  }
+
+  .weather-section {
+    display: flex;
+  }
+
+  .ahu-sign {
+    max-width: 30%;
+  }
+
+  .ahu-link-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* width: 50%; */
+    padding: 3px;
+  }
+
+  .reports {
+    display: flex;
+  }
+
+  .moku-links-and-map {
+    padding-bottom: 2rem;
+  }
+
+  .home-moku-sign:hover {
+    transition: 500ms;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 80px 16px;
+  }
+
+  .bio {
+    background-color: white;
+  }
+
+  .niihau-text {
+    padding: 2rem;
+  }
+
+  .disclaimer-text,
+  .resource-text,
+  .moku-text,
+  .ahu-text,
+  .bio,
+  .mayor-text {
+    padding: 3rem;
+    line-height: 200%;
+  }
+  .contact-icons {
+    display: none;
+  }
+
+  .home-moku-sign {
+    width: 75%;
+  }
+
+  .moku-map {
+    width: 50%;
+  }
+
+  .desktop-title {
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    font-family: "Unbounded";
+  }
+
+  .report-title {
+    letter-spacing: 0.5rem;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .foot-container {
+    background-color: #450068;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-r-text,
+  .bottom-r-text,
+  .disclaimer-top,
+  .disclaimer-bottom,
+  .boundary-page {
+    background-image: url("./assets/petro2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .resource-img,
+  .disclaimer-img {
+    display: block;
+  }
+
+  .mobile-ahu-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ahu-row-1,
+  .ahu-row-2,
+  .ahu-row-3 {
+    display: flex;
+    flex-direction: row;
+  }
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #8f76c2;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  button:hover:before,
+  button:focus:before,
+  button:active:before {
+    left: 0;
+    right: 0;
+  }
+  .ahu-link {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  .ahu-link:hover,
+  .ahu-link:focus,
+  .ahu-link:active {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ahu-map {
+    width: 70%;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .desktop-title {
+    display: block;
+    text-align: center;
+  }
+
+  .tablet-map {
+    display: none;
+  }
+
+  .desktop-map {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .ham-links {
+    z-index: 0;
+  }
+
+  .mobile-menu {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    /* position: absolute; */
+    padding: 0.5rem;
+    right: 0;
+    top: 2.5rem;
+    width: 50%;
+    background-color: #450068;
+    z-index: 10000;
+    opacity: 0;
+  }
+
+  .page-burger-open {
+    opacity: 1;
+    transition: all 390ms ease-in-out;
+    /* z-index: 1; */
+  }
+
+  .navbar {
+    display: flex;
+    top: 0;
+    color: white;
+    z-index: 1;
+    justify-content: flex-start;
+    background-color: #450068;
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+  }
+
+  .nav-link,
+  .nav-link-active {
+    display: none;
+  }
+
+  .ham-link-active {
+    color: #8f76c2;
+    font-weight: 400;
+  }
+
+  .ham-link,
+  .foot-link {
+    padding: 2px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 300ms;
+    cursor: pointer;
+  }
+
+  .ham-link:hover,
+  .foot-link:hover {
+    font-size: 1rem;
+    text-shadow: rgba(2, 90, 32, 0.86);
+  }
+
+  .ham-link:after {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  .home-bg {
+    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+  }
+
+  .contact-icon {
+    display: none;
+  }
+
+  .moku-title,
+  .main-title,
+  .click-map,
+  .nav-link,
+  a,
+  .foot-container,
+  .img-cap {
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .bio {
+    background-color: white;
+    /* padding: 1rem; */
+  }
+
+  .ahu-link-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .moku-link-container {
+    width: 100%;
+  }
+
+  .moku-links-and-map {
+    padding-bottom: 2rem;
+  }
+
+  .home-moku-sign:hover {
+    transition: 500ms;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 80px 16px;
+  }
+
+  .moku-text {
+    padding: 3rem;
+    font-size: medium;
+  }
+
+  .ahu-text {
+    padding: 2rem;
+    font-size: x-large;
+  }
+
+  .moku-pic {
+    width: 75%;
+  }
+
+  .click-text {
+    display: flex;
+    font-size: larger;
+    padding: 1rem;
+  }
+
+  .crumb,
+  .current-crumb,
+  .breadcrumb-arrow {
+    color: white;
+    padding: 1rem;
+    font-size: 25px;
+  }
+
+  .crumb:hover {
+    /* font-size: 18px; */
+    color: #8f76c2;
+    text-shadow: #020202;
+  }
+
+  .home-moku-sign {
+    width: 75%;
+  }
+
+  .moku-map {
+    width: 50%;
+  }
+
+  .desktop-title {
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    font-family: "Unbounded";
+  }
+
+  .ahu-text {
+    padding: 3rem;
+    font-size: large;
+  }
+
+  .ahu-link {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  .ahu-link:hover,
+  .ahu-link:focus,
+  .ahu-link:active {
+    transform: scale(1.1);
+  }
+
+  .foot-container {
+    background-color: #450068;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .report-title {
+    letter-spacing: 0.5rem;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .video,
+  .reports {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .weather-section {
+    display: flex;
+    /* justify-content: space-around; */
+  }
+
+  .weather-report {
+    padding-right: 8rem;
+  }
+
+  /* .top-r-text,
+  .bottom-r-text,
+  .disclaimer-top,
+  .disclaimer-bottom {
+    background-image: url("./assets/petro2.png");
+    padding: 2.5rem;
+  } */
+  .resource-img,
+  .disclaimer-img {
+    display: block;
+  }
+
+  .mobile-ahu-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ahu-row-1,
+  .ahu-row-2,
+  .ahu-row-3 {
+    display: flex;
+    flex-direction: row;
+  }
+  button {
+    padding: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  button:hover,
+  button:focus,
+  button:active {
+    transform: scale(1.1);
+  }
+  button:active {
+    transform: scale(1.2);
+  }
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #8f76c2;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  button:hover:before,
+  button:focus:before,
+  button:active:before {
+    left: 0;
+    right: 0;
+  }
+  li {
+    padding: 0.2rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .title-header,
+  .title {
+    display: none;
+  }
+
+  .report-title {
+    letter-spacing: 0.5rem;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .moku-title,
+  .main-title,
+  .click-map,
+  .nav-link,
+  a,
+  .foot-container,
+  .img-cap {
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .main-title {
+    letter-spacing: 1.8rem;
+  }
+
+  .moku-title {
+    padding: 2rem;
+  }
+
+  .bio {
+    font-size: xlarge;
+    padding: 4rem;
+    font-weight: 500;
+    /* font-family: "Unbounded"; */
+  }
+
+  .nav-desktop {
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    background-color: #450068;
+  }
+
+  .click-map {
+    display: flex;
+    color: #020202;
+    font-size: xx-large;
+    padding: 2rem;
+    font-family: "Unbounded";
+  }
+
+  .mobile-bio {
+    display: none;
+  }
+
+  .desktop-bio {
+    display: block;
+  }
+
+  .nav-link {
+    display: flex;
+  }
+
+  .nav-link-active {
+    color: #8f76c2;
+    /* font-size: 19px; */
+  }
+
+  .nav-link,
+  .foot-link {
+    /* z-index: 1; */
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.1rem;
+    /* text-transform: lowercase; */
+    cursor: pointer;
+  }
+
+  .nav-link,
+  .foot-item {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-link:before,
+  .foot-item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  .nav-link:hover:before,
+  .nav-link:focus:before,
+  .nav-link:active:before,
+  .foot-item:hover:before,
+  .foot-item:focus:before,
+  .foot-item:active:before {
+    left: 0;
+    right: 0;
+  }
+
+  .nav-link:hover,
+  .foot-item:hover {
+    /* font-size: 20px; */
+    color: #8f76c2;
+    text-shadow: #f7fbf8;
+  }
+
+  /* .nav-link:after {
+    transform: scaleY(0.2);
+    opacity: 1;
+  } */
+  .hamburger {
+    display: none;
+  }
+
+  .signature {
+    width: 30%;
+  }
+
+  .ahu-link {
+    padding: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  .ahu-link:hover,
+  .ahu-link:focus,
+  .ahu-link:active {
+    transform: scale(1.1);
+  }
+  button {
+    padding: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  button:hover,
+  button:focus,
+  button:active {
+    transform: scale(1.1);
+  }
+  button:active {
+    transform: scale(1.2);
+  }
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #8f76c2;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  button:hover:before,
+  button:focus:before,
+  button:active:before {
+    left: 0;
+    right: 0;
+  }
+  .ahu-sign {
+    max-width: 30%;
+    display: flex;
+    padding: 1rem;
+  }
+
+  .ahu-text {
+    padding: 3rem;
+    font-size: large;
+  }
+
+  .ahu-map {
+    width: 70%;
+  }
+
+  .ahu-elements {
+    padding: 2.5rem;
+  }
+
+  .ahu-map-and-sign {
+    padding: 4.5rem;
+  }
+
+  .ahu-link-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+  }
+
+  .moku-link-container {
+    width: 100%;
+  }
+
+  .moku-links-and-map {
+    padding-bottom: 3rem;
+  }
+
+  .moku-text {
+    padding: 3rem;
+    font-size: medium;
+  }
+
+  .moku-map {
+    width: 50%;
+  }
+
+  .home-bg {
+    background-image: url("../../kuapapa.capstone/src/assets/kalo-bg.png");
+    /* background-repeat: repeat; */
+    background-size: cover;
+    padding-top: 45px;
+  }
+
+  .desktop-title {
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    font-family: "Unbounded";
+  }
+
+  .mobile-title {
+    display: none;
+  }
+
+  .weather-section {
+    display: flex;
+  }
+
+  .weather-report {
+    padding-right: 10rem;
+  }
+
+  .video,
+  .reports {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-icon {
+    display: none;
+  }
+
+  .all-contact {
+    /* padding: 2rem; */
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .contact-container {
+    padding: 5rem;
+  }
+
+  .cob:hover,
+  .bc:hover {
+    font-size: 20px;
+    transition: 500ms;
+  }
+
+  .moku-sign {
+    /* display: inline-block; */
+    padding: 1rem;
+    width: 80%;
+  }
+  .learn-more {
+    /* color: white; */
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+  }
+  .niihau-text {
+    padding: 8rem;
+  }
+
+  .home-moku-sign:hover {
+    transition: 500ms;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 80px 16px;
+  }
+
+  .crumb,
+  .breadcrumb-arrow {
+    color: white;
+    padding: 1rem;
+    text-shadow: 2px 2px 2px black;
+    /* font-size: 20px; */
+  }
+
+  .current-crumb {
+    text-shadow: 2px 2px 2px #8f76c2;
+  }
+
+  .crumb:hover {
+    /* font-size: 18px; */
+    color: #8f76c2;
+    text-shadow: #020202;
+  }
+
+  .home-moku-sign {
+    width: 75%;
+  }
+
+  .bc {
+    display: flex;
+    justify-content: center;
+  }
+
+  .foot-container {
+    background-color: #450068;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .disclaimer-text,
+  .resource-text,
+  .moku-text,
+  .ahu-text,
+  .bio,
+  .mayor-text {
+    padding: 3rem;
+    line-height: 200%;
+  }
+
+  .resource-img,
+  .disclaimer-img {
+    display: block;
+  }
+
+  .mobile-ahu-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ahu-row-1,
+  .ahu-row-2,
+  .ahu-row-3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    padding: 0.2rem;
+  }
+  .kauai-roads {
+    font-size: large;
+  }
+}
